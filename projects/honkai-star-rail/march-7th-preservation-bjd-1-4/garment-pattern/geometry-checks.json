@@ -1,0 +1,186 @@
+{
+  "version": "v0.2",
+  "method": "Cubic sampled curves; shapely distance buffer with miter join, limit2. Sleeve notches placed by equal normalized arc length; each cap half has1mm ease.",
+  "all_net_and_cut_polygons_valid": true,
+  "all_cut_polygons_contain_net": true,
+  "pairs": [
+    {
+      "pair": "B01/B02肩缝",
+      "edge_a_mm": 13.928,
+      "edge_b_mm": 13.928,
+      "planned_ease_mm": 0,
+      "residual_mm": 0.0,
+      "pass": true
+    },
+    {
+      "pair": "B01/B02侧缝",
+      "edge_a_mm": 50.543,
+      "edge_b_mm": 50.543,
+      "planned_ease_mm": 0,
+      "residual_mm": 0.0,
+      "pass": true
+    },
+    {
+      "pair": "P-B03前袖山",
+      "edge_a_mm": 34.595,
+      "edge_b_mm": 33.595,
+      "planned_ease_mm": 1,
+      "residual_mm": 0.0,
+      "pass": true
+    },
+    {
+      "pair": "P-B03后袖山",
+      "edge_a_mm": 33.534,
+      "edge_b_mm": 32.534,
+      "planned_ease_mm": 1,
+      "residual_mm": 0.0,
+      "pass": true
+    },
+    {
+      "pair": "P-B03前袖山累计50%",
+      "edge_a_mm": 17.298,
+      "edge_b_mm": 16.798,
+      "planned_ease_mm": 0.5,
+      "residual_mm": 0.0,
+      "pass": true
+    },
+    {
+      "pair": "P-B03前袖山累计100%",
+      "edge_a_mm": 34.595,
+      "edge_b_mm": 33.595,
+      "planned_ease_mm": 1,
+      "residual_mm": 0.0,
+      "pass": true
+    },
+    {
+      "pair": "P-B03后袖山累计50%",
+      "edge_a_mm": 16.767,
+      "edge_b_mm": 16.267,
+      "planned_ease_mm": 0.5,
+      "residual_mm": 0.0,
+      "pass": true
+    },
+    {
+      "pair": "P-B03后袖山累计100%",
+      "edge_a_mm": 33.534,
+      "edge_b_mm": 32.534,
+      "planned_ease_mm": 1,
+      "residual_mm": 0.0,
+      "pass": true
+    },
+    {
+      "pair": "O01/O02侧缝",
+      "edge_a_mm": 31.623,
+      "edge_b_mm": 31.623,
+      "planned_ease_mm": 0,
+      "residual_mm": 0.0,
+      "pass": true
+    },
+    {
+      "pair": "P-O03前袖山",
+      "edge_a_mm": 25.182,
+      "edge_b_mm": 24.182,
+      "planned_ease_mm": 1,
+      "residual_mm": 0.0,
+      "pass": true
+    },
+    {
+      "pair": "P-O03后袖山",
+      "edge_a_mm": 24.653,
+      "edge_b_mm": 23.653,
+      "planned_ease_mm": 1,
+      "residual_mm": 0.0,
+      "pass": true
+    },
+    {
+      "pair": "P-O03前袖山累计50%",
+      "edge_a_mm": 12.591,
+      "edge_b_mm": 12.091,
+      "planned_ease_mm": 0.5,
+      "residual_mm": 0.0,
+      "pass": true
+    },
+    {
+      "pair": "P-O03前袖山累计100%",
+      "edge_a_mm": 25.182,
+      "edge_b_mm": 24.182,
+      "planned_ease_mm": 1,
+      "residual_mm": 0.0,
+      "pass": true
+    },
+    {
+      "pair": "P-O03后袖山累计50%",
+      "edge_a_mm": 12.327,
+      "edge_b_mm": 11.827,
+      "planned_ease_mm": 0.5,
+      "residual_mm": 0.0,
+      "pass": true
+    },
+    {
+      "pair": "P-O03后袖山累计100%",
+      "edge_a_mm": 24.653,
+      "edge_b_mm": 23.653,
+      "planned_ease_mm": 1,
+      "residual_mm": 0.0,
+      "pass": true
+    },
+    {
+      "pair": "C01/C02肩顶连接",
+      "edge_a_mm": 16.0,
+      "edge_b_mm": 16.0,
+      "planned_ease_mm": 0,
+      "residual_mm": 0.0,
+      "pass": true
+    },
+    {
+      "pair": "闭合胸围",
+      "edge_a_mm": 180,
+      "edge_b_mm": 170,
+      "planned_ease_mm": 10,
+      "residual_mm": 0,
+      "pass": true
+    },
+    {
+      "pair": "腰围：前80-10省＋后80-10省",
+      "edge_a_mm": 140,
+      "edge_b_mm": 128,
+      "planned_ease_mm": 12,
+      "residual_mm": 0,
+      "pass": true
+    },
+    {
+      "pair": "裙褶后腰140=腰头150-搭接10",
+      "edge_a_mm": 140.0,
+      "edge_b_mm": 140,
+      "planned_ease_mm": 0,
+      "residual_mm": 0,
+      "pass": true
+    }
+  ],
+  "sleeve_cuff_gather_mm": 20,
+  "white_sleeve_length_plus_cuff_mm": 122,
+  "closed_waist_mm": 140,
+  "skirt_pleats": {
+    "flat_mm": 420,
+    "repeat_mm": 30,
+    "finished_repeat_mm": 10,
+    "count": 14,
+    "finished_waist_mm": 140,
+    "waistband_total_mm": 150,
+    "overlap_mm": 10,
+    "back_slit_length_mm": 30,
+    "skirt_body_overlap_mm": 0
+  },
+  "physical_fit_validated": false,
+  "waist_layer_reference": {
+    "waist_flap_top_equals_skirt_waistband_top": true,
+    "skirt_with_waistband_height_mm": 98,
+    "long_waist_flap_height_mm": 86,
+    "clearance_above_skirt_bottom_mm": 12
+  },
+  "upper_sleeve_flounce": {
+    "edge_mm": 50,
+    "target_seam_mm": 47.8348,
+    "gather_mm": 2.1652
+  }
+}

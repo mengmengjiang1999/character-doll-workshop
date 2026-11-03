@@ -2,9 +2,18 @@
 
 用于积累各类角色的娃衣布料印花、BJD／棉花娃娃服装、缠花与 3D 打印配饰。
 
-**当前交付是照三月七公式服重绘的彩色布料印花稿，后续交给厂家印布。** 两套花型分别保存于 `fabric-print/`，包含配色、渐变、边饰和定位纹样。现有纸样属于历史辅助工作，不是本轮交付。
+**当前交付是两套公式服的完整衣层与全尺寸衣片试版。** 每层提供前后外形，衣身、袖、裙、里片、贴边与系带都有对应版片；确认试穿后，再将 `fabric-print/` 的纹样按这些实际衣片定位，交给厂家印布。
 
-这是个人非商业制作项目。当前图稿是纹样打样布局，尚未按实际裁片定版，也未完成印布打样、缩水测量和成衣试穿。
+这是个人非商业制作项目。新衣片为数值化结构试版，尚未实物试穿；存护使用部分商品标称加明确设计假设，巡猎使用可替换的假设设计基准。旧纹样文件仍是打样布局，尚未升级为最终定位印布稿。
+
+## 完整衣服打版入口
+
+- **[可视化打版册：分层外形、全套衣片、逐片尺寸](docs/garment-guide.html)**（下载仓库后本地打开 HTML，或用下列图片查看）。
+- [存护各层前后图](projects/honkai-star-rail/march-7th-preservation-bjd-1-4/garment-pattern/layers-overview.png) · [全套衣片图](projects/honkai-star-rail/march-7th-preservation-bjd-1-4/garment-pattern/pieces-overview.png) · [衣片目录](projects/honkai-star-rail/march-7th-preservation-bjd-1-4/garment-pattern/)
+- [巡猎各层前后图](projects/honkai-star-rail/march-7th-hunt-bandai-sitting-plush/garment-pattern/layers-overview.png) · [全套衣片图](projects/honkai-star-rail/march-7th-hunt-bandai-sitting-plush/garment-pattern/pieces-overview.png) · [衣片目录](projects/honkai-star-rail/march-7th-hunt-bandai-sitting-plush/garment-pattern/)
+- [公式服衣层参考复核](docs/garment-reference-review.md)：区分直接观察与为娃衣选择的结构。
+
+衣片 PDF 为 1:1；按实际大小输出并量取 50 mm 校准标尺。彩色分层示意仅说明外形和穿搭，不能从图片像素取尺寸。
 
 ## 先看尺寸图和选材
 
@@ -44,10 +53,11 @@
 
 ## 当前工作顺序
 
-1. 对照官方公式服核对 `fabric-print/` 的颜色、纹样和部位对应，区分可见细节与待确认部分。
-2. 选定布料和厂家，确认印花格式、色彩配置、实际尺寸与布纹方向；先印纹样和颜色小样。
-3. 根据实际衣片确定定位花型的位置、方向、缝合余量及经纬向缩水补偿，再生成生产排版。
-4. 完成印布、缝制和试穿后，将实物结果写入 `build-log.md`。数字文件检查不能替代实物验证。
+1. 看 `garment-pattern/` 每层前后外形、净衣片和裁边，按输入依据确认本版的估算／设计尺寸。
+2. 用低成本坯布验证衣身、袖、后开口和裙腰，再叠完整衣层；记录修正值，重出衣片。
+3. 按部位选择布料和厂家，先试薄衬、叠缝、粘扣与色样；确认布纹方向及印后尺寸变化。
+4. 将 `fabric-print/` 纹样定位到调整后的衣片，底色覆盖缝份，并按材料分别生成定位印布稿。
+5. 实物结果写入 `build-log.md`；数字检查不代替穿脱、坐姿和成衣验证。
 
 ## 目录
 
@@ -62,12 +72,23 @@ projects/
       references.md         来源、视角、模型及使用说明
       bill-of-materials.md  材料候选与实际消耗
       build-log.md          印花打样、改版、试装与成品验证
+      garment-pattern/      完整衣层、1:1衣片、裁剪数量、尺寸及拼接校验
       fabric-print/         彩色印花母版、导出图、纹样对应与尺寸清单
       patterns/             历史辅助纸样及后续适配记录
       models/               自制配饰源文件、打印导出件和适配说明
 ```
 
 新项目从[项目模板](templates/project-template.md)开始。材料选择见[工具与材料指南](docs/materials-and-tools.md)。
+
+## 完整衣片再生成
+
+```sh
+python3 tools/create_preservation_garment.py
+python3 tools/create_hunt_garment.py
+python3 tools/build_garment_guide.py
+```
+
+输入参数、假设条件和拼接检查保存在各 `garment-pattern/` 目录；生成数字文件不代表已经通过实物试穿。
 
 ## 印花文件再生成
 

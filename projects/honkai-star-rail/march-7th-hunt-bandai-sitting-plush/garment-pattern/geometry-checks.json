@@ -1,0 +1,149 @@
+{
+  "version": "v0.2",
+  "method": "Cubic curves sampled at 24 intervals; shapely true distance offset with miter joins; lengths measured on sampled seam paths",
+  "all_net_and_cut_polygons_valid": true,
+  "all_cut_polygons_contain_net": true,
+  "pairs": [
+    {
+      "pair": "B01/B02 肩缝",
+      "edge_a_mm": 39.294,
+      "edge_b_mm": 39.294,
+      "planned_ease_mm": 0,
+      "residual_mm": 0.0,
+      "pass": true
+    },
+    {
+      "pair": "B01/B02 侧缝",
+      "edge_a_mm": 85.406,
+      "edge_b_mm": 85.406,
+      "planned_ease_mm": 0,
+      "residual_mm": 0.0,
+      "pass": true
+    },
+    {
+      "pair": "H-B03 前袖山",
+      "edge_a_mm": 69.594,
+      "edge_b_mm": 67.594,
+      "planned_ease_mm": 2,
+      "residual_mm": 0.0,
+      "pass": true
+    },
+    {
+      "pair": "H-B03 后袖山",
+      "edge_a_mm": 60.076,
+      "edge_b_mm": 58.076,
+      "planned_ease_mm": 2,
+      "residual_mm": 0.0,
+      "pass": true
+    },
+    {
+      "pair": "H-B03 前单记号距肩点",
+      "edge_a_mm": 34.797,
+      "edge_b_mm": 33.797,
+      "planned_ease_mm": 1.0,
+      "residual_mm": 0.0,
+      "pass": true
+    },
+    {
+      "pair": "H-B03 后双1记号距肩点",
+      "edge_a_mm": 27.034,
+      "edge_b_mm": 26.134,
+      "planned_ease_mm": 0.9,
+      "residual_mm": 0.0,
+      "pass": true
+    },
+    {
+      "pair": "H-B03 后双2记号距肩点",
+      "edge_a_mm": 33.042,
+      "edge_b_mm": 31.942,
+      "planned_ease_mm": 1.1,
+      "residual_mm": 0.0,
+      "pass": true
+    },
+    {
+      "pair": "B05 接领边/衣身领口",
+      "edge_a_mm": 180.728,
+      "edge_b_mm": 180.728,
+      "planned_ease_mm": 0,
+      "residual_mm": 0,
+      "pass": true
+    },
+    {
+      "pair": "R01/R02 肩缝",
+      "edge_a_mm": 44.643,
+      "edge_b_mm": 44.643,
+      "planned_ease_mm": 0,
+      "residual_mm": 0.0,
+      "pass": true
+    },
+    {
+      "pair": "R01/R02 侧缝",
+      "edge_a_mm": 46.39,
+      "edge_b_mm": 46.39,
+      "planned_ease_mm": 0,
+      "residual_mm": 0.0,
+      "pass": true
+    },
+    {
+      "pair": "H-R03 前袖山",
+      "edge_a_mm": 69.727,
+      "edge_b_mm": 67.727,
+      "planned_ease_mm": 2,
+      "residual_mm": 0.0,
+      "pass": true
+    },
+    {
+      "pair": "H-R03 后袖山",
+      "edge_a_mm": 61.585,
+      "edge_b_mm": 59.585,
+      "planned_ease_mm": 2,
+      "residual_mm": 0.0,
+      "pass": true
+    },
+    {
+      "pair": "H-R03 前单记号距肩点",
+      "edge_a_mm": 34.864,
+      "edge_b_mm": 33.864,
+      "planned_ease_mm": 1.0,
+      "residual_mm": 0.0,
+      "pass": true
+    },
+    {
+      "pair": "H-R03 后双1记号距肩点",
+      "edge_a_mm": 27.713,
+      "edge_b_mm": 26.813,
+      "planned_ease_mm": 0.9,
+      "residual_mm": 0.0,
+      "pass": true
+    },
+    {
+      "pair": "H-R03 后双2记号距肩点",
+      "edge_a_mm": 33.872,
+      "edge_b_mm": 32.772,
+      "planned_ease_mm": 1.1,
+      "residual_mm": 0.0,
+      "pass": true
+    }
+  ],
+  "closed_chest_mm": 420,
+  "closed_max_abdomen_mm": 480,
+  "waistband_closed_length_mm": 480,
+  "cuff_gathering": {
+    "sleeve_edge_mm": 149.73,
+    "cuff_join_mm": 120,
+    "fullness_mm": 29.73
+  },
+  "underlayer_join": {
+    "front_gathered_mm": 120,
+    "sides_gathered_mm": 200,
+    "total_coverage_mm": 320,
+    "rear_uncovered_mm": 160
+  },
+  "lining_reveal_design_mm": {
+    "front_pink_beyond_dark": 8,
+    "front_white_beyond_pink": 7,
+    "side_pink_beyond_dark": 8.485,
+    "side_white_beyond_pink": 7
+  },
+  "physical_fit_validated": false
+}

@@ -1,0 +1,23 @@
+{
+  "version": "v0.2-engineering-toile",
+  "units": "mm",
+  "actual_Bandai_measurements": false,
+  "basis": "Independent design dummy; NOT inferred from product height or copied from third-party pattern",
+  "chest_circumference_assumed": 400,
+  "maximum_abdomen_circumference_assumed": 460,
+  "chest_ease": 20,
+  "abdomen_ease": 20,
+  "shoulder_width_design": 148,
+  "front_center_length_design": 125,
+  "back_center_length_design": 145,
+  "underarm_depth_design": 58,
+  "sleeve_length_design": 100,
+  "cuff_finished_circumference_design": 120,
+  "regular_allowance": 6,
+  "turned_detail_allowance": 4,
+  "closure_total_overlap": 12,
+  "hook_loop_width": 8,
+  "neck_half_width_design": 36,
+  "base_front_chest_share": 0.5238095238,
+  "base_front_belly_share": 0.5208333333
+}
