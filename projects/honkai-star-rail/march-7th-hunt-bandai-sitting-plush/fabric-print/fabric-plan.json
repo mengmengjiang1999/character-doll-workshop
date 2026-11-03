@@ -1,0 +1,208 @@
+{
+  "version": "v0.1-sampling-candidates",
+  "researched_on": "2026-11-03",
+  "status": "Candidates only; not purchased, sampled or approved for production",
+  "dimension_kind": "current artwork canvas dimensions, not garment measurements",
+  "material_group_meaning": "target ranges are design recommendations; example_gsm is a specific supplier product fact",
+  "references": "../../../../docs/fabric-selection.md",
+  "material_groups": {
+    "M1": {
+      "name": "薄涤塔夫",
+      "target_gsm": [
+        80,
+        100
+      ],
+      "example_gsm": 90,
+      "example_url": "https://www.contrado.co.uk/printing-on-taffeta-fabric",
+      "process": "polyester dye sublimation",
+      "notes": "有光泽、较有形；印后压褶须试样"
+    },
+    "M2": {
+      "name": "细密涤斜纹",
+      "target_gsm": [
+        100,
+        130
+      ],
+      "example_gsm": 130,
+      "example_url": "https://www.contrado.co.uk/twill-recycled-fabric",
+      "process": "polyester dye sublimation",
+      "notes": "实例柔软、微光泽，不是哑光或硬挺保证"
+    },
+    "M3": {
+      "name": "涤纶薄仿双绉",
+      "target_gsm": [
+        70,
+        90
+      ],
+      "example_gsm": 80,
+      "example_url": "https://prinfab.com/fabric/crepe-de-chine/",
+      "process": "polyester dye sublimation",
+      "notes": "厂家实例提示可能不顺纹；定位能力另确认"
+    },
+    "M4": {
+      "name": "无弹薄仿丝缎",
+      "target_gsm": [
+        80,
+        100
+      ],
+      "example_gsm": 85,
+      "example_url": "https://prinfab.com/fabric/faux-silk/",
+      "process": "polyester dye sublimation",
+      "notes": "印面有光泽；厂家实例提示可能不顺纹"
+    },
+    "M5": {
+      "name": "高密纯棉细布Lawn",
+      "target_gsm": [
+        75,
+        90
+      ],
+      "example_gsm": 75,
+      "example_url": "https://prinfab.com/fabric/lawn/",
+      "process": "example uses pigment printing; other printers may use cotton-compatible reactive printing",
+      "notes": "缩水与遮透实测；不套用全涤升华参数"
+    },
+    "M6": {
+      "name": "半透乔其备选",
+      "target_gsm": [
+        60,
+        70
+      ],
+      "example_gsm": 67,
+      "example_url": "https://prinfab.com/fabric/georgette/",
+      "process": "polyester dye sublimation",
+      "notes": "仅半透罩层备选，本轮主纹样无默认分配"
+    }
+  },
+  "components": [
+    {
+      "dimension_id": "H01",
+      "source_id": "H01",
+      "name": "胸前双卷纹",
+      "file": "components/h01-chest-scrolls.svg",
+      "artwork_size_mm": [
+        230,
+        140
+      ],
+      "sample_material_group": "M2",
+      "optional_print": false,
+      "final_fabric_confirmed": false
+    },
+    {
+      "dimension_id": "H02",
+      "source_id": "H02",
+      "name": "红衣前缘与内尾纹",
+      "file": "components/h02-red-opening-scrolls.svg",
+      "artwork_size_mm": [
+        240,
+        140
+      ],
+      "sample_material_group": "M3",
+      "optional_print": false,
+      "final_fabric_confirmed": false
+    },
+    {
+      "dimension_id": "H03",
+      "source_id": "H03",
+      "name": "侧面大下摆卷纹",
+      "file": "components/h03-large-hem-scroll.svg",
+      "artwork_size_mm": [
+        230,
+        170
+      ],
+      "sample_material_group": "M2",
+      "optional_print": false,
+      "final_fabric_confirmed": false
+    },
+    {
+      "dimension_id": "H04",
+      "source_id": "H04",
+      "name": "前方小下摆卷纹",
+      "file": "components/h04-small-front-hem-scroll.svg",
+      "artwork_size_mm": [
+        135,
+        170
+      ],
+      "sample_material_group": "M2",
+      "optional_print": false,
+      "final_fabric_confirmed": false
+    },
+    {
+      "dimension_id": "H05",
+      "source_id": "H05",
+      "name": "肩部浅金青蓝纹",
+      "file": "components/h05-shoulder-gold-cyan.svg",
+      "artwork_size_mm": [
+        95,
+        170
+      ],
+      "sample_material_group": "M3",
+      "optional_print": true,
+      "final_fabric_confirmed": false
+    },
+    {
+      "dimension_id": "H06",
+      "source_id": "H06",
+      "name": "蓝色腰带",
+      "file": "components/h06-blue-sash.svg",
+      "artwork_size_mm": [
+        480,
+        42
+      ],
+      "sample_material_group": "M4",
+      "optional_print": false,
+      "final_fabric_confirmed": false
+    },
+    {
+      "dimension_id": "H07",
+      "source_id": "H07",
+      "name": "粉色腰带",
+      "file": "components/h07-pink-sash.svg",
+      "artwork_size_mm": [
+        480,
+        42
+      ],
+      "sample_material_group": "M4",
+      "optional_print": false,
+      "final_fabric_confirmed": false
+    },
+    {
+      "dimension_id": "H08",
+      "source_id": "H08",
+      "name": "粉花布贴",
+      "file": "components/h08-pink-flower-applique-print.svg",
+      "artwork_size_mm": [
+        150,
+        146
+      ],
+      "sample_material_group": "M4",
+      "optional_print": true,
+      "final_fabric_confirmed": false
+    },
+    {
+      "dimension_id": "H09",
+      "source_id": "H09",
+      "name": "白袖淡粉花边",
+      "file": "components/h09-white-sleeve-flower-print.svg",
+      "artwork_size_mm": [
+        155,
+        146
+      ],
+      "sample_material_group": "M5",
+      "optional_print": false,
+      "final_fabric_confirmed": false
+    },
+    {
+      "dimension_id": "H10",
+      "source_id": "H10",
+      "name": "蓝垂带边纹",
+      "file": "components/h10-blue-ribbon-tail-print.svg",
+      "artwork_size_mm": [
+        155,
+        146
+      ],
+      "sample_material_group": "M4",
+      "optional_print": false,
+      "final_fabric_confirmed": false
+    }
+  ]
+}

@@ -18,10 +18,13 @@
 ## 文件导航
 
 - **[彩色布料印花目录](fabric-print/)**
+- [整版尺寸标注图](fabric-print/dimensions-overview-v0.1.png) · [逐块宽高尺寸图](fabric-print/dimensions-components-v0.1.png)（单位 mm，现有纹样画布尺寸）
+- [按部位选布与具体来源](bill-of-materials.md) · [图案到面料的分组表](fabric-print/fabric-plan.json) · [通用选材与国内询样入口](../../../docs/fabric-selection.md)
 - [SVG 印花母版：preservation-print-master-v0.1](fabric-print/preservation-print-master-v0.1.svg)
 - [300 ppi PNG](fabric-print/preservation-print-master-v0.1-300ppi.png) · [300 ppi TIFF](fabric-print/preservation-print-master-v0.1-300ppi.tiff) · [1:1 PDF](fabric-print/preservation-print-master-v0.1-1to1.pdf)
 - [印花文件、尺寸与导出清单](fabric-print/manifest.json)
 - [纹样对应说明](fabric-print/mapping.md)
+- [拼接与背部魔术贴规划](../../../docs/seams-and-back-closure.md) · [本项目拼接清单](fabric-print/sewing-plan.json)
 - [交给厂家的说明与打样要求](../../../docs/fabric-print-handoff.md)
 - [服装观察与分件方案](costume-analysis.md)
 - [历史辅助：中文试坯制作说明](sewing-guide.md)

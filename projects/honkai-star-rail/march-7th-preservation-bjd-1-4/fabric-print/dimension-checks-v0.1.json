@@ -1,0 +1,128 @@
+{
+  "status": "Passed: values matched to source SVG/manifest; unique SVG IDs and internal references checked; all four rendered PNGs visually reviewed.",
+  "units": "mm",
+  "canvas_mm": [
+    400,
+    500
+  ],
+  "dimension_kind": "artwork canvas, not garment or cutting-piece measurements",
+  "source_manifest_sha256": "a90f757777e0b734bfc2acfff99aa8a119271faa6e9496c966a478602348eca5",
+  "components": [
+    {
+      "dimension_id": "S01",
+      "source_id": "skirt-border-panel",
+      "file": "components/skirt-border-panel.svg",
+      "name": "裙摆边纹",
+      "width_mm": 360,
+      "height_mm": 100
+    },
+    {
+      "dimension_id": "S02",
+      "source_id": "collar-left",
+      "file": "components/collar-left.svg",
+      "name": "披领左片",
+      "width_mm": 90,
+      "height_mm": 110
+    },
+    {
+      "dimension_id": "S03",
+      "source_id": "collar-right",
+      "file": "components/collar-right.svg",
+      "name": "披领右片",
+      "width_mm": 90,
+      "height_mm": 110
+    },
+    {
+      "dimension_id": "S04",
+      "source_id": "jacket-gradient-field",
+      "file": "components/jacket-gradient-field.svg",
+      "name": "外搭蓝紫渐变",
+      "width_mm": 160,
+      "height_mm": 110
+    },
+    {
+      "dimension_id": "S05",
+      "source_id": "back-ribbon-left",
+      "file": "components/back-ribbon-left.svg",
+      "name": "背部垂尾左片",
+      "width_mm": 75,
+      "height_mm": 140
+    },
+    {
+      "dimension_id": "S06",
+      "source_id": "back-ribbon-right",
+      "file": "components/back-ribbon-right.svg",
+      "name": "背部垂尾右片",
+      "width_mm": 75,
+      "height_mm": 140
+    },
+    {
+      "dimension_id": "S07",
+      "source_id": "waist-panel-left",
+      "file": "components/waist-panel-left.svg",
+      "name": "深色腰片左片",
+      "width_mm": 85,
+      "height_mm": 120
+    },
+    {
+      "dimension_id": "S08",
+      "source_id": "waist-panel-right",
+      "file": "components/waist-panel-right.svg",
+      "name": "深色腰片右片",
+      "width_mm": 85,
+      "height_mm": 120
+    },
+    {
+      "dimension_id": "S09",
+      "source_id": "colored-four-petal-badge",
+      "file": "components/colored-four-petal-badge.svg",
+      "name": "彩色四瓣花饰",
+      "width_mm": 44,
+      "height_mm": 44
+    },
+    {
+      "dimension_id": "S10",
+      "source_id": "white-four-petal-badge",
+      "file": "components/white-four-petal-badge.svg",
+      "name": "白色四瓣标志",
+      "width_mm": 44,
+      "height_mm": 44
+    },
+    {
+      "dimension_id": "S11",
+      "source_id": "cuff-stripe-field",
+      "file": "components/cuff-stripe-field.svg",
+      "name": "袖口条纹",
+      "width_mm": 160,
+      "height_mm": 28
+    },
+    {
+      "dimension_id": "S12",
+      "source_id": "lilac-belt-field",
+      "file": "components/lilac-belt-field.svg",
+      "name": "淡紫腰带",
+      "width_mm": 180,
+      "height_mm": 16
+    }
+  ],
+  "outputs": [
+    {
+      "svg": "dimensions-overview-v0.1.svg",
+      "png": "dimensions-overview-v0.1.png",
+      "pixels": [
+        1800,
+        1510
+      ],
+      "embedded_icc": true
+    },
+    {
+      "svg": "dimensions-components-v0.1.svg",
+      "png": "dimensions-components-v0.1.png",
+      "pixels": [
+        1800,
+        2296
+      ],
+      "embedded_icc": true
+    }
+  ]
+}

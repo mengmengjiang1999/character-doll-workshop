@@ -1,0 +1,449 @@
+{
+  "version": "v0.1-seams-and-back-closure-plan",
+  "units": "mm",
+  "status": "定位印花拼接/背扣规划；未完成实际衣片外形，不能按现有矩形样块裁成衣",
+  "source_manifest": "manifest.json",
+  "material_plan": "fabric-plan.json",
+  "documentation": "../../../../docs/seams-and-back-closure.md",
+  "existing_artwork_is_fitted_garment_pattern": false,
+  "new_cut_ready_artwork_created": false,
+  "seam_allowance_starting_points": {
+    "general_mm": 5,
+    "small_turned_detail_mm": 3,
+    "scope": "仅试版起点；不同布料、翻缝方式、曲线及接缝厚度经小样调整；下摆/包边/后中贴边余量另外定",
+    "hem_turn_allowance_mm": null,
+    "printer_external_bleed_mm": null
+  },
+  "artwork_layers": {
+    "PRINT_ART": "只含成品可见图案及延伸至实际裁剪边的底色/图案；不含尺寸、缝线和标签",
+    "SEW_GUIDE": "独立非印刷校对层：缝合线、折线、拼接编号、对位记号、布纹方向",
+    "CUT_GUIDE": "独立非印刷校对层：真实裁剪轮廓、每边工艺余量、开口端点",
+    "CLOSURE_GUIDE": "独立非印刷校对层：原后中线、成品搭接区、勾圈安装区、局部支承片",
+    "extension_rule": "先定实际缝线/成品边，再加对应缝份，最后将底色/纹样延伸到裁剪边；当前样块边不是实际裁剪边",
+    "printer_bleed_rule": "裁剪边外另加多少出血由厂家定位精度/缩水样确认；厂家的未印白边不能代替已经印色的缝份"
+  },
+  "back_closure": {
+    "status": "construction starting point; not a fitted closure",
+    "position": "主衣身后中；独立裙腰/装饰腰带各自后开，按实际层次分开装扣",
+    "outer_overlap_panel": "wearer-left back; 从穿衣者方向命名",
+    "underlap_panel": "wearer-right back",
+    "finished_total_overlap_width_mm": 10,
+    "finished_hook_loop_width_mm": 6,
+    "clear_margin_each_side_mm": 2,
+    "net_extension_beyond_nominal_center_back_per_panel_mm": 5.0,
+    "geometry": "原后中合体线保持不变；两片各向对侧延伸净5/6 mm（本项目见数值），闭合后只形成总净搭接10/12 mm。不是左右各加一个总搭接宽；翻折/贴边工艺余量另加。",
+    "edge_finishing_extra_allowance_mm": null,
+    "edge_finishing_status": "待选择另裁贴边或折边、布厚及局部薄衬后确定，不能由普通缝份代替",
+    "opening_length_mm": null,
+    "hook_loop_segment_lengths_mm": null,
+    "length_status": "须从实际衣片开口、头/臂穿脱路径和试穿确定；未用样块高度推算",
+    "hook_face": "下层内搭片朝外一面；细软勾",
+    "loop_face": "上层外搭片朝内一面；柔软毛圈",
+    "body_protection": "勾圈闭合后夹在布层间；贴身侧有柔软薄护里/贴边，针脚和硬边不露向娃体或毛发",
+    "tape_selection": "无背胶、可缝、低厚度柔软款；6/8 mm为设计规格，未确认具体品牌该窄宽现货",
+    "reinforcement": "只在粘扣带承力区和开口端点局部加薄衬/薄布；不把整件加厚",
+    "keep_motifs_out_of_hidden_overlap": true,
+    "do_not_join_independent_layers_through_closure": true,
+    "production_approved": false
+  },
+  "matching_rules": [
+    "按缝线配对检查长度；曲线走缝，袖山/褶裙的吃势和褶量单独记录，未知值保留空项",
+    "每对接缝至少对应端点和必要转折/中心记号；记号在独立校对层，转印到反面或缝份内",
+    "相邻片共享同一成品对花坐标；白线/金边高度在缝线上对齐，不在裁剪边上对齐",
+    "左右/前后分开命名；样块中的镜像和重复不视为官方背面证据",
+    "后中闭合时核对可见底色和渐变；主体花纹避开被上搭片遮住的部分",
+    "不同材质分幅印制，先比较洗后缩水/印后变形；不可把整幅多材质拼接关系当作同布剪开即合"
+  ],
+  "required_garment_pieces": [
+    {
+      "piece_id": "P-BASE-FRONT",
+      "purpose": "白衬衣前身，M5；现纹样库未包含",
+      "outline_status": "required; not drafted or fitted",
+      "finished_size_mm": null
+    },
+    {
+      "piece_id": "P-BASE-BACK-L",
+      "purpose": "白衬衣穿衣者左后片，上搭毛圈面；须新增",
+      "outline_status": "required; not drafted or fitted",
+      "finished_size_mm": null
+    },
+    {
+      "piece_id": "P-BASE-BACK-R",
+      "purpose": "白衬衣穿衣者右后片，下搭细勾面；须新增",
+      "outline_status": "required; not drafted or fitted",
+      "finished_size_mm": null
+    },
+    {
+      "piece_id": "P-BASE-BACK-FACING",
+      "purpose": "两后边贴边/薄护里和局部衬",
+      "outline_status": "required; not drafted or fitted",
+      "finished_size_mm": null
+    },
+    {
+      "piece_id": "P-SLEEVES-CUFFS",
+      "purpose": "左右袖、袖口和袖口薄里；S11只供条纹",
+      "outline_status": "required; not drafted or fitted",
+      "finished_size_mm": null
+    },
+    {
+      "piece_id": "P-OUTER-PANELS",
+      "purpose": "蓝紫外搭前身、左/右后片及后边贴边；S04只供色场",
+      "outline_status": "required; not drafted or fitted",
+      "finished_size_mm": null
+    },
+    {
+      "piece_id": "P-COLLAR-PANELS",
+      "purpose": "左右披领面/薄里及领口连接边；S02/03不是定型衣片",
+      "outline_status": "required; not drafted or fitted",
+      "finished_size_mm": null
+    },
+    {
+      "piece_id": "P-SKIRT-PANELS",
+      "purpose": "裙片、褶位及独立后开腰头；S01只供裙边纹",
+      "outline_status": "required; not drafted or fitted",
+      "finished_size_mm": null
+    },
+    {
+      "piece_id": "P-WAIST-DECOR",
+      "purpose": "左右深色腰片、薄里、淡紫独立装饰腰带",
+      "outline_status": "required; not drafted or fitted",
+      "finished_size_mm": null
+    },
+    {
+      "piece_id": "P-BROOCH-BOW",
+      "purpose": "独立蝴蝶结翼、结芯、两垂尾及薄里，附可缝胸针底座",
+      "outline_status": "required; not drafted or fitted",
+      "finished_size_mm": null
+    },
+    {
+      "piece_id": "P-BROOCH-SUPPORT",
+      "purpose": "一侧后片内的承力小布片＋局部薄衬，避开后中粘扣带",
+      "outline_status": "required; not drafted or fitted",
+      "finished_size_mm": null
+    }
+  ],
+  "joins": [
+    {
+      "join_id": "P-BASE-BODY",
+      "piece_roles": [
+        "P-BASE-FRONT",
+        "P-BASE-BACK-L",
+        "P-BASE-BACK-R"
+      ],
+      "method": "前后肩缝/侧缝配对；后中仅装可开合粘扣带，不缝死；前装饰襟保留外观",
+      "seam_allowance_start_mm": 5,
+      "matched_seam_lengths_mm": null,
+      "notches_and_grainline_status": "待实际衣片展开后标定；按缝线走缝核对，不比较裁剪边长度",
+      "verified": false
+    },
+    {
+      "join_id": "P-SLEEVE-CUFF",
+      "piece_roles": [
+        "P-SLEEVES-CUFFS",
+        "P-BASE-FRONT",
+        "P-BASE-BACK-L",
+        "P-BASE-BACK-R"
+      ],
+      "method": "袖山接相应袖窿、袖底缝接合；袖口接袖摆，外缘薄翻缝另试3 mm；袖山吃势待定",
+      "seam_allowance_start_mm": 5,
+      "matched_seam_lengths_mm": null,
+      "notches_and_grainline_status": "待实际衣片展开后标定；按缝线走缝核对，不比较裁剪边长度",
+      "verified": false
+    },
+    {
+      "join_id": "P-OUTER-BODY",
+      "piece_roles": [
+        "P-OUTER-PANELS"
+      ],
+      "method": "外搭自身肩缝/侧缝配对；如后身成围需自己设后开扣，不能把内白衣后片一起贯穿缝死",
+      "seam_allowance_start_mm": 5,
+      "matched_seam_lengths_mm": null,
+      "notches_and_grainline_status": "待实际衣片展开后标定；按缝线走缝核对，不比较裁剪边长度",
+      "verified": false
+    },
+    {
+      "join_id": "P-COLLAR",
+      "piece_roles": [
+        "P-COLLAR-PANELS",
+        "P-OUTER-PANELS"
+      ],
+      "method": "披领本侧面里翻缝先试3 mm；内领口接外搭用普通拼接5 mm起点。后中随外搭开口分开，左右不横跨扣口连接",
+      "seam_allowance_start_mm": 3,
+      "matched_seam_lengths_mm": null,
+      "notches_and_grainline_status": "待实际衣片展开后标定；按缝线走缝核对，不比较裁剪边长度",
+      "verified": false,
+      "inner_neck_join_seam_allowance_start_mm": 5
+    },
+    {
+      "join_id": "P-SKIRT-WAIST",
+      "piece_roles": [
+        "P-SKIRT-PANELS"
+      ],
+      "method": "裙片侧缝接合，褶好后上缘接独立腰头；后中在腰头下留足穿脱开衩，开衩长待试穿",
+      "seam_allowance_start_mm": 5,
+      "matched_seam_lengths_mm": null,
+      "notches_and_grainline_status": "待实际衣片展开后标定；按缝线走缝核对，不比较裁剪边长度",
+      "verified": false
+    },
+    {
+      "join_id": "P-WAIST-DECOR",
+      "piece_roles": [
+        "P-WAIST-DECOR"
+      ],
+      "method": "腰片面里翻缝，上端接独立淡紫装饰腰带；腰片侧下缘自由，腰带自有后开合",
+      "seam_allowance_start_mm": 3,
+      "matched_seam_lengths_mm": null,
+      "notches_and_grainline_status": "待实际衣片展开后标定；按缝线走缝核对，不比较裁剪边长度",
+      "verified": false
+    },
+    {
+      "join_id": "P-BROOCH-BOW",
+      "piece_roles": [
+        "P-BROOCH-BOW",
+        "P-BROOCH-SUPPORT"
+      ],
+      "method": "两尾和蝴蝶结翼接独立结芯；背面缝胸针底座，佩戴时只别进一侧后片承力区，穿脱先摘",
+      "seam_allowance_start_mm": 3,
+      "matched_seam_lengths_mm": null,
+      "notches_and_grainline_status": "待实际衣片展开后标定；按缝线走缝核对，不比较裁剪边长度",
+      "verified": false
+    }
+  ],
+  "removable_back_bow": {
+    "decision": "按用户指定采用可拆别针/胸针式；不是一侧永久缝住",
+    "pin_base_attachment": "可缝胸针底座固定到蝴蝶结背部承力底片，针尖有锁扣罩",
+    "garment_support": "一侧后片内独立承力小布片＋薄衬；不跨后中、不穿两片、不压粘扣带",
+    "support_side": "待实物蝴蝶结重心与衣片排布确定；只能选择一侧",
+    "pin_base_size_mm": null,
+    "support_piece_size_mm": null,
+    "anchor_location_mm": null,
+    "placement_status": "尺寸/位置按实物蝴蝶结与衣片确定；支承区底色衔接原后背色场",
+    "closure_load_bearing": false,
+    "remove_before_dressing": true
+  },
+  "components": [
+    {
+      "dimension_id": "S01",
+      "source_id": "skirt-border-panel",
+      "source_file": "components/skirt-border-panel.svg",
+      "artwork_canvas_size_mm": [
+        360,
+        100
+      ],
+      "sample_material_group": "M1",
+      "optional_print": false,
+      "is_garment_pattern": false,
+      "final_cut_outline_mm": null,
+      "destination_roles": "skirt panels / skirt waistband",
+      "planned_join_id": "P-SKIRT-WAIST",
+      "seam_allowance_category": "general",
+      "seam_allowance_start_mm": 5,
+      "construction_note": "将裙边纹重新定位至各片成品下摆；侧缝沿缝线对齐白线高度，菱形和四瓣标志避开缝口及后中搭接。褶量/褶位另定，不能把360 mm样块当腰围。"
+    },
+    {
+      "dimension_id": "S02",
+      "source_id": "collar-left",
+      "source_file": "components/collar-left.svg",
+      "artwork_canvas_size_mm": [
+        90,
+        110
+      ],
+      "sample_material_group": "M2",
+      "optional_print": false,
+      "is_garment_pattern": false,
+      "final_cut_outline_mm": null,
+      "destination_roles": "collar wearer-left / collar facing wearer-left",
+      "planned_join_id": "P-COLLAR",
+      "seam_allowance_category": "small_turn",
+      "seam_allowance_start_mm": 3,
+      "construction_note": "现有左披领示意不含可靠缝线；内缘连外搭领口，外缘与本侧薄里翻缝，后中断开不桥接背扣。"
+    },
+    {
+      "dimension_id": "S03",
+      "source_id": "collar-right",
+      "source_file": "components/collar-right.svg",
+      "artwork_canvas_size_mm": [
+        90,
+        110
+      ],
+      "sample_material_group": "M2",
+      "optional_print": false,
+      "is_garment_pattern": false,
+      "final_cut_outline_mm": null,
+      "destination_roles": "collar wearer-right / collar facing wearer-right",
+      "planned_join_id": "P-COLLAR",
+      "seam_allowance_category": "small_turn",
+      "seam_allowance_start_mm": 3,
+      "construction_note": "现稿为镜像样块，仅作配色；须按背面参考分别确认白边转角及后中位置，不将左右自动镜像认作最终版。"
+    },
+    {
+      "dimension_id": "S04",
+      "source_id": "jacket-gradient-field",
+      "source_file": "components/jacket-gradient-field.svg",
+      "artwork_canvas_size_mm": [
+        160,
+        110
+      ],
+      "sample_material_group": "M3",
+      "optional_print": false,
+      "is_garment_pattern": false,
+      "final_cut_outline_mm": null,
+      "destination_roles": "outer front / outer back wearer-left / outer back wearer-right",
+      "planned_join_id": "P-OUTER-BODY",
+      "seam_allowance_category": "general",
+      "seam_allowance_start_mm": 5,
+      "construction_note": "这是连续渐变色场，尚缺外搭前/后衣片外形；按肩缝和侧缝分区取色并对齐，后片的搭接被遮区只延续底色。"
+    },
+    {
+      "dimension_id": "S05",
+      "source_id": "back-ribbon-left",
+      "source_file": "components/back-ribbon-left.svg",
+      "artwork_canvas_size_mm": [
+        75,
+        140
+      ],
+      "sample_material_group": "M4",
+      "optional_print": false,
+      "is_garment_pattern": false,
+      "final_cut_outline_mm": null,
+      "destination_roles": "bow left tail face / left tail lining",
+      "planned_join_id": "P-BROOCH-BOW",
+      "seam_allowance_category": "small_turn",
+      "seam_allowance_start_mm": 3,
+      "construction_note": "仅垂尾色场，不是完整蝴蝶结。补蝴蝶结翼、结芯、尾片薄里；尾片上端收进独立蝴蝶结，不接衣身开口。"
+    },
+    {
+      "dimension_id": "S06",
+      "source_id": "back-ribbon-right",
+      "source_file": "components/back-ribbon-right.svg",
+      "artwork_canvas_size_mm": [
+        75,
+        140
+      ],
+      "sample_material_group": "M4",
+      "optional_print": false,
+      "is_garment_pattern": false,
+      "final_cut_outline_mm": null,
+      "destination_roles": "bow right tail face / right tail lining",
+      "planned_join_id": "P-BROOCH-BOW",
+      "seam_allowance_category": "small_turn",
+      "seam_allowance_start_mm": 3,
+      "construction_note": "右尾图为镜像配色试样，真实正反面及方向分别核对；与左尾一并组成可拆别针蝴蝶结。"
+    },
+    {
+      "dimension_id": "S07",
+      "source_id": "waist-panel-left",
+      "source_file": "components/waist-panel-left.svg",
+      "artwork_canvas_size_mm": [
+        85,
+        120
+      ],
+      "sample_material_group": "M2",
+      "optional_print": false,
+      "is_garment_pattern": false,
+      "final_cut_outline_mm": null,
+      "destination_roles": "waist flap wearer-left face / lining",
+      "planned_join_id": "P-WAIST-DECOR",
+      "seam_allowance_category": "small_turn",
+      "seam_allowance_start_mm": 3,
+      "construction_note": "按官方可见层次分别确定左右腰片；上缘固定到装饰腰带，侧下缘自由。现示意外形和金边不是裁剪线。"
+    },
+    {
+      "dimension_id": "S08",
+      "source_id": "waist-panel-right",
+      "source_file": "components/waist-panel-right.svg",
+      "artwork_canvas_size_mm": [
+        85,
+        120
+      ],
+      "sample_material_group": "M2",
+      "optional_print": false,
+      "is_garment_pattern": false,
+      "final_cut_outline_mm": null,
+      "destination_roles": "waist flap wearer-right face / lining",
+      "planned_join_id": "P-WAIST-DECOR",
+      "seam_allowance_category": "small_turn",
+      "seam_allowance_start_mm": 3,
+      "construction_note": "镜像样块不证明实际右片对称；上缘接装饰腰带，避开相机装饰位置和后中闭合区，不与左片侧边缝成筒。"
+    },
+    {
+      "dimension_id": "S09",
+      "source_id": "colored-four-petal-badge",
+      "source_file": "components/colored-four-petal-badge.svg",
+      "artwork_canvas_size_mm": [
+        44,
+        44
+      ],
+      "sample_material_group": "M4",
+      "optional_print": true,
+      "is_garment_pattern": false,
+      "final_cut_outline_mm": null,
+      "destination_roles": "optional flower applique on brooch bow",
+      "planned_join_id": "P-BROOCH-BOW",
+      "seam_allowance_category": "small_turn",
+      "seam_allowance_start_mm": 3,
+      "construction_note": "可选印刷花饰；可用缠花/立体件替代。若用布贴，面布接薄底布后固定到可拆蝴蝶结，不能作为衣身闭合扣。"
+    },
+    {
+      "dimension_id": "S10",
+      "source_id": "white-four-petal-badge",
+      "source_file": "components/white-four-petal-badge.svg",
+      "artwork_canvas_size_mm": [
+        44,
+        44
+      ],
+      "sample_material_group": "M1",
+      "optional_print": true,
+      "is_garment_pattern": false,
+      "final_cut_outline_mm": null,
+      "destination_roles": "optional motif merged into skirt artwork",
+      "planned_join_id": "P-SKIRT-WAIST",
+      "seam_allowance_category": "none",
+      "seam_allowance_start_mm": null,
+      "construction_note": "仅四瓣标志独立比色样块；默认合回S01相应裙片印花，不增加一个需要拼接的44×44 mm方形衣片。"
+    },
+    {
+      "dimension_id": "S11",
+      "source_id": "cuff-stripe-field",
+      "source_file": "components/cuff-stripe-field.svg",
+      "artwork_canvas_size_mm": [
+        160,
+        28
+      ],
+      "sample_material_group": "M5",
+      "optional_print": false,
+      "is_garment_pattern": false,
+      "final_cut_outline_mm": null,
+      "destination_roles": "cuff face wearer-left/right / cuff facing / sleeve hem",
+      "planned_join_id": "P-SLEEVE-CUFF",
+      "seam_allowance_category": "general",
+      "seam_allowance_start_mm": 5,
+      "construction_note": "条纹色场需定位到实际左右袖口；袖片袖底缝闭合后接袖口。袖口外缘小翻缝可试3 mm，手部能否通过决定是否留袖口开口。"
+    },
+    {
+      "dimension_id": "S12",
+      "source_id": "lilac-belt-field",
+      "source_file": "components/lilac-belt-field.svg",
+      "artwork_canvas_size_mm": [
+        180,
+        16
+      ],
+      "sample_material_group": "M4",
+      "optional_print": false,
+      "is_garment_pattern": false,
+      "final_cut_outline_mm": null,
+      "destination_roles": "decorative waist belt face / lining",
+      "planned_join_id": "P-WAIST-DECOR",
+      "seam_allowance_category": "small_turn",
+      "seam_allowance_start_mm": 3,
+      "construction_note": "色带需按装饰腰带成品宽和周长重新排布；两侧腰片挂在其上，腰带独立后开，不能把衣身和裙腰两层一起缝死。"
+    }
+  ],
+  "release_gates": [
+    "真实衣片展开并标定前/后/左右、缝线、折线、裁剪线、纹向、配对记号；缺失后片补齐",
+    "后开口长度与各粘扣段经过实际娃体穿脱验证，能闭合且不靠装饰件拉紧",
+    "同材质小样确认翻缝厚度、滑移/散边、洗后变形及印花位置；再调整起始缝份",
+    "每对接缝走缝通过，褶量/吃势单列，对花看闭合后的可见范围",
+    "分别导出无工艺线的印花文件与带工艺线的校对文件，按材料分幅；厂家确认最终排料尺寸和裁边外出血"
+  ]
+}

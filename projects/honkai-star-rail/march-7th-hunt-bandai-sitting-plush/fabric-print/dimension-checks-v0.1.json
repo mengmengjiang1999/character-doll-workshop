@@ -1,0 +1,112 @@
+{
+  "status": "Passed: values matched to source SVG/manifest; unique SVG IDs and internal references checked; all four rendered PNGs visually reviewed.",
+  "units": "mm",
+  "canvas_mm": [
+    500,
+    600
+  ],
+  "dimension_kind": "artwork canvas, not garment or cutting-piece measurements",
+  "source_manifest_sha256": "6650d379f5d52573318333a0a80d30e0b787861ef7e3802222c75d8c63334b4f",
+  "components": [
+    {
+      "dimension_id": "H01",
+      "source_id": "H01",
+      "file": "components/h01-chest-scrolls.svg",
+      "name": "胸前双卷纹",
+      "width_mm": 230,
+      "height_mm": 140
+    },
+    {
+      "dimension_id": "H02",
+      "source_id": "H02",
+      "file": "components/h02-red-opening-scrolls.svg",
+      "name": "红衣前缘与内尾纹",
+      "width_mm": 240,
+      "height_mm": 140
+    },
+    {
+      "dimension_id": "H03",
+      "source_id": "H03",
+      "file": "components/h03-large-hem-scroll.svg",
+      "name": "侧面大下摆卷纹",
+      "width_mm": 230,
+      "height_mm": 170
+    },
+    {
+      "dimension_id": "H04",
+      "source_id": "H04",
+      "file": "components/h04-small-front-hem-scroll.svg",
+      "name": "前方小下摆卷纹",
+      "width_mm": 135,
+      "height_mm": 170
+    },
+    {
+      "dimension_id": "H05",
+      "source_id": "H05",
+      "file": "components/h05-shoulder-gold-cyan.svg",
+      "name": "肩部浅金青蓝纹",
+      "width_mm": 95,
+      "height_mm": 170
+    },
+    {
+      "dimension_id": "H06",
+      "source_id": "H06",
+      "file": "components/h06-blue-sash.svg",
+      "name": "蓝色腰带",
+      "width_mm": 480,
+      "height_mm": 42
+    },
+    {
+      "dimension_id": "H07",
+      "source_id": "H07",
+      "file": "components/h07-pink-sash.svg",
+      "name": "粉色腰带",
+      "width_mm": 480,
+      "height_mm": 42
+    },
+    {
+      "dimension_id": "H08",
+      "source_id": "H08",
+      "file": "components/h08-pink-flower-applique-print.svg",
+      "name": "粉花布贴",
+      "width_mm": 150,
+      "height_mm": 146
+    },
+    {
+      "dimension_id": "H09",
+      "source_id": "H09",
+      "file": "components/h09-white-sleeve-flower-print.svg",
+      "name": "白袖淡粉花边",
+      "width_mm": 155,
+      "height_mm": 146
+    },
+    {
+      "dimension_id": "H10",
+      "source_id": "H10",
+      "file": "components/h10-blue-ribbon-tail-print.svg",
+      "name": "蓝垂带边纹",
+      "width_mm": 155,
+      "height_mm": 146
+    }
+  ],
+  "outputs": [
+    {
+      "svg": "dimensions-overview-v0.1.svg",
+      "png": "dimensions-overview-v0.1.png",
+      "pixels": [
+        1800,
+        1510
+      ],
+      "embedded_icc": true
+    },
+    {
+      "svg": "dimensions-components-v0.1.svg",
+      "png": "dimensions-components-v0.1.png",
+      "pixels": [
+        1800,
+        2296
+      ],
+      "embedded_icc": true
+    }
+  ]
+}

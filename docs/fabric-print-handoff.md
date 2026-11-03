@@ -4,6 +4,12 @@
 
 ## 文件与尺寸
 
+已增加 `dimensions-overview-v0.1.svg/png` 与 `dimensions-components-v0.1.svg/png`，分别标明整版、各组件宽高和毫米单位。标注来自现有 SVG 画布与 manifest；含留白，不代表最终裁片。**尺寸图用于沟通，请不要把箭头、编号和文字一起印到布上。**
+
+按[部位选材表](fabric-selection.md)及各目录 `fabric-plan.json` 分布料询样；原整版是综合花型总览，最终定布后需要按材质分别排版，不能默认全套同布印制。
+
+新增的[拼接与背开口规划](seams-and-back-closure.md)会作为正式定位排版的依据：先完成净衣片和后中搭接，再加缝份与所需印花延伸。印花出血不等于缝份，魔术贴搭接净宽也不能由普通缝份代替。现有图案块未因此变成完整可缝衣片。
+
 | 项目 | 当前打样画布 | 300 ppi 导出像素尺寸（四舍五入） | 入口 |
 | --- | --- | --- | --- |
 | 存护／囡囡体 S 胸 | 400 × 500 mm | 4724 × 5906 px | [印花目录](../projects/honkai-star-rail/march-7th-preservation-bjd-1-4/fabric-print/) |

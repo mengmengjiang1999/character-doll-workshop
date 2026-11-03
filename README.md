@@ -6,7 +6,16 @@
 
 这是个人非商业制作项目。当前图稿是纹样打样布局，尚未按实际裁片定版，也未完成印布打样、缩水测量和成衣试穿。
 
-## 先看彩色印花稿
+## 先看尺寸图和选材
+
+- [按部位选布、具体商品链接与国内询样入口](docs/fabric-selection.md)：裙片、披领、白袖、外搭与飘带分别取样，M1–M5 为主候选组。
+- [拼接缝份与背部魔术贴规划](docs/seams-and-back-closure.md) · [彩色结构图](docs/illustrations/seams-and-back-closure-v0.1.png)：区分净衣片、缝份、搭接区与印花延伸；存护背部蝴蝶结确定为可拆别针款。
+- 存护：[整版尺寸图](projects/honkai-star-rail/march-7th-preservation-bjd-1-4/fabric-print/dimensions-overview-v0.1.png) · [12 个分件尺寸图](projects/honkai-star-rail/march-7th-preservation-bjd-1-4/fabric-print/dimensions-components-v0.1.png) · [材料分组](projects/honkai-star-rail/march-7th-preservation-bjd-1-4/fabric-print/fabric-plan.json)。
+- 巡猎：[整版尺寸图](projects/honkai-star-rail/march-7th-hunt-bandai-sitting-plush/fabric-print/dimensions-overview-v0.1.png) · [10 个分件尺寸图](projects/honkai-star-rail/march-7th-hunt-bandai-sitting-plush/fabric-print/dimensions-components-v0.1.png) · [材料分组](projects/honkai-star-rail/march-7th-hunt-bandai-sitting-plush/fabric-print/fabric-plan.json)。
+
+尺寸图用 mm 标明现有纹样画布的宽、高，含组件自身留白；不是实际衣片尺码。带标注图片用于看稿与沟通，交厂印布选下列无标注文件，并在最终选布后按材质分别排版。
+
+## 彩色印花文件
 
 | 公式服与目标载体 | 纹样打样画布 | 文件入口 |
 | --- | --- | --- |
@@ -15,13 +24,13 @@
 
 每套交付约定为可编辑 SVG、1:1 PDF、300 ppi sRGB PNG／TIFF；实际文件以各目录清单为准。**画布尺寸是本次纹样排版尺寸，不是衣服尺码，也不代表最终用布量。** 厂家交付、打样和颜色确认见[印花交付说明](docs/fabric-print-handoff.md)。
 
-存护公式服彩色纹样预览：
+存护公式服尺寸总览：
 
-![三月七存护公式服布料彩色纹样打样布局](projects/honkai-star-rail/march-7th-preservation-bjd-1-4/fabric-print/preview-v0.1.png)
+![三月七存护公式服布料纹样尺寸总览](projects/honkai-star-rail/march-7th-preservation-bjd-1-4/fabric-print/dimensions-overview-v0.1.png)
 
-巡猎公式服彩色纹样预览：
+巡猎公式服尺寸总览：
 
-![三月七巡猎公式服布料彩色纹样打样布局](projects/honkai-star-rail/march-7th-hunt-bandai-sitting-plush/fabric-print/preview-v0.1.png)
+![三月七巡猎公式服布料纹样尺寸总览](projects/honkai-star-rail/march-7th-hunt-bandai-sitting-plush/fabric-print/dimensions-overview-v0.1.png)
 
 官方立绘、视频和游戏／MMD 模型用于核对图案、颜色、结构与位置。游戏 UV 贴图可以作为绘制依据，但不直接整图印成娃衣；定位花型最终需要映射到真实衣片，并计入缝合、折边和褶量。
 
@@ -69,9 +78,13 @@ python3 tools/create_preservation_print.py
 python3 tools/create_hunt_print.py
 npm run export:fabric
 python3 tools/verify_fabric_print.py
+python3 tools/create_dimension_previews.py --render
+python3 tools/create_seam_closure_preview.py --render
 ```
 
 导出需要 Chromium／Chrome；可用 `PRINT_CHROME_PATH` 指定本机浏览器路径，或用 `npx playwright install chromium` 安装 Playwright 浏览器。导出文件使用 `-300ppi.png`、`-300ppi.tiff`、`-1to1.pdf` 后缀，预览图为 `preview-v0.1.png`。
+
+尺寸标注另存为 `dimensions-*.svg/png`。中文会转换成文字轮廓；默认使用 macOS 黑体，其他系统可通过 `FABRIC_LABEL_FONT` 指定本地 CJK 字体路径、`FABRIC_LABEL_FONT_INDEX` 指定 TTC 字体索引。PNG 渲染使用 Node 与 sharp，可用 `FABRIC_NODE_BIN` 指定 Node 路径。
 
 ## 历史辅助文件再生成
 
