@@ -10,6 +10,7 @@
 - [纸样源文件与参数](projects/honkai-star-rail/march-7th-preservation-bjd-1-4/patterns/README.md)：SVG、标称／假设／设计参数和接缝检查记录。
 - [巡猎四瓣额饰与缝接底座](projects/honkai-star-rail/march-7th-hunt-bandai-sitting-plush/models/README.md)：STL、OpenSCAD、参数化生成器及预览，未实际打印／佩戴。
 - [官方存护角色模型下载脚本](tools/download_preservation_reference.py)：从官方活动页所用 CDN 下载并校验 PMX 包，保存到本地忽略目录；附原始使用说明。
+- [已找到的坐姿娃衣参考纸样](projects/honkai-star-rail/march-7th-hunt-bandai-sitting-plush/existing-pattern-research.md)：作者公开分享的 40 cm 坐姿卫衣和裤子原图已本地保存，另有上衣 A4 参考打印稿；与万代 38 cm 的适配尚待比较。
 
 官方 MMD 角色模型用于观察衣服结构，不当作目标娃体，也不直接转换为娃衣纸样。两套造型的立绘与动作参考已下载到各项目的 `references/local/images/`。
 
@@ -25,7 +26,7 @@
 | 项目 | 目标载体 | 当前状态 |
 | --- | --- | --- |
 | [三月七·存护公式服](projects/honkai-star-rail/march-7th-preservation-bjd-1-4/README.md) | UFdoll 四分囡囡体 S 胸 | 官方模型已下载；基础试坯 v0.1 已生成，待试穿与角色化 |
-| [三月七·巡猎公式服](projects/honkai-star-rail/march-7th-hunt-bandai-sitting-plush/README.md) | 万代一番赏 POTEPOTTE 坐姿三月七 | 官方立绘已下载；额饰试件已生成，娃衣尺寸待测 |
+| [三月七·巡猎公式服](projects/honkai-star-rail/march-7th-hunt-bandai-sitting-plush/README.md) | 万代一番赏 POTEPOTTE 坐姿三月七 | 已取得立绘与 40 cm 坐姿参考纸样；额饰试件已生成 |
 
 两个项目各自保存量体与纸样，四分规格、角色模型比例和商品标称高度均不能替代目标娃体实测。
 
