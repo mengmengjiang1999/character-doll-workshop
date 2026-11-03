@@ -1,0 +1,53 @@
+{
+  "canvas_mm": [
+    400,
+    500
+  ],
+  "nominal_ppi": 300,
+  "note": "Artwork sampling layout. Final garment placement, printer profile and fabric shrinkage are not approved.",
+  "raster_outputs": [
+    {
+      "file": "preservation-print-master-v0.1-300ppi.png",
+      "width_px": 4724,
+      "height_px": 5906,
+      "density_ppi": 300,
+      "color_space": "srgb",
+      "embedded_icc": true,
+      "alpha": false,
+      "bytes": 420399,
+      "icc_profile_description": "sRGB",
+      "sha256": "21c4fbe4ea78f0742a10fce306e109b756a48fcba269bea991918c3ed26f139a"
+    },
+    {
+      "file": "preservation-print-master-v0.1-300ppi.tiff",
+      "width_px": 4724,
+      "height_px": 5906,
+      "density_ppi": 300,
+      "color_space": "srgb",
+      "embedded_icc": true,
+      "alpha": false,
+      "bytes": 592582,
+      "icc_profile_description": "sRGB",
+      "sha256": "1f26b4bd2cc78ae68040b22de1565cf7638f64cbcfb0f2e2dcbbe11248832181"
+    }
+  ],
+  "pdf": "preservation-print-master-v0.1-1to1.pdf",
+  "pdf_page_mm": [
+    400,
+    500
+  ],
+  "pdf_status": "Digital checks passed; PDF rendered for visual review. Fabric color and garment fit remain untested.",
+  "pdf_verified": {
+    "pages": 1,
+    "page_mm": [
+      400.0,
+      500.0
+    ],
+    "embedded_raster_images": 0,
+    "visible_text_characters": 0,
+    "vector_drawing_count": 64,
+    "sha256": "e9ac1704d971b26e03f86b40b97077537b68c6927bed362bb4a659fdb8bdf2ed"
+  },
+  "svg_verified_count": 13,
+  "visual_review": "Passed: rendered vector PDF compared with full-colour PNG; motif instances, gradients and canvas boundaries checked."
+}

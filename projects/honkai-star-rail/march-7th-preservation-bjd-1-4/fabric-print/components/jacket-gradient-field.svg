@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="160mm" height="110mm" viewBox="0 0 160 110">
+<title>jacket-gradient-field</title>
+<desc>Editable textile artwork, millimetres; draft color and placement proof, no cut or seam lines.</desc>
+<defs>
+<linearGradient id="jacketGradient" x1="0" y1="0" x2="0" y2="1">
+ <stop offset="0" stop-color="#C98DD4"/><stop offset="0.12" stop-color="#BF95DC"/>
+ <stop offset="0.57" stop-color="#87ADE0"/><stop offset="1" stop-color="#87ADE0"/>
+</linearGradient>
+<linearGradient id="ribbonGradient" x1="0" y1="0" x2="0" y2="1">
+ <stop offset="0" stop-color="#72CEE3"/><stop offset="0.28" stop-color="#84C9E8"/>
+ <stop offset="0.62" stop-color="#AABCEC"/><stop offset="0.9" stop-color="#EDB7F1"/>
+ <stop offset="1" stop-color="#F0B8F2"/>
+</linearGradient>
+<linearGradient id="beltGradient" x1="0" y1="0" x2="0" y2="1">
+ <stop offset="0" stop-color="#B8A2DA"/><stop offset="0.5" stop-color="#C3B6E7"/>
+ <stop offset="1" stop-color="#ACA3D8"/>
+</linearGradient>
+<g id="diamondMotif">
+ <path d="M0,-6 L4.1,0 L0,6 L-4.1,0 Z" fill="#E7E8F7"/>
+ <path d="M0,-6 L0,0 L-4.1,0 Z" fill="#F5C9F1"/>
+ <path d="M0,-6 L4.1,0 L0,0 Z" fill="#F7F8FC"/>
+ <path d="M-4.1,0 L0,0 L0,6 Z" fill="#84D7E8"/>
+ <path d="M0,0 L4.1,0 L0,6 Z" fill="#B6B8E7"/>
+</g>
+<path id="fourPetalOutline" d="M0,-20 C9,-20 12,-13 8,-8 C13,-12 20,-9 20,0 C20,9 13,12 8,8 C12,13 9,20 0,20 C-9,20 -12,13 -8,8 C-13,12 -20,9 -20,0 C-20,-9 -13,-12 -8,-8 C-12,-13 -9,-20 0,-20 Z"/>
+<g id="coloredFlower">
+ <g id="coloredWhitePetal" fill="#FAF9F6">
+  <path d="M0,1 C-7,-2 -9,-10 -5,-16 C-3,-19 0,-21 0,-21 C3,-19 7,-15 7,-11 C7,-6 4,-2 0,1 Z"/>
+ </g>
+ <use xlink:href="#coloredWhitePetal" transform="rotate(90)"/>
+ <use xlink:href="#coloredWhitePetal" transform="rotate(180)"/>
+ <use xlink:href="#coloredWhitePetal" transform="rotate(270)"/>
+ <g fill="#E996D1">
+  <ellipse cx="0" cy="-10.2" rx="2.8" ry="7.8"/><ellipse cx="10.2" cy="0" rx="7.8" ry="2.8"/>
+  <ellipse cx="0" cy="10.2" rx="2.8" ry="7.8"/><ellipse cx="-10.2" cy="0" rx="7.8" ry="2.8"/>
+ </g>
+ <g fill="#82DFEF">
+  <ellipse cx="0" cy="-9.5" rx="1.65" ry="6.4"/><ellipse cx="9.5" cy="0" rx="6.4" ry="1.65"/>
+  <ellipse cx="0" cy="9.5" rx="1.65" ry="6.4"/><ellipse cx="-9.5" cy="0" rx="6.4" ry="1.65"/>
+ </g>
+ <circle r="2.1" fill="#FAF9F6"/>
+</g>
+<g id="outlineFlower">
+ <use xlink:href="#fourPetalOutline" fill="none" stroke="#FAF9F6" stroke-width="3.1"/>
+ <use xlink:href="#fourPetalOutline" transform="scale(.63)" fill="none" stroke="#FAF9F6" stroke-width="2.2"/>
+ <circle r="2.4" fill="#FAF9F6"/>
+</g>
+</defs>
+<rect width="160" height="110" fill="url(#jacketGradient)"/>
+</svg>

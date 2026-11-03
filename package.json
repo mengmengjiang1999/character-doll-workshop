@@ -1,0 +1,13 @@
+{
+  "name": "character-doll-workshop",
+  "private": true,
+  "description": "Deterministic export tools for textile print artwork",
+  "scripts": {
+    "export:fabric": "node tools/export_fabric_print.mjs"
+  },
+  "devDependencies": {
+    "pdf-lib": "1.17.1",
+    "playwright": "1.62.1",
+    "sharp": "0.35.5"
+  }
+}

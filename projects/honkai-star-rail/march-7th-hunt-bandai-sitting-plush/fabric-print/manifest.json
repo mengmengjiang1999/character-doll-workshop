@@ -1,0 +1,228 @@
+{
+  "version": "0.1",
+  "status": "reference-based placement-print colour proof; unmeasured sample dimensions",
+  "character": "三月七 · 巡猎 · 公式服",
+  "units": "mm",
+  "canvas_mm": [
+    500,
+    600
+  ],
+  "no_cut_lines": true,
+  "no_seam_lines": true,
+  "no_printed_labels": true,
+  "sheet": {
+    "file": "hunt-print-master-v0.1.svg",
+    "width_mm": 500,
+    "height_mm": 600,
+    "background": "white",
+    "rendered_text": false,
+    "cut_lines": false,
+    "external_images": false
+  },
+  "size_status": "All dimensions are chosen for textile proofing. No Bandai body dimensions are implied; no fitted cutting pattern is supplied.",
+  "colour_space": "sRGB, unprofiled screen reconstruction; no printer ICC applied",
+  "palette": {
+    "chest_brown": "#66505E",
+    "chest_scroll": "#A57E89",
+    "hem_ground": "#493B48",
+    "hem_ink": "#251724",
+    "vermilion": "#BE2F1D",
+    "red_shadow": "#891C20",
+    "light_gold": "#EADDB9",
+    "gold_shadow": "#A99575",
+    "ivory": "#FCF1DC",
+    "cyan": "#72CFE6",
+    "sash_blue": "#54769C",
+    "ribbon_blue": "#7185AB",
+    "pink": "#F3AFBE",
+    "pink_ink": "#D97996",
+    "sleeve_white": "#FFF8F5"
+  },
+  "references": [
+    {
+      "source": "HoYoLAB official character preview",
+      "url": "https://www.hoyolab.com/article/31407362",
+      "local": "../references/local/images/hunt-official-preview.jpg"
+    },
+    {
+      "source": "HoYoWiki official splash art",
+      "url": "https://wiki.hoyolab.com/pc/hsr/entry/2657?lang=en-us",
+      "local": "../references/local/images/splash-art.png"
+    },
+    {
+      "source": "official model publishing page cover; cover is splash illustration, not a model orthographic view",
+      "url": "https://www.aplaybox.com/details/model/KG9eRZVCtc9y",
+      "local": "../references/local/official-models/official-model-cover.jpg"
+    }
+  ],
+  "not_claimed": [
+    "official texture extraction",
+    "exact scale",
+    "verified Bandai fit",
+    "reconstructed back view",
+    "print colour accuracy",
+    "metallic ink"
+  ],
+  "components": [
+    {
+      "id": "H01",
+      "file": "components/h01-chest-scrolls.svg",
+      "artwork_size_mm": [
+        230,
+        140
+      ],
+      "sheet_origin_mm": [
+        10,
+        10
+      ],
+      "mapping": "胸前双内卷纹",
+      "scale_status": "design sample size, not measured doll or final pattern",
+      "observed": "正面深褐胸片、浅褐向内收卷纹、中央浅金双线可见。",
+      "reconstruction": "两侧纹样从有透视的单幅立绘手绘展开；左右对称、纹样长度和边距是本次印样排布选择，未读取模型贴图。"
+    },
+    {
+      "id": "H02",
+      "file": "components/h02-red-opening-scrolls.svg",
+      "artwork_size_mm": [
+        240,
+        140
+      ],
+      "sheet_origin_mm": [
+        250,
+        10
+      ],
+      "mapping": "红外衣浅金前缘与暗红内尾纹",
+      "scale_status": "design sample size, not measured doll or final pattern",
+      "observed": "角色右前襟有开口回卷，再分成两道向下延伸的浅金长弧；抬袖后方红长尾内侧可见暗红轮廓的瓣形回卷纹。",
+      "reconstruction": "左半为可见前缘浅金纹，右半为内侧长尾暗红纹；两个位置合放一块红色印样方便比色，并不代表同一衣片。暗红细节较小，瓣形轮廓为手绘近似展开。"
+    },
+    {
+      "id": "H03",
+      "file": "components/h03-large-hem-scroll.svg",
+      "artwork_size_mm": [
+        230,
+        170
+      ],
+      "sheet_origin_mm": [
+        10,
+        160
+      ],
+      "mapping": "可见侧大下摆回卷纹",
+      "scale_status": "design sample size, not measured doll or final pattern",
+      "observed": "立绘画面右侧的大下摆具有浅金包边、深褐底和单向大回卷；卷纹下部连向分叉尾部。",
+      "reconstruction": "将侧面透视手绘展开为平面定位印花。金色外缘为要印在布上的装饰，不是裁剪线。遮挡处收在净色底，不续画背面。"
+    },
+    {
+      "id": "H04",
+      "file": "components/h04-small-front-hem-scroll.svg",
+      "artwork_size_mm": [
+        135,
+        170
+      ],
+      "sheet_origin_mm": [
+        250,
+        160
+      ],
+      "mapping": "前下摆小回卷纹",
+      "scale_status": "design sample size, not measured doll or final pattern",
+      "observed": "腰带下方可见的小片前下摆为深褐底浅金边，中央也是单个回卷，与侧片比例不同。",
+      "reconstruction": "遮挡和透视较强；轮廓边距及长宽为单独纹样打样设计，不作为小玩偶衣片外形。"
+    },
+    {
+      "id": "H05",
+      "file": "components/h05-shoulder-gold-cyan.svg",
+      "artwork_size_mm": [
+        95,
+        170
+      ],
+      "sheet_origin_mm": [
+        395,
+        160
+      ],
+      "mapping": "肩部浅金青蓝纹样试样",
+      "scale_status": "design sample size, not measured doll or final pattern",
+      "observed": "肩头可见浅金/乳白云头状三瓣结构，中部三个青蓝小瓣，下接细长金色分叉。",
+      "reconstruction": "此处是把可见肩饰表面转为印花的可选方案；原造型含立体层次。两枚同图只供颜色、尺寸试样，不声称左右纹样一致。"
+    },
+    {
+      "id": "H06",
+      "file": "components/h06-blue-sash.svg",
+      "artwork_size_mm": [
+        480,
+        42
+      ],
+      "sheet_origin_mm": [
+        10,
+        340
+      ],
+      "mapping": "蓝色腰带素色试样",
+      "scale_status": "design sample size, not measured doll or final pattern",
+      "observed": "交叉腰带为蓝色，有亮浅边和暗边；蝴蝶结扣是立体装饰。",
+      "reconstruction": "只输出蓝色带材印样与上下边色差，不把金属扣画成布料纹样。带宽 42 mm 是打样尺寸。"
+    },
+    {
+      "id": "H07",
+      "file": "components/h07-pink-sash.svg",
+      "artwork_size_mm": [
+        480,
+        42
+      ],
+      "sheet_origin_mm": [
+        10,
+        392
+      ],
+      "mapping": "粉色腰带素色试样",
+      "scale_status": "design sample size, not measured doll or final pattern",
+      "observed": "腰间有浅粉色长带；花形装饰有独立厚度。",
+      "reconstruction": "素色带与花形分开，允许后期缠花/缝制叠装；本带材的渐变为试色选择。"
+    },
+    {
+      "id": "H08",
+      "file": "components/h08-pink-flower-applique-print.svg",
+      "artwork_size_mm": [
+        150,
+        146
+      ],
+      "sheet_origin_mm": [
+        10,
+        444
+      ],
+      "mapping": "粉花可选布贴印花",
+      "scale_status": "design sample size, not measured doll or final pattern",
+      "observed": "腰侧可见浅粉色花形结，深粉描边/花瓣内纹，轮廓受角度与折叠影响。",
+      "reconstruction": "花结简化为平面五瓣叠贴方案；原件层次建议另缝或缠花。本平面替代并非官方纹样精确描摹。"
+    },
+    {
+      "id": "H09",
+      "file": "components/h09-white-sleeve-flower-print.svg",
+      "artwork_size_mm": [
+        155,
+        146
+      ],
+      "sheet_origin_mm": [
+        170,
+        444
+      ],
+      "mapping": "白袖淡粉花边试样",
+      "scale_status": "design sample size, not measured doll or final pattern",
+      "observed": "抬起的白袖近袖缘有很浅的粉色花形/缎边，局部可见。",
+      "reconstruction": "这是可见色彩及花形的平面布贴/印花替代试样；原件具体工艺与被遮挡处不确定，没有补画完整一圈。"
+    },
+    {
+      "id": "H10",
+      "file": "components/h10-blue-ribbon-tail-print.svg",
+      "artwork_size_mm": [
+        155,
+        146
+      ],
+      "sheet_origin_mm": [
+        335,
+        444
+      ],
+      "mapping": "蓝垂带浅色边与小花纹",
+      "scale_status": "design sample size, not measured doll or final pattern",
+      "observed": "画面右上蓝色垂带有浅边，靠末端有曲折浅色带纹与逐渐缩小的四瓣花。",
+      "reconstruction": "把一条弯折透视的可见垂带局部整理成矩形纹样试样；并非完整环绕或背面纹样。"
+    }
+  ]
+}

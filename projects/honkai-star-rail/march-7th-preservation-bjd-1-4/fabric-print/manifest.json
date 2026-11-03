@@ -1,0 +1,210 @@
+{
+  "version": "v0.1-color-placement-proof",
+  "units": "mm",
+  "canvas_mm": [
+    400,
+    500
+  ],
+  "color_space_intent": "sRGB; no printer ICC profile applied",
+  "status": "ARTWORK SAMPLE ONLY; placement, final cut shape and colors not approved for production",
+  "source_basis": [
+    "official Preservation illustrations",
+    "official local PMX 衣服.png and 衣服1.png",
+    "local front/back/left/right reference renders"
+  ],
+  "palette": {
+    "skirt_navy": "#334D83",
+    "collar_blue": "#3C578D",
+    "jacket_blue": "#87ADE0",
+    "jacket_lilac": "#C98DD4",
+    "ribbon_cyan": "#72CEE3",
+    "ribbon_blue": "#91B6EB",
+    "ribbon_pink": "#F0B8F2",
+    "white": "#FAF9F6",
+    "pink": "#E996D1",
+    "cyan": "#82DFEF",
+    "waist_charcoal": "#454143",
+    "gold": "#D8C9A5"
+  },
+  "components": [
+    {
+      "id": "skirt-border-panel",
+      "file": "components/skirt-border-panel.svg",
+      "artwork_size_mm": [
+        360,
+        100
+      ],
+      "sheet_origin_mm": [
+        20,
+        18
+      ],
+      "mapping": "P04 裙摆边纹；五枚菱形＋单枚白色四瓣标志",
+      "scale_status": "design sample size, not measured doll or final pattern"
+    },
+    {
+      "id": "collar-left",
+      "file": "components/collar-left.svg",
+      "artwork_size_mm": [
+        90,
+        110
+      ],
+      "sheet_origin_mm": [
+        20,
+        138
+      ],
+      "mapping": "P03 披领双白线，左片展开示意",
+      "scale_status": "design sample size, not measured doll or final pattern"
+    },
+    {
+      "id": "collar-right",
+      "file": "components/collar-right.svg",
+      "artwork_size_mm": [
+        90,
+        110
+      ],
+      "sheet_origin_mm": [
+        120,
+        138
+      ],
+      "mapping": "P03 披领双白线，右片镜像展开示意",
+      "scale_status": "design sample size, not measured doll or final pattern"
+    },
+    {
+      "id": "jacket-gradient-field",
+      "file": "components/jacket-gradient-field.svg",
+      "artwork_size_mm": [
+        160,
+        110
+      ],
+      "sheet_origin_mm": [
+        220,
+        138
+      ],
+      "mapping": "P03 外搭蓝紫过渡色场，可按最终衣片取位",
+      "scale_status": "design sample size, not measured doll or final pattern"
+    },
+    {
+      "id": "back-ribbon-left",
+      "file": "components/back-ribbon-left.svg",
+      "artwork_size_mm": [
+        75,
+        140
+      ],
+      "sheet_origin_mm": [
+        20,
+        267
+      ],
+      "mapping": "P03 背部蝴蝶结垂尾的蓝粉渐变色场",
+      "scale_status": "design sample size, not measured doll or final pattern"
+    },
+    {
+      "id": "back-ribbon-right",
+      "file": "components/back-ribbon-right.svg",
+      "artwork_size_mm": [
+        75,
+        140
+      ],
+      "sheet_origin_mm": [
+        110,
+        267
+      ],
+      "mapping": "P03 背部蝴蝶结垂尾，镜像色场",
+      "scale_status": "design sample size, not measured doll or final pattern"
+    },
+    {
+      "id": "waist-panel-left",
+      "file": "components/waist-panel-left.svg",
+      "artwork_size_mm": [
+        85,
+        120
+      ],
+      "sheet_origin_mm": [
+        210,
+        267
+      ],
+      "mapping": "P05 深色腰片金色细边，平面展开示意",
+      "scale_status": "design sample size, not measured doll or final pattern"
+    },
+    {
+      "id": "waist-panel-right",
+      "file": "components/waist-panel-right.svg",
+      "artwork_size_mm": [
+        85,
+        120
+      ],
+      "sheet_origin_mm": [
+        305,
+        267
+      ],
+      "mapping": "P05 深色腰片金色细边，镜像展开示意",
+      "scale_status": "design sample size, not measured doll or final pattern"
+    },
+    {
+      "id": "colored-four-petal-badge",
+      "file": "components/colored-four-petal-badge.svg",
+      "artwork_size_mm": [
+        44,
+        44
+      ],
+      "sheet_origin_mm": [
+        20,
+        430
+      ],
+      "mapping": "P06 白色长瓣、粉色内瓣、蓝色内心四瓣花饰的可选印刷版本",
+      "scale_status": "design sample size, not measured doll or final pattern"
+    },
+    {
+      "id": "white-four-petal-badge",
+      "file": "components/white-four-petal-badge.svg",
+      "artwork_size_mm": [
+        44,
+        44
+      ],
+      "sheet_origin_mm": [
+        80,
+        430
+      ],
+      "mapping": "P04 裙侧四瓣线描标志的单独样块",
+      "scale_status": "design sample size, not measured doll or final pattern"
+    },
+    {
+      "id": "cuff-stripe-field",
+      "file": "components/cuff-stripe-field.svg",
+      "artwork_size_mm": [
+        160,
+        28
+      ],
+      "sheet_origin_mm": [
+        220,
+        407
+      ],
+      "mapping": "P02 白袖口蓝色细线色场",
+      "scale_status": "design sample size, not measured doll or final pattern"
+    },
+    {
+      "id": "lilac-belt-field",
+      "file": "components/lilac-belt-field.svg",
+      "artwork_size_mm": [
+        180,
+        16
+      ],
+      "sheet_origin_mm": [
+        170,
+        458
+      ],
+      "mapping": "P05 淡紫腰带的浅色平面色场与细边",
+      "scale_status": "design sample size, not measured doll or final pattern"
+    }
+  ],
+  "no_cut_lines": true,
+  "no_seam_lines": true,
+  "no_printed_labels": true,
+  "removed_from_reference": [
+    "3D shading",
+    "fold shadows",
+    "UV seams",
+    "mesh topology",
+    "metal buttons",
+    "camera and skin textures"
+  ]
+}
