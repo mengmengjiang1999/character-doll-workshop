@@ -21,6 +21,7 @@ __pycache__/
 *.FCStd1
 *.bak
 *.tmp
+tmp/
 
 # Editable patterns/models and shareable SVG/PDF/STL/3MF exports are tracked.
 # Do not add downloaded official assets with git add -f.

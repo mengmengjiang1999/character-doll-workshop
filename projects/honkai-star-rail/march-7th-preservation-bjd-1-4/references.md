@@ -8,12 +8,22 @@
 | [HoYoWiki 三月七·存护](https://wiki.hoyolab.com/pc/hsr/entry/7?lang=zh-cn) | HoYoLAB 官方平台，社区维护词条 | 立绘与动作参考入口；不作为官方服装纸样 |
 | [星穹铁道官网](https://sr.mihoyo.com/main?nav=world) | 米哈游 | 官方查阅入口；未提取独立立绘直链 |
 
-## 模型线索：待核实后下载
+## 已下载的官方模型
+
+- 发布页：[跃迁特别招募](https://www.bilibili.com/blackboard/activity-Hk1xELkY1x.html)，其源码中的三月七下载卡片直接指向下面的官方 CDN。
+- [官方 ZIP 下载](https://activity.hdslb.com/blackboard/static/20221205/d7f098333308ba7412aa9b57601bfa1d/KkVjYLh8y3.zip)，2026-11-03 实际下载，3,655,358 字节，ZIP CRC 通过。
+- SHA-256：`4256b27d90175166460d6ef31d23b3e0ea163d351ad25881a90d87f4d7c41483`。
+- 本地目录：`references/local/official-models/extracted/星穹铁道—三月七/`；角色文件 `三月七 1.0.pmx`，另含贴图、弓箭 PMX 与 `使用规则.txt`。
+- 这是官方公开配布的 MMD／PMX 参考模型，不宣称是游戏客户端原始资源包。可用于观察角色衣服与配饰，不代表目标娃体结构。
+- 随包说明署名模型编辑神帝宇、版权 miHoYo；禁止商业用途与二次配布。原始 ZIP、PMX、贴图和说明只保存在本地，不提交到公开仓库。
+- 重取时运行仓库根目录的 `python3 tools/download_preservation_reference.py`，脚本校验固定 SHA 并保留原始说明。
+
+## 其他入口记录
 
 - [跃迁特别招募活动页](https://www.bilibili.com/blackboard/activity-Hk1xELkY1x.html)：活动标题已确认，当前下载清单未读到。
 - [模型账号候选入口](https://www.aplaybox.com/u/516827875/model)：配布引用指向该账号，当前认证信息与列表尚未直接核实。
 - [三月七模型候选页](https://www.aplaybox.com/details/model/CLCDE3lCEAbR)：搜索索引显示模型编辑神帝宇、版权 miHoYo，以及禁止商用和二次配布等说明；尚未读到完整页面及压缩包说明。
-- 当前没有下载、上传或转制该模型；使用前核对完整说明并登记署名、版本与实际下载入口。
+- 模之屋候选页不作为本次 ZIP 来源；此次下载以官方 B站活动页直接链接为依据。
 
 ## 娃体
 

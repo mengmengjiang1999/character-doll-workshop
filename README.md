@@ -2,7 +2,16 @@
 
 用于积累各类角色的 BJD 娃衣、棉花娃娃衣服、缠花配饰与 3D 打印配饰：从官方参考、量体、打版到试穿和成品记录。
 
-这是个人非商业制作项目。仓库公开，便于保存和交流制作过程；当前是项目建档阶段，尚无可直接裁剪的成衣纸样或经过试装的打印模型。
+这是个人非商业制作项目。仓库公开，便于保存和交流制作过程。当前已有可打印的基础试坯纸样和配饰打印试件；尚未完成实物试穿，也不是完整角色服装成品版。
+
+## 现在可以使用的文件
+
+- [囡囡体 S 胸试坯 PDF（A4，4 页）](projects/honkai-star-rail/march-7th-preservation-bjd-1-4/patterns/muslin-v0.1-draft-a4.pdf)：上身、基础裙片、独立袖筒、百褶裙试片；前三页纵向，第四页横向，按 100% 打印并核对 50 mm 方框。
+- [纸样源文件与参数](projects/honkai-star-rail/march-7th-preservation-bjd-1-4/patterns/README.md)：SVG、标称／假设／设计参数和接缝检查记录。
+- [巡猎四瓣额饰与缝接底座](projects/honkai-star-rail/march-7th-hunt-bandai-sitting-plush/models/README.md)：STL、OpenSCAD、参数化生成器及预览，未实际打印／佩戴。
+- [官方存护角色模型下载脚本](tools/download_preservation_reference.py)：从官方活动页所用 CDN 下载并校验 PMX 包，保存到本地忽略目录；附原始使用说明。
+
+官方 MMD 角色模型用于观察衣服结构，不当作目标娃体，也不直接转换为娃衣纸样。两套造型的立绘与动作参考已下载到各项目的 `references/local/images/`。
 
 ## 已有能力
 
@@ -15,8 +24,8 @@
 
 | 项目 | 目标载体 | 当前状态 |
 | --- | --- | --- |
-| [三月七·存护公式服](projects/honkai-star-rail/march-7th-preservation-bjd-1-4/README.md) | UFdoll 四分囡囡体 S 胸 | 已登记标称尺寸来源；待实测与结构拆解 |
-| [三月七·巡猎公式服](projects/honkai-star-rail/march-7th-hunt-bandai-sitting-plush/README.md) | 万代一番赏 POTEPOTTE 坐姿三月七 | 已登记官方商品记录；待核对实物原衣结构与尺寸 |
+| [三月七·存护公式服](projects/honkai-star-rail/march-7th-preservation-bjd-1-4/README.md) | UFdoll 四分囡囡体 S 胸 | 官方模型已下载；基础试坯 v0.1 已生成，待试穿与角色化 |
+| [三月七·巡猎公式服](projects/honkai-star-rail/march-7th-hunt-bandai-sitting-plush/README.md) | 万代一番赏 POTEPOTTE 坐姿三月七 | 官方立绘已下载；额饰试件已生成，娃衣尺寸待测 |
 
 两个项目各自保存量体与纸样，四分规格、角色模型比例和商品标称高度均不能替代目标娃体实测。
 
@@ -46,6 +55,19 @@ projects/
 ```
 
 新项目从[项目模板](templates/project-template.md)开始。材料选择见[工具与材料指南](docs/materials-and-tools.md)。
+
+## 再生成
+
+使用 Python 3.9 或更新版本，安装 `requirements.txt` 后，在仓库根目录执行：
+
+```sh
+python3 tools/download_preservation_reference.py  # 下载并校验官方模型，存本地忽略目录
+python3 tools/render_pmx_reference.py             # 用模型生成本地四视图参考
+python3 tools/generate_patterns.py                # 根据参数重建试坯 PDF / SVG
+python3 tools/generate_accessories.py --preview  # 重建额饰、底座与预览
+```
+
+具体模型来源、下载状态和本地文件位置见[模型获取记录](docs/model-download-report.md)。
 
 ## 参考素材与公开文件
 

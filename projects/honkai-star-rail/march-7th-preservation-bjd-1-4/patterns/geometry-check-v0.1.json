@@ -1,0 +1,101 @@
+{
+  "status": "DIGITAL GEOMETRY PASS; physical fit NOT tested",
+  "version": "v0.1-draft",
+  "units": "mm",
+  "page_sizes_mm": [
+    [
+      210,
+      297
+    ],
+    [
+      210,
+      297
+    ],
+    [
+      210,
+      297
+    ],
+    [
+      297,
+      210
+    ]
+  ],
+  "page_count": 4,
+  "calibration_square_mm": [
+    50,
+    50
+  ],
+  "bust_seam_circumference": 176,
+  "waist_closed_dart_circumference": 136,
+  "dart_intake_per_quarter": 4.0,
+  "total_darts": 4,
+  "skirt_waist_arc_total": 136.0,
+  "skirt_hip_capacity_at_assumed_depth": 245.95574287564278,
+  "skirt_hip_target_minimum": 215,
+  "pleated_skirt": {
+    "half_panels": 2,
+    "pleats_per_half": 4,
+    "flat_repeat": 51.0,
+    "folded_repeat": 17.0,
+    "flat_width_per_half": 204.0,
+    "folded_width_per_half": 68.0,
+    "cut_width_per_half": 210.0,
+    "height_with_allowance": 96,
+    "max_released_circumference": 408.0,
+    "note": "Vertical pleats not sewn shut; their drape and hip clearance need physical fitting."
+  },
+  "matching_seams": {
+    "front_to_back_shoulder_mm": [
+      32.01562118716424,
+      32.01562118716424
+    ],
+    "front_to_back_side_mm": [
+      46.470768123342694,
+      46.470768123342694
+    ],
+    "front_dart_legs_mm": [
+      32.0624390837628,
+      32.0624390837628
+    ],
+    "back_dart_legs_mm": [
+      40.049968789001575,
+      40.049968789001575
+    ],
+    "quarter_bodice_closed_waist_to_skirt_arc_mm": [
+      34.0,
+      34.0
+    ],
+    "skirt_adjacent_side_mm": [
+      90,
+      90
+    ],
+    "sleeve_side_edges_mm": [
+      100.4987562112089,
+      100.4987562112089
+    ],
+    "pleated_half_waist_to_half_bodice_mm": [
+      68.0,
+      68.0
+    ],
+    "pleated_cf_seam_mm": [
+      90,
+      90
+    ],
+    "pleated_cb_sewn_seam_mm": [
+      50,
+      50
+    ]
+  },
+  "tolerance_mm": 0.01,
+  "seam_allowance_mm": 3,
+  "fold_allowance_mm": 0,
+  "closed_cut_contours_checked_for_crossings": true,
+  "not_verified": [
+    "actual body fit",
+    "bust projection and balance",
+    "armhole clearance",
+    "hand passage",
+    "costume silhouette",
+    "physical printing calibration"
+  ]
+}
