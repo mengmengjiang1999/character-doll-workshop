@@ -2,15 +2,16 @@
 
 用于积累各类角色的娃衣布料印花、BJD／棉花娃娃服装、缠花与 3D 打印配饰。
 
-**当前交付是两套公式服的完整衣层与全尺寸衣片试版。** 每层提供前后外形，衣身、袖、裙、里片、贴边与系带都有对应版片；确认试穿后，再将 `fabric-print/` 的纹样按这些实际衣片定位，交给厂家印布。
+**当前交付是两套公式服的完整衣层、全尺寸衣片与带花纹看稿图。** 分层前后外形和 57 种编号衣片直接显示对应花纹，保留尺寸、缝份和拼接线；试穿修版后再生成交厂印布稿。
 
 这是个人非商业制作项目。新衣片为数值化结构试版，尚未实物试穿；存护使用部分商品标称加明确设计假设，巡猎使用可替换的假设设计基准。旧纹样文件仍是打样布局，尚未升级为最终定位印布稿。
 
 ## 完整衣服打版入口
 
-- **[可视化打版册：分层外形、全套衣片、逐片尺寸](docs/garment-guide.html)**（下载仓库后本地打开 HTML，或用下列图片查看）。
-- [存护各层前后图](projects/honkai-star-rail/march-7th-preservation-bjd-1-4/garment-pattern/layers-overview.png) · [全套衣片图](projects/honkai-star-rail/march-7th-preservation-bjd-1-4/garment-pattern/pieces-overview.png) · [衣片目录](projects/honkai-star-rail/march-7th-preservation-bjd-1-4/garment-pattern/)
-- [巡猎各层前后图](projects/honkai-star-rail/march-7th-hunt-bandai-sitting-plush/garment-pattern/layers-overview.png) · [全套衣片图](projects/honkai-star-rail/march-7th-hunt-bandai-sitting-plush/garment-pattern/pieces-overview.png) · [衣片目录](projects/honkai-star-rail/march-7th-hunt-bandai-sitting-plush/garment-pattern/)
+- **[带花纹打版册：分层外形、全套衣片、逐片尺寸](docs/garment-guide.html)**（下载仓库后本地打开 HTML，或用下列图片查看）。
+- [存护各层前后图](projects/honkai-star-rail/march-7th-preservation-bjd-1-4/garment-pattern/patterned/layers-overview.png) · [全套衣片图](projects/honkai-star-rail/march-7th-preservation-bjd-1-4/garment-pattern/patterned/pieces-overview.png) · [衣片目录](projects/honkai-star-rail/march-7th-preservation-bjd-1-4/garment-pattern/)
+- [巡猎各层前后图](projects/honkai-star-rail/march-7th-hunt-bandai-sitting-plush/garment-pattern/patterned/layers-overview.png) · [全套衣片图](projects/honkai-star-rail/march-7th-hunt-bandai-sitting-plush/garment-pattern/patterned/pieces-overview.png) · [衣片目录](projects/honkai-star-rail/march-7th-hunt-bandai-sitting-plush/garment-pattern/)
+- [本轮花纹定位与文件说明](docs/patterned-preview.md)：彩色看稿沿用 v0.2 完整衣片轮廓。
 - [公式服衣层参考复核](docs/garment-reference-review.md)：区分直接观察与为娃衣选择的结构。
 
 衣片 PDF 为 1:1；按实际大小输出并量取 50 mm 校准标尺。彩色分层示意仅说明外形和穿搭，不能从图片像素取尺寸。
@@ -85,6 +86,8 @@ projects/
 ```sh
 python3 tools/create_preservation_garment.py
 python3 tools/create_hunt_garment.py
+python3 tools/create_preservation_patterned_preview.py
+python3 tools/create_hunt_patterned_preview.py
 python3 tools/build_garment_guide.py
 ```
 

@@ -1,0 +1,277 @@
+{
+  "status": "pattern placement preview; not production print or fit validated",
+  "geometry_unchanged": true,
+  "piece_count": 27,
+  "pieces": [
+    {
+      "piece_id": "H-B01",
+      "name": "浅色底衣前身",
+      "source_motif": null,
+      "preview_face": "outer face",
+      "base_color_covers_allowance": true,
+      "motif_clipped_to_net_shape": true,
+      "geometry_source": "../pieces/H-B01.svg",
+      "notes": "里布/贴边不另加无关纹样；未知后背为净色；R04单片显示里侧暗纹，外面用净红色。"
+    },
+    {
+      "piece_id": "H-B02",
+      "name": "浅色底衣后片",
+      "source_motif": null,
+      "preview_face": "outer face",
+      "base_color_covers_allowance": true,
+      "motif_clipped_to_net_shape": true,
+      "geometry_source": "../pieces/H-B02.svg",
+      "notes": "里布/贴边不另加无关纹样；未知后背为净色；R04单片显示里侧暗纹，外面用净红色。"
+    },
+    {
+      "piece_id": "H-B03",
+      "name": "蓬白袖",
+      "source_motif": "h09-white-sleeve-flower-print.svg",
+      "preview_face": "outer face",
+      "base_color_covers_allowance": true,
+      "motif_clipped_to_net_shape": true,
+      "geometry_source": "../pieces/H-B03.svg",
+      "notes": "里布/贴边不另加无关纹样；未知后背为净色；R04单片显示里侧暗纹，外面用净红色。"
+    },
+    {
+      "piece_id": "H-B04",
+      "name": "白袖口／深色腕带基底",
+      "source_motif": null,
+      "preview_face": "outer face",
+      "base_color_covers_allowance": true,
+      "motif_clipped_to_net_shape": true,
+      "geometry_source": "../pieces/H-B04.svg",
+      "notes": "里布/贴边不另加无关纹样；未知后背为净色；R04单片显示里侧暗纹，外面用净红色。"
+    },
+    {
+      "piece_id": "H-B05",
+      "name": "浅色立领",
+      "source_motif": null,
+      "preview_face": "outer face",
+      "base_color_covers_allowance": true,
+      "motif_clipped_to_net_shape": true,
+      "geometry_source": "../pieces/H-B05.svg",
+      "notes": "里布/贴边不另加无关纹样；未知后背为净色；R04单片显示里侧暗纹，外面用净红色。"
+    },
+    {
+      "piece_id": "H-B06",
+      "name": "底衣后中薄贴边",
+      "source_motif": null,
+      "preview_face": "outer face",
+      "base_color_covers_allowance": true,
+      "motif_clipped_to_net_shape": true,
+      "geometry_source": "../pieces/H-B06.svg",
+      "notes": "里布/贴边不另加无关纹样；未知后背为净色；R04单片显示里侧暗纹，外面用净红色。"
+    },
+    {
+      "piece_id": "H-B07",
+      "name": "白袖下开口贴边",
+      "source_motif": null,
+      "preview_face": "outer face",
+      "base_color_covers_allowance": true,
+      "motif_clipped_to_net_shape": true,
+      "geometry_source": "../pieces/H-B07.svg",
+      "notes": "里布/贴边不另加无关纹样；未知后背为净色；R04单片显示里侧暗纹，外面用净红色。"
+    },
+    {
+      "piece_id": "H-B08",
+      "name": "白袖下开口搭接条",
+      "source_motif": null,
+      "preview_face": "outer face",
+      "base_color_covers_allowance": true,
+      "motif_clipped_to_net_shape": true,
+      "geometry_source": "../pieces/H-B08.svg",
+      "notes": "里布/贴边不另加无关纹样；未知后背为净色；R04单片显示里侧暗纹，外面用净红色。"
+    },
+    {
+      "piece_id": "H-C01",
+      "name": "弧形深褐胸片",
+      "source_motif": "h01-chest-scrolls.svg",
+      "preview_face": "outer face",
+      "base_color_covers_allowance": true,
+      "motif_clipped_to_net_shape": true,
+      "geometry_source": "../pieces/H-C01.svg",
+      "notes": "里布/贴边不另加无关纹样；未知后背为净色；R04单片显示里侧暗纹，外面用净红色。"
+    },
+    {
+      "piece_id": "H-R01",
+      "name": "红短外搭前片",
+      "source_motif": "h02-red-opening-scrolls.svg",
+      "preview_face": "outer face",
+      "base_color_covers_allowance": true,
+      "motif_clipped_to_net_shape": true,
+      "geometry_source": "../pieces/H-R01.svg",
+      "notes": "里布/贴边不另加无关纹样；未知后背为净色；R04单片显示里侧暗纹，外面用净红色。"
+    },
+    {
+      "piece_id": "H-R02",
+      "name": "红短外搭后片",
+      "source_motif": null,
+      "preview_face": "outer face",
+      "base_color_covers_allowance": true,
+      "motif_clipped_to_net_shape": true,
+      "geometry_source": "../pieces/H-R02.svg",
+      "notes": "里布/贴边不另加无关纹样；未知后背为净色；R04单片显示里侧暗纹，外面用净红色。"
+    },
+    {
+      "piece_id": "H-R03",
+      "name": "红短肩袖",
+      "source_motif": "h05-shoulder-gold-cyan.svg",
+      "preview_face": "outer face",
+      "base_color_covers_allowance": true,
+      "motif_clipped_to_net_shape": true,
+      "geometry_source": "../pieces/H-R03.svg",
+      "notes": "里布/贴边不另加无关纹样；未知后背为净色；R04单片显示里侧暗纹，外面用净红色。"
+    },
+    {
+      "piece_id": "H-R04",
+      "name": "红尖长衣尾",
+      "source_motif": "h02-red-opening-scrolls.svg",
+      "preview_face": "lining",
+      "base_color_covers_allowance": true,
+      "motif_clipped_to_net_shape": true,
+      "geometry_source": "../pieces/H-R04.svg",
+      "notes": "里布/贴边不另加无关纹样；未知后背为净色；R04单片显示里侧暗纹，外面用净红色。"
+    },
+    {
+      "piece_id": "H-R05",
+      "name": "红肩袖下开口贴边",
+      "source_motif": null,
+      "preview_face": "outer face",
+      "base_color_covers_allowance": true,
+      "motif_clipped_to_net_shape": true,
+      "geometry_source": "../pieces/H-R05.svg",
+      "notes": "里布/贴边不另加无关纹样；未知后背为净色；R04单片显示里侧暗纹，外面用净红色。"
+    },
+    {
+      "piece_id": "H-R06",
+      "name": "红肩袖下开口搭接条",
+      "source_motif": null,
+      "preview_face": "outer face",
+      "base_color_covers_allowance": true,
+      "motif_clipped_to_net_shape": true,
+      "geometry_source": "../pieces/H-R06.svg",
+      "notes": "里布/贴边不另加无关纹样；未知后背为净色；R04单片显示里侧暗纹，外面用净红色。"
+    },
+    {
+      "piece_id": "H-S01",
+      "name": "深色侧裙瓣",
+      "source_motif": "h03-large-hem-scroll.svg",
+      "preview_face": "outer face",
+      "base_color_covers_allowance": true,
+      "motif_clipped_to_net_shape": true,
+      "geometry_source": "../pieces/H-S01.svg",
+      "notes": "里布/贴边不另加无关纹样；未知后背为净色；R04单片显示里侧暗纹，外面用净红色。"
+    },
+    {
+      "piece_id": "H-S02",
+      "name": "深色前裙瓣",
+      "source_motif": "h04-small-front-hem-scroll.svg",
+      "preview_face": "outer face",
+      "base_color_covers_allowance": true,
+      "motif_clipped_to_net_shape": true,
+      "geometry_source": "../pieces/H-S02.svg",
+      "notes": "里布/贴边不另加无关纹样；未知后背为净色；R04单片显示里侧暗纹，外面用净红色。"
+    },
+    {
+      "piece_id": "H-S03",
+      "name": "独立柔软裙腰头",
+      "source_motif": null,
+      "preview_face": "outer face",
+      "base_color_covers_allowance": true,
+      "motif_clipped_to_net_shape": true,
+      "geometry_source": "../pieces/H-S03.svg",
+      "notes": "里布/贴边不另加无关纹样；未知后背为净色；R04单片显示里侧暗纹，外面用净红色。"
+    },
+    {
+      "piece_id": "H-S04",
+      "name": "粉色前衬摆",
+      "source_motif": null,
+      "preview_face": "outer face",
+      "base_color_covers_allowance": true,
+      "motif_clipped_to_net_shape": true,
+      "geometry_source": "../pieces/H-S04.svg",
+      "notes": "里布/贴边不另加无关纹样；未知后背为净色；R04单片显示里侧暗纹，外面用净红色。"
+    },
+    {
+      "piece_id": "H-S05",
+      "name": "粉色侧衬摆",
+      "source_motif": null,
+      "preview_face": "outer face",
+      "base_color_covers_allowance": true,
+      "motif_clipped_to_net_shape": true,
+      "geometry_source": "../pieces/H-S05.svg",
+      "notes": "里布/贴边不另加无关纹样；未知后背为净色；R04单片显示里侧暗纹，外面用净红色。"
+    },
+    {
+      "piece_id": "H-S06",
+      "name": "白色前衬摆",
+      "source_motif": null,
+      "preview_face": "outer face",
+      "base_color_covers_allowance": true,
+      "motif_clipped_to_net_shape": true,
+      "geometry_source": "../pieces/H-S06.svg",
+      "notes": "里布/贴边不另加无关纹样；未知后背为净色；R04单片显示里侧暗纹，外面用净红色。"
+    },
+    {
+      "piece_id": "H-S07",
+      "name": "白色侧衬摆",
+      "source_motif": null,
+      "preview_face": "outer face",
+      "base_color_covers_allowance": true,
+      "motif_clipped_to_net_shape": true,
+      "geometry_source": "../pieces/H-S07.svg",
+      "notes": "里布/贴边不另加无关纹样；未知后背为净色；R04单片显示里侧暗纹，外面用净红色。"
+    },
+    {
+      "piece_id": "H-W01",
+      "name": "蓝色斜交腰带",
+      "source_motif": null,
+      "preview_face": "outer face",
+      "base_color_covers_allowance": true,
+      "motif_clipped_to_net_shape": true,
+      "geometry_source": "../pieces/H-W01.svg",
+      "notes": "里布/贴边不另加无关纹样；未知后背为净色；R04单片显示里侧暗纹，外面用净红色。"
+    },
+    {
+      "piece_id": "H-W02",
+      "name": "粉色横腰带",
+      "source_motif": null,
+      "preview_face": "outer face",
+      "base_color_covers_allowance": true,
+      "motif_clipped_to_net_shape": true,
+      "geometry_source": "../pieces/H-W02.svg",
+      "notes": "里布/贴边不另加无关纹样；未知后背为净色；R04单片显示里侧暗纹，外面用净红色。"
+    },
+    {
+      "piece_id": "H-W03",
+      "name": "蓝色渐尖垂尾",
+      "source_motif": "h10-blue-ribbon-tail-print.svg",
+      "preview_face": "outer face",
+      "base_color_covers_allowance": true,
+      "motif_clipped_to_net_shape": true,
+      "geometry_source": "../pieces/H-W03.svg",
+      "notes": "里布/贴边不另加无关纹样；未知后背为净色；R04单片显示里侧暗纹，外面用净红色。"
+    },
+    {
+      "piece_id": "H-W04",
+      "name": "粉色侧垂带",
+      "source_motif": null,
+      "preview_face": "outer face",
+      "base_color_covers_allowance": true,
+      "motif_clipped_to_net_shape": true,
+      "geometry_source": "../pieces/H-W04.svg",
+      "notes": "里布/贴边不另加无关纹样；未知后背为净色；R04单片显示里侧暗纹，外面用净红色。"
+    },
+    {
+      "piece_id": "H-T01",
+      "name": "粉色袖顶褶边",
+      "source_motif": null,
+      "preview_face": "outer face",
+      "base_color_covers_allowance": true,
+      "motif_clipped_to_net_shape": true,
+      "geometry_source": "../pieces/H-T01.svg",
+      "notes": "里布/贴边不另加无关纹样；未知后背为净色；R04单片显示里侧暗纹，外面用净红色。"
+    }
+  ]
+}
