@@ -1,0 +1,26 @@
+.DS_Store
+._*
+Thumbs.db
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.private/
+.venv/
+__pycache__/
+*.pyc
+.idea/
+.vscode/
+**/references/local/
+**/exports/local/
+*.gcode
+*.bgcode
+*.blend1
+*.blend2
+*.FCStd1
+*.bak
+*.tmp
+
+# Editable patterns/models and shareable SVG/PDF/STL/3MF exports are tracked.
+# Do not add downloaded official assets with git add -f.
