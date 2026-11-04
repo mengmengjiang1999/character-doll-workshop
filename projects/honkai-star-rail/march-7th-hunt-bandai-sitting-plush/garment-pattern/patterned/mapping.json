@@ -1,6 +1,8 @@
 {
   "status": "pattern placement preview; not production print or fit validated",
   "geometry_unchanged": true,
+  "material_source": "../piece-materials.json",
+  "single_svg_page_height_extended_for_material_notes": true,
   "piece_count": 27,
   "pieces": [
     {

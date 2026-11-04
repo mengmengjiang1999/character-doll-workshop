@@ -2,6 +2,7 @@
 
 这次提供 **30 种完整衣片净轮廓、含缝份裁边、六层前后外形与组装关系**。它是按用户授权估算的第一轮成衣试版，不再拿纹样矩形作为衣服。可以先裁白坯验证；未声称已合身或能直接下单印定位花。
 
+- **[逐片材质记录](piece-materials.md)** · [材料数据](piece-materials.json)
 - [每层前后外观与合穿示意](patterned/layers-overview.png)
 - [全部衣片尺寸图](patterned/pieces-overview.png)
 - [30 页 1:1 完整衣片 PDF](preservation-full-pattern-v0.2-1to1.pdf)

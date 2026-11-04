@@ -2,7 +2,7 @@
 
 用于积累各类角色的娃衣布料印花、BJD／棉花娃娃服装、缠花与 3D 打印配饰。
 
-**当前交付是两套公式服的完整衣层、全尺寸衣片与带花纹看稿图。** 分层前后外形和 57 种编号衣片直接显示对应花纹，保留尺寸、缝份和拼接线；试穿修版后再生成交厂印布稿。
+**当前交付是两套公式服的完整衣层、全尺寸衣片与带花纹看稿图。** 分层前后外形和 57 种编号衣片直接显示对应花纹，保留尺寸、缝份和拼接线，并逐片记录面布、里布、辅衬及印花安排；试穿修版后再生成交厂印布稿。
 
 这是个人非商业制作项目。新衣片为数值化结构试版，尚未实物试穿；存护使用部分商品标称加明确设计假设，巡猎使用可替换的假设设计基准。旧纹样文件仍是打样布局，尚未升级为最终定位印布稿。
 
@@ -17,6 +17,8 @@
 衣片 PDF 为 1:1；按实际大小输出并量取 50 mm 校准标尺。彩色分层示意仅说明外形和穿搭，不能从图片像素取尺寸。
 
 ## 先看尺寸图和选材
+
+- **逐片材质记录：[存护 30 片](projects/honkai-star-rail/march-7th-preservation-bjd-1-4/garment-pattern/piece-materials.md) · [巡猎 27 片](projects/honkai-star-rail/march-7th-hunt-bandai-sitting-plush/garment-pattern/piece-materials.md)**；含每层中文材质、目标克重、颜色／印花、里布、局部衬和选材理由。[材料目录与来源](docs/material-catalog.md)。
 
 - [按部位选布、具体商品链接与国内询样入口](docs/fabric-selection.md)：裙片、披领、白袖、外搭与飘带分别取样，M1–M5 为主候选组。
 - [拼接缝份与背部魔术贴规划](docs/seams-and-back-closure.md) · [彩色结构图](docs/illustrations/seams-and-back-closure-v0.1.png)：区分净衣片、缝份、搭接区与印花延伸；存护背部蝴蝶结确定为可拆别针款。
@@ -88,6 +90,7 @@ python3 tools/create_preservation_garment.py
 python3 tools/create_hunt_garment.py
 python3 tools/create_preservation_patterned_preview.py
 python3 tools/create_hunt_patterned_preview.py
+python3 tools/build_piece_material_tables.py
 python3 tools/build_garment_guide.py
 ```
 

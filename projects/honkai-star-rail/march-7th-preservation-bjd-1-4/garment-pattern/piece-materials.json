@@ -1,0 +1,828 @@
+{
+  "version": "v0.1-piece-material-candidates",
+  "status": "逐片面/里/贴边/支承/局部衬候选；未采购定版，未通过实布与穿脱验证",
+  "updated_on": "2026-11-04",
+  "source_manifest": "pattern-manifest.json",
+  "catalog": "../../../../docs/material-catalog.json",
+  "count_policy": "source_cut_count保留原衣片清单；uses.cut_count只分配这些面/里/支承/原有衬层。局部工艺衬cut_count=null表示按扣段另裁小样，非新增整衣片；optional=true须小样显示需要时才采用。",
+  "pieces": [
+    {
+      "piece_id": "P-B01",
+      "name": "收腰白衬衣前身",
+      "source_cut_count": "面布1",
+      "uses": [
+        {
+          "role": "面布",
+          "group": "M5",
+          "cut_count": 1,
+          "treatment": "原白，不印花",
+          "placement": "整片",
+          "optional": false
+        }
+      ],
+      "lining_note": "无独立里布。",
+      "interfacing_note": "不加整片衬。",
+      "reason": "细密薄棉用于收腰白衣，控制省道与叠穿厚度。",
+      "confirmed": false
+    },
+    {
+      "piece_id": "P-B02",
+      "name": "收腰白衬衣后片",
+      "source_cut_count": "面布2，镜像",
+      "uses": [
+        {
+          "role": "面布",
+          "group": "M5",
+          "cut_count": 2,
+          "treatment": "原白，不印花",
+          "placement": "整片",
+          "optional": false
+        }
+      ],
+      "lining_note": "无整片里布；后开口由P-B05贴边遮针脚。",
+      "interfacing_note": "扣位薄衬计在P-B05，不在本片重复叠加。",
+      "reason": "与前身同批薄棉，后中保持柔软可开。",
+      "confirmed": false
+    },
+    {
+      "piece_id": "P-B03",
+      "name": "完整白长袖",
+      "source_cut_count": "面布2，镜像",
+      "uses": [
+        {
+          "role": "面布",
+          "group": "M5",
+          "cut_count": 2,
+          "treatment": "原白，不印花",
+          "placement": "整片",
+          "optional": false
+        }
+      ],
+      "lining_note": "无独立里布。",
+      "interfacing_note": "不加衬；袖底以P-B08收净。",
+      "reason": "薄棉有利于袖山吃势和袖摆小抽褶。",
+      "confirmed": false
+    },
+    {
+      "piece_id": "P-B04",
+      "name": "宽翻袖口",
+      "source_cut_count": "面布2＋薄里2",
+      "uses": [
+        {
+          "role": "面布",
+          "group": "M5",
+          "cut_count": 2,
+          "treatment": "白底，按成品袖口定位蓝条",
+          "placement": "整片",
+          "optional": false
+        },
+        {
+          "role": "里布",
+          "group": "M5",
+          "cut_count": 2,
+          "treatment": "原白，不印花",
+          "placement": "整片",
+          "optional": false
+        },
+        {
+          "role": "衬布",
+          "group": "I1",
+          "cut_count": null,
+          "treatment": "素白，不印；局部缝入",
+          "placement": "仅袖扣安装区及端点",
+          "optional": true
+        }
+      ],
+      "lining_note": "面2配薄里2，里侧原白。",
+      "interfacing_note": "仅扣位需要时试I1；不把整个宽袖口做硬。",
+      "reason": "和白袖同布，蓝条定位在面层，薄里包净边与针脚。",
+      "confirmed": false
+    },
+    {
+      "piece_id": "P-B05",
+      "name": "白衣后中贴边",
+      "source_cut_count": "薄里2",
+      "uses": [
+        {
+          "role": "贴边布",
+          "group": "M5",
+          "cut_count": 2,
+          "treatment": "原白，不印花",
+          "placement": "整片",
+          "optional": false
+        },
+        {
+          "role": "衬布",
+          "group": "I1",
+          "cut_count": null,
+          "treatment": "素白，不印；局部缝入",
+          "placement": "后中实际勾圈缝装段和开口端点",
+          "optional": false
+        }
+      ],
+      "lining_note": "本片就是后中薄贴边，共2；不另裁整片里身。",
+      "interfacing_note": "原组装要求扣位薄衬，由本贴边承担；局部数量随扣段，不按整片加衬。",
+      "reason": "原白薄棉遮针脚，局部衬分散反复开扣拉力。",
+      "confirmed": false
+    },
+    {
+      "piece_id": "P-B06",
+      "name": "白衣领口斜裁包边",
+      "source_cut_count": "面布1，45度斜裁",
+      "uses": [
+        {
+          "role": "贴边布",
+          "group": "M5",
+          "cut_count": 1,
+          "treatment": "原白，不印花；按45°斜裁",
+          "placement": "整片",
+          "optional": false
+        }
+      ],
+      "lining_note": "无额外里布；现有面布1作为对折包边。",
+      "interfacing_note": "不加衬。",
+      "reason": "同批薄棉斜裁沿领曲线转弯，保持包边轻薄。",
+      "confirmed": false
+    },
+    {
+      "piece_id": "P-B07",
+      "name": "白色宽翻领片",
+      "source_cut_count": "面布2＋薄里2，镜像",
+      "uses": [
+        {
+          "role": "面布",
+          "group": "M5",
+          "cut_count": 2,
+          "treatment": "原白，不印花",
+          "placement": "整片",
+          "optional": false
+        },
+        {
+          "role": "里布",
+          "group": "M5",
+          "cut_count": 2,
+          "treatment": "原白，不印花",
+          "placement": "整片",
+          "optional": false
+        },
+        {
+          "role": "衬布",
+          "group": "I1",
+          "cut_count": null,
+          "treatment": "素白，不印；局部缝入",
+          "placement": "仅领尖或根部需要支承的小区域",
+          "optional": true
+        }
+      ],
+      "lining_note": "左右面2配薄里2，均原白。",
+      "interfacing_note": "小样软塌时才局部试I1；不预设整片粘衬。",
+      "reason": "双层薄棉形成翻领，和白衣保持相同白色。",
+      "confirmed": false
+    },
+    {
+      "piece_id": "P-B08",
+      "name": "袖底开衩薄条",
+      "source_cut_count": "面布2，斜裁",
+      "uses": [
+        {
+          "role": "贴边布",
+          "group": "M5",
+          "cut_count": 2,
+          "treatment": "原白，不印花；斜裁",
+          "placement": "整片",
+          "optional": false
+        }
+      ],
+      "lining_note": "无额外里布；原面布2改以包边用途登记。",
+      "interfacing_note": "不加衬。",
+      "reason": "薄斜条包袖底开衩，避免袖口根部堆厚。",
+      "confirmed": false
+    },
+    {
+      "piece_id": "P-O01",
+      "name": "露肩蓝外搭前片",
+      "source_cut_count": "面布2＋薄里2，镜像",
+      "uses": [
+        {
+          "role": "面布",
+          "group": "M3",
+          "cut_count": 2,
+          "treatment": "蓝色定位色场，按当前前片看稿",
+          "placement": "整片",
+          "optional": false
+        },
+        {
+          "role": "里布",
+          "group": "M3",
+          "cut_count": 2,
+          "treatment": "匹配蓝净色，不复制面部图案",
+          "placement": "整片",
+          "optional": false
+        }
+      ],
+      "lining_note": "面2配薄里2；各层分别排料，按原清单镜像条件。",
+      "interfacing_note": "不加整片衬，保留外搭和翻片垂感。",
+      "reason": "薄仿双绉使外搭前片垂顺，里层用匹配净色控制露里。",
+      "confirmed": false
+    },
+    {
+      "piece_id": "P-O02",
+      "name": "露肩蓝外搭后片",
+      "source_cut_count": "面布2＋薄里2，镜像",
+      "uses": [
+        {
+          "role": "面布",
+          "group": "M3",
+          "cut_count": 2,
+          "treatment": "净蓝底；背面采用当前工程净色，不补未知花纹",
+          "placement": "整片",
+          "optional": false
+        },
+        {
+          "role": "里布",
+          "group": "M3",
+          "cut_count": 2,
+          "treatment": "匹配蓝净色，不印纹样；兼后中贴边",
+          "placement": "整片",
+          "optional": false
+        },
+        {
+          "role": "衬布",
+          "group": "I1",
+          "cut_count": null,
+          "treatment": "素白，不印；局部缝入",
+          "placement": "仅后中扣位及端点",
+          "optional": false
+        }
+      ],
+      "lining_note": "面2配薄里2；各层分别排料，按原清单镜像条件。",
+      "interfacing_note": "后中实际扣位局部I1；别针承力另由P-A05承担，不跨开口。",
+      "reason": "薄仿双绉使外搭后片垂顺，里层用匹配净色控制露里。",
+      "confirmed": false
+    },
+    {
+      "piece_id": "P-O03",
+      "name": "蓝色上臂外袖",
+      "source_cut_count": "面布2＋薄里2，镜像",
+      "uses": [
+        {
+          "role": "面布",
+          "group": "M3",
+          "cut_count": 2,
+          "treatment": "蓝色定位色场",
+          "placement": "整片",
+          "optional": false
+        },
+        {
+          "role": "里布",
+          "group": "M3",
+          "cut_count": 2,
+          "treatment": "匹配蓝净色，不印纹样",
+          "placement": "整片",
+          "optional": false
+        }
+      ],
+      "lining_note": "面2配薄里2；各层分别排料，按原清单镜像条件。",
+      "interfacing_note": "不加整片衬，保留外搭和翻片垂感。",
+      "reason": "薄仿双绉使蓝外袖垂顺，里层用匹配净色控制露里。",
+      "confirmed": false
+    },
+    {
+      "piece_id": "P-O04",
+      "name": "前腰蓝系带",
+      "source_cut_count": "面布2＋薄里2，镜像",
+      "uses": [
+        {
+          "role": "面布",
+          "group": "M3",
+          "cut_count": 2,
+          "treatment": "匹配外搭的净蓝色",
+          "placement": "整片",
+          "optional": false
+        },
+        {
+          "role": "里布",
+          "group": "M3",
+          "cut_count": 2,
+          "treatment": "同色薄里，翻面可见；不复制纹样",
+          "placement": "整片",
+          "optional": false
+        }
+      ],
+      "lining_note": "面2配薄里2；各层分别排料，按原清单镜像条件。",
+      "interfacing_note": "不加整片衬，保留外搭和翻片垂感。",
+      "reason": "薄仿双绉使前系带垂顺，里层用匹配净色控制露里。",
+      "confirmed": false
+    },
+    {
+      "piece_id": "P-O05",
+      "name": "蓝袖外侧尖垂片",
+      "source_cut_count": "面布2＋薄里2，镜像",
+      "uses": [
+        {
+          "role": "面布",
+          "group": "M3",
+          "cut_count": 2,
+          "treatment": "匹配外搭的净蓝色",
+          "placement": "整片",
+          "optional": false
+        },
+        {
+          "role": "里布",
+          "group": "M3",
+          "cut_count": 2,
+          "treatment": "同色薄里，翻面可见；不复制纹样",
+          "placement": "整片",
+          "optional": false
+        }
+      ],
+      "lining_note": "面2配薄里2；各层分别排料，按原清单镜像条件。",
+      "interfacing_note": "不加整片衬，保留外搭和翻片垂感。",
+      "reason": "薄仿双绉使袖尖垂片垂顺，里层用匹配净色控制露里。",
+      "confirmed": false
+    },
+    {
+      "piece_id": "P-O06",
+      "name": "蓝紫上臂翻片",
+      "source_cut_count": "面布2＋薄里2",
+      "uses": [
+        {
+          "role": "面布",
+          "group": "M3",
+          "cut_count": 2,
+          "treatment": "按看稿定位蓝紫渐变",
+          "placement": "整片",
+          "optional": false
+        },
+        {
+          "role": "里布",
+          "group": "M3",
+          "cut_count": 2,
+          "treatment": "匹配蓝紫净色薄里，翻面可见；不擅加背纹",
+          "placement": "整片",
+          "optional": false
+        }
+      ],
+      "lining_note": "面2配薄里2；各层分别排料，按原清单镜像条件。",
+      "interfacing_note": "不加整片衬，保留外搭和翻片垂感。",
+      "reason": "薄仿双绉使上臂翻片垂顺，里层用匹配净色控制露里。",
+      "confirmed": false
+    },
+    {
+      "piece_id": "P-O07",
+      "name": "露肩外搭隐藏支承条",
+      "source_cut_count": "薄布4＋薄里4",
+      "uses": [
+        {
+          "role": "支承布",
+          "group": "M5",
+          "cut_count": 4,
+          "treatment": "原白，不印花",
+          "placement": "整片",
+          "optional": false
+        },
+        {
+          "role": "里布",
+          "group": "M5",
+          "cut_count": 4,
+          "treatment": "原白，不印花",
+          "placement": "整片",
+          "optional": false
+        }
+      ],
+      "lining_note": "原薄布4＋薄里4，均用M5素白；不是4片衬布。",
+      "interfacing_note": "不另加衬，固定端按原设计缝牢。",
+      "reason": "隐藏支承条需要轻薄无弹布层，连接本侧白衣与蓝外搭。",
+      "confirmed": false
+    },
+    {
+      "piece_id": "P-C01",
+      "name": "深蓝前披领",
+      "source_cut_count": "面布2＋薄里2，镜像",
+      "uses": [
+        {
+          "role": "面布",
+          "group": "M2",
+          "cut_count": 2,
+          "treatment": "深蓝底双白条，按本片成品边定位",
+          "placement": "整片",
+          "optional": false
+        },
+        {
+          "role": "里布",
+          "group": "M3",
+          "cut_count": 2,
+          "treatment": "匹配深蓝净色，不复制白条纹",
+          "placement": "整片",
+          "optional": false
+        },
+        {
+          "role": "衬布",
+          "group": "I1",
+          "cut_count": null,
+          "treatment": "素白，不印；局部缝入",
+          "placement": "仅领尖或固定点，需要时取小片",
+          "optional": true
+        }
+      ],
+      "lining_note": "面2配M3薄里2，不用双层M2增厚。",
+      "interfacing_note": "先试无衬；仅局部软塌时用I1。",
+      "reason": "面层承载清晰白条，较薄净色里层降低尖角翻缝厚度。",
+      "confirmed": false
+    },
+    {
+      "piece_id": "P-C02",
+      "name": "深蓝后尖披领",
+      "source_cut_count": "面布2＋薄里2，镜像",
+      "uses": [
+        {
+          "role": "面布",
+          "group": "M2",
+          "cut_count": 2,
+          "treatment": "深蓝底双白条，按本片成品边定位",
+          "placement": "整片",
+          "optional": false
+        },
+        {
+          "role": "里布",
+          "group": "M3",
+          "cut_count": 2,
+          "treatment": "匹配深蓝净色，不复制白条纹",
+          "placement": "整片",
+          "optional": false
+        },
+        {
+          "role": "衬布",
+          "group": "I1",
+          "cut_count": null,
+          "treatment": "素白，不印；局部缝入",
+          "placement": "仅领尖或固定点，需要时取小片",
+          "optional": true
+        }
+      ],
+      "lining_note": "面2配M3薄里2，不用双层M2增厚。",
+      "interfacing_note": "先试无衬；仅局部软塌时用I1。",
+      "reason": "面层承载清晰白条，较薄净色里层降低尖角翻缝厚度。",
+      "confirmed": false
+    },
+    {
+      "piece_id": "P-S01",
+      "name": "深蓝十四褶裙片",
+      "source_cut_count": "面布1",
+      "uses": [
+        {
+          "role": "面布",
+          "group": "M1",
+          "cut_count": 1,
+          "treatment": "深蓝裙面与白边/标志定位印花",
+          "placement": "整片",
+          "optional": false
+        }
+      ],
+      "lining_note": "原清单无独立里布，不增裙里。",
+      "interfacing_note": "不加衬；褶形按印后样布测试。",
+      "reason": "薄塔夫作为十四褶裙形状候选，先检查细褶体积与反光。",
+      "confirmed": false
+    },
+    {
+      "piece_id": "P-S02",
+      "name": "独立裙腰头",
+      "source_cut_count": "面布1＋薄里1",
+      "uses": [
+        {
+          "role": "面布",
+          "group": "M5",
+          "cut_count": 1,
+          "treatment": "原白，不印花；隐藏腰头",
+          "placement": "整片",
+          "optional": false
+        },
+        {
+          "role": "里布",
+          "group": "M5",
+          "cut_count": 1,
+          "treatment": "原白，不印花",
+          "placement": "整片",
+          "optional": false
+        },
+        {
+          "role": "衬布",
+          "group": "I1",
+          "cut_count": null,
+          "treatment": "素白，不印；局部缝入",
+          "placement": "仅后扣安装段和端点",
+          "optional": false
+        }
+      ],
+      "lining_note": "面1＋薄里1，选原允许的M5路线。",
+      "interfacing_note": "后扣段局部I1，其余腰头保持薄软。",
+      "reason": "净色紧密薄棉承接褶量；无需在隐藏腰头印裙面花。",
+      "confirmed": false
+    },
+    {
+      "piece_id": "P-S03",
+      "name": "裙后开衩护片",
+      "source_cut_count": "薄里1",
+      "uses": [
+        {
+          "role": "里布",
+          "group": "M5",
+          "cut_count": 1,
+          "treatment": "原白，不印花",
+          "placement": "整片",
+          "optional": false
+        }
+      ],
+      "lining_note": "原薄里1就是开衩护片，不再添加里层。",
+      "interfacing_note": "不加衬。",
+      "reason": "柔软原白护片覆盖开衩内侧，不承担后扣主拉力。",
+      "confirmed": false
+    },
+    {
+      "piece_id": "P-W01",
+      "name": "右前深色短腰片",
+      "source_cut_count": "面布1＋薄里1",
+      "uses": [
+        {
+          "role": "面布",
+          "group": "M2",
+          "cut_count": 1,
+          "treatment": "深色底与金边按本片可见成品边定位",
+          "placement": "整片",
+          "optional": false
+        },
+        {
+          "role": "里布",
+          "group": "M3",
+          "cut_count": 1,
+          "treatment": "匹配深灰净色，不印花",
+          "placement": "整片",
+          "optional": false
+        }
+      ],
+      "lining_note": "面1配薄里1，沿用原镜像/方向要求。",
+      "interfacing_note": "默认不加衬；上端固定先试样。",
+      "reason": "细斜纹容纳深色边纹，薄仿双绉里层让自由侧下缘不堆厚。",
+      "confirmed": false
+    },
+    {
+      "piece_id": "P-W02",
+      "name": "左前深色长腰片",
+      "source_cut_count": "面布1＋薄里1",
+      "uses": [
+        {
+          "role": "面布",
+          "group": "M2",
+          "cut_count": 1,
+          "treatment": "深色底与金边按本片可见成品边定位",
+          "placement": "整片",
+          "optional": false
+        },
+        {
+          "role": "里布",
+          "group": "M3",
+          "cut_count": 1,
+          "treatment": "匹配深灰净色，不印花",
+          "placement": "整片",
+          "optional": false
+        }
+      ],
+      "lining_note": "面1配薄里1，沿用原镜像/方向要求。",
+      "interfacing_note": "默认不加衬；上端固定先试样。",
+      "reason": "细斜纹容纳深色边纹，薄仿双绉里层让自由侧下缘不堆厚。",
+      "confirmed": false
+    },
+    {
+      "piece_id": "P-W03",
+      "name": "左右后深色腰片",
+      "source_cut_count": "面布2＋薄里2，镜像",
+      "uses": [
+        {
+          "role": "面布",
+          "group": "M2",
+          "cut_count": 2,
+          "treatment": "深色底与金边按本片可见成品边定位",
+          "placement": "整片",
+          "optional": false
+        },
+        {
+          "role": "里布",
+          "group": "M3",
+          "cut_count": 2,
+          "treatment": "匹配深灰净色，不印花",
+          "placement": "整片",
+          "optional": false
+        }
+      ],
+      "lining_note": "面2配薄里2，沿用原镜像/方向要求。",
+      "interfacing_note": "默认不加衬；上端固定先试样。",
+      "reason": "细斜纹容纳深色边纹，薄仿双绉里层让自由侧下缘不堆厚。",
+      "confirmed": false
+    },
+    {
+      "piece_id": "P-W04",
+      "name": "独立淡紫装饰腰带",
+      "source_cut_count": "面布1＋薄里1",
+      "uses": [
+        {
+          "role": "面布",
+          "group": "M4",
+          "cut_count": 1,
+          "treatment": "淡紫净色",
+          "placement": "整片",
+          "optional": false
+        },
+        {
+          "role": "里布",
+          "group": "M3",
+          "cut_count": 1,
+          "treatment": "匹配淡紫净色薄里",
+          "placement": "整片",
+          "optional": false
+        },
+        {
+          "role": "衬布",
+          "group": "I1",
+          "cut_count": null,
+          "treatment": "素白，不印；局部缝入",
+          "placement": "仅后扣段和端点",
+          "optional": false
+        }
+      ],
+      "lining_note": "面1＋薄里1；薄里为M3，非再裁一层M4缎面。",
+      "interfacing_note": "后扣局部I1，不贯穿缝住白衣或裙腰。",
+      "reason": "缎面呈现淡紫色带，薄里包边并减少腰部叠层体积。",
+      "confirmed": false
+    },
+    {
+      "piece_id": "P-A01",
+      "name": "背部蝴蝶结双翼",
+      "source_cut_count": "面布1＋薄里1",
+      "uses": [
+        {
+          "role": "面布",
+          "group": "M4",
+          "cut_count": 1,
+          "treatment": "青蓝净色，无主体纹样",
+          "placement": "整片",
+          "optional": false
+        },
+        {
+          "role": "里布",
+          "group": "M3",
+          "cut_count": 1,
+          "treatment": "匹配青蓝净色薄里",
+          "placement": "整片",
+          "optional": false
+        },
+        {
+          "role": "衬布",
+          "group": "I1",
+          "cut_count": null,
+          "treatment": "素白，不印；局部缝入",
+          "placement": "仅中部捏褶和结芯接触区，需要时使用",
+          "optional": true
+        }
+      ],
+      "lining_note": "面1＋薄里1；翻面可见用匹配净色。",
+      "interfacing_note": "默认保留柔软翼形；需定形仅试局部I1，针座由P-A04承力。",
+      "reason": "缎面用于蝶翼光泽，薄里避免整只蝶结双缎过厚。",
+      "confirmed": false
+    },
+    {
+      "piece_id": "P-A02",
+      "name": "蝴蝶结结芯",
+      "source_cut_count": "面布1＋薄里1",
+      "uses": [
+        {
+          "role": "面布",
+          "group": "M4",
+          "cut_count": 1,
+          "treatment": "匹配蝴蝶结结芯净色",
+          "placement": "整片",
+          "optional": false
+        },
+        {
+          "role": "里布",
+          "group": "M3",
+          "cut_count": 1,
+          "treatment": "匹配结芯净色薄里",
+          "placement": "整片",
+          "optional": false
+        }
+      ],
+      "lining_note": "面1＋薄里1。",
+      "interfacing_note": "不再加衬；背面连接P-A04已含承力布和薄衬。",
+      "reason": "薄里使小结芯围合时减少层数体积。",
+      "confirmed": false
+    },
+    {
+      "piece_id": "P-A03L",
+      "name": "蓝粉左垂尾",
+      "source_cut_count": "面布1＋薄里1",
+      "uses": [
+        {
+          "role": "面布",
+          "group": "M4",
+          "cut_count": 1,
+          "treatment": "按本片蓝上粉下色场定位印花",
+          "placement": "整片",
+          "optional": false
+        },
+        {
+          "role": "里布",
+          "group": "M3",
+          "cut_count": 1,
+          "treatment": "匹配蓝粉配色的薄里；必要时净色/渐变打样，不复制主体纹样",
+          "placement": "整片",
+          "optional": false
+        }
+      ],
+      "lining_note": "本片独立面1＋薄里1；左右各自排料，不合并为同长镜像。",
+      "interfacing_note": "不加衬，保持垂尾流动。",
+      "reason": "缎面表现渐变；翻面可见的较薄里布减少露白与边缘卷曲。",
+      "confirmed": false
+    },
+    {
+      "piece_id": "P-A03R",
+      "name": "蓝粉右垂尾",
+      "source_cut_count": "面布1＋薄里1",
+      "uses": [
+        {
+          "role": "面布",
+          "group": "M4",
+          "cut_count": 1,
+          "treatment": "按本片蓝上粉下色场定位印花",
+          "placement": "整片",
+          "optional": false
+        },
+        {
+          "role": "里布",
+          "group": "M3",
+          "cut_count": 1,
+          "treatment": "匹配蓝粉配色的薄里；必要时净色/渐变打样，不复制主体纹样",
+          "placement": "整片",
+          "optional": false
+        }
+      ],
+      "lining_note": "本片独立面1＋薄里1；左右各自排料，不合并为同长镜像。",
+      "interfacing_note": "不加衬，保持垂尾流动。",
+      "reason": "缎面表现渐变；翻面可见的较薄里布减少露白与边缘卷曲。",
+      "confirmed": false
+    },
+    {
+      "piece_id": "P-A04",
+      "name": "蝴蝶结针座承力底片",
+      "source_cut_count": "薄布2＋薄衬1",
+      "uses": [
+        {
+          "role": "支承布",
+          "group": "M7",
+          "cut_count": 2,
+          "treatment": "原白，不印花",
+          "placement": "整片",
+          "optional": false
+        },
+        {
+          "role": "衬布",
+          "group": "I1",
+          "cut_count": 1,
+          "treatment": "素白，不印；缝入两层支承布之间",
+          "placement": "整片",
+          "optional": false
+        }
+      ],
+      "lining_note": "原薄布2是两层承力底布，无额外印花里片。",
+      "interfacing_note": "保留原清单薄衬1；I1是必备设计层，实际货号仍待取样。",
+      "reason": "本轮局部承力建议：原清单概略M5改选较稳的M7府绸承接针座缝孔载荷；原薄布2、薄衬1数量不变。先核验双层厚度，不把针座仅固定在薄缎。",
+      "confirmed": false
+    },
+    {
+      "piece_id": "P-A05",
+      "name": "衣身单侧别针承力片",
+      "source_cut_count": "薄布1＋薄衬1",
+      "uses": [
+        {
+          "role": "支承布",
+          "group": "M7",
+          "cut_count": 1,
+          "treatment": "原白，不印花",
+          "placement": "整片",
+          "optional": false
+        },
+        {
+          "role": "衬布",
+          "group": "I1",
+          "cut_count": 1,
+          "treatment": "素白，不印；置于支承片背面",
+          "placement": "整片",
+          "optional": false
+        }
+      ],
+      "lining_note": "原薄布1＋薄衬1；安装在外搭本侧里层内，无新增整里片。",
+      "interfacing_note": "保留原设计薄衬1；仅该支承区，不跨后中魔术贴。",
+      "reason": "本轮局部承力建议：原清单概略M5改选M7稳布分散别针局部拉力；原薄布1、薄衬1数量不变。只固定一侧承力区，不跨魔术贴开口。",
+      "confirmed": false
+    }
+  ]
+}

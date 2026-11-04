@@ -1,0 +1,170 @@
+{
+  "version": "v0.1-piece-material-candidates",
+  "status": "逐衣片取样候选；未采购定版、未确认手感/颜色/厚度，未实物试穿",
+  "updated_on": "2026-11-04",
+  "target_gsm_meaning": "target_gsm 是本项目筛样范围；supplier_example.gsm 和 fiber 是指定厂商实例，不代表所有同名面料。",
+  "lining_policy": "里布、贴边布、支承布与衬布分别登记；不把隐藏件默认印成主面图案。翻面可见里层另写颜色或纹样。",
+  "interfacing_policy": "I1 为默认轻薄缝入衬候选；I2仅供小样通过后的替代，不同一位置双叠。原清单已含薄衬的A04/A05各保留1；其他局部衬按uses的placement与optional执行，不加成整片硬衬。",
+  "groups": {
+    "M1": {
+      "name": "无弹薄涤塔夫",
+      "short_name": "薄涤塔夫",
+      "fiber": "100% 涤纶",
+      "target_gsm": [
+        80,
+        100
+      ],
+      "process": "白基布定位升华印花；按逐片印花安排区分印花或净色",
+      "source_urls": [
+        "https://www.contrado.co.uk/printing-on-taffeta-fabric"
+      ],
+      "notes": "目标克重为项目取样范围；略挺和褶形保持须印后试样，不能只因全涤便保证定褶。",
+      "supplier_example": {
+        "name": "Contrado Taffeta",
+        "gsm": 90,
+        "fiber": "100% 涤纶",
+        "verified_on": "2026-11-03"
+      }
+    },
+    "M2": {
+      "name": "无弹细密涤斜纹",
+      "short_name": "细密涤斜纹",
+      "fiber": "全涤；实例为 51% 再生涤纶＋49% 普通涤纶",
+      "target_gsm": [
+        100,
+        130
+      ],
+      "process": "白基布定位升华印花",
+      "source_urls": [
+        "https://www.contrado.co.uk/twill-recycled-fabric"
+      ],
+      "notes": "用于深色有纹面片；实例柔软微光泽，不是哑光硬挺保证，不默认双层都用此主面布。",
+      "supplier_example": {
+        "name": "Contrado Bermondsey Twill",
+        "gsm": 130,
+        "fiber": "51% 再生涤纶＋49% 普通涤纶",
+        "verified_on": "2026-11-03"
+      }
+    },
+    "M3": {
+      "name": "无弹涤纶薄仿双绉",
+      "short_name": "薄仿双绉",
+      "fiber": "100% 涤纶",
+      "target_gsm": [
+        70,
+        90
+      ],
+      "process": "面片按需升华印花；薄里优先匹配素色，不复制正面纹样",
+      "source_urls": [
+        "https://prinfab.com/fabric/crepe-de-chine/"
+      ],
+      "notes": "用于流动外搭及较薄里层；匹配色里布可用素色现货或净色打样。厂商提示可能不顺经纬，定位能力另确认。",
+      "supplier_example": {
+        "name": "Prinfab Crepe de Chine",
+        "gsm": 80,
+        "fiber": "100% 涤纶",
+        "verified_on": "2026-11-03"
+      }
+    },
+    "M4": {
+      "name": "无弹薄仿丝缎",
+      "short_name": "薄仿丝缎",
+      "fiber": "100% 涤纶",
+      "target_gsm": [
+        80,
+        100
+      ],
+      "process": "有光泽面定位升华印花或净色；翻面里层另列",
+      "source_urls": [
+        "https://prinfab.com/fabric/faux-silk/"
+      ],
+      "notes": "表面有光泽，反面较哑；小带和结芯先试翻缝体积。厂商提示可能不顺经纬。不得把缎的反面当作已完成薄里。",
+      "supplier_example": {
+        "name": "Prinfab Faux Silk",
+        "gsm": 85,
+        "fiber": "100% 涤纶",
+        "verified_on": "2026-11-03"
+      }
+    },
+    "M5": {
+      "name": "高密纯棉细布 Lawn",
+      "short_name": "纯棉细布",
+      "fiber": "100% 棉",
+      "target_gsm": [
+        75,
+        90
+      ],
+      "process": "原白件不印；有图案部位用适配棉的颜料数码工艺，另厂工艺须确认",
+      "source_urls": [
+        "https://prinfab.com/fabric/lawn/"
+      ],
+      "notes": "白衣、窄贴边和轻薄里布优先取低克重样；预处理及经纬缩水以本批实测为准，不把供应商预估直接当补偿。",
+      "supplier_example": {
+        "name": "Prinfab Lawn",
+        "gsm": 75,
+        "fiber": "100% 棉",
+        "verified_on": "2026-11-03"
+      }
+    },
+    "M7": {
+      "name": "无弹紧密纯棉府绸支承布",
+      "short_name": "支承棉府绸",
+      "fiber": "100% 棉",
+      "target_gsm": [
+        110,
+        130
+      ],
+      "process": "原白或匹配浅净色，不印花；按原承力片轮廓裁取",
+      "source_urls": [
+        "https://prinfab.com/fabric/poplin/"
+      ],
+      "notes": "仅局部针座和衣身承力底片。先比较范围低端与双层翻缝体积；作为本项目支承布是制作选择，未验证承重。M6仍是旧表半透乔其备选，本轮57片未使用。",
+      "supplier_example": {
+        "name": "Prinfab Poplin",
+        "gsm": 130,
+        "fiber": "100% 棉",
+        "verified_on": "2026-11-04"
+      }
+    },
+    "I1": {
+      "name": "轻薄柔软缝入衬",
+      "short_name": "缝入薄衬",
+      "fiber": "候选实例：55% 粘胶 CV＋35% 再生涤纶＋10% 涤纶",
+      "target_gsm": [
+        30,
+        40
+      ],
+      "process": "不印花；缝入或沿指定承力区固定，无需热粘",
+      "source_urls": [
+        "https://www.vlieseline.com/en/product/382/L-11"
+      ],
+      "notes": "以 Vlieseline L 11 作轻薄缝入衬实例，32 g/m²为厂商实标；30–40为项目取样目标。用于小件或扣位的适配性仍需缝制小样，不能代替独立支承布。",
+      "supplier_example": {
+        "name": "Vlieseline L 11",
+        "gsm": 32,
+        "fiber": "55% CV, 35% R-PES, 10% PES",
+        "verified_on": "2026-11-04"
+      }
+    },
+    "I2": {
+      "name": "轻薄热粘衬替代候选",
+      "short_name": "热粘薄衬备选",
+      "fiber": "候选实例：85% 聚酰胺 PA＋15% 再生涤纶",
+      "target_gsm": [
+        30,
+        40
+      ],
+      "process": "不印花；只在小样通过后替代指定 I1，用厂商当前说明与本批面布匹配工艺",
+      "source_urls": [
+        "https://www.vlieseline.com/en/product/378/H-180"
+      ],
+      "notes": "Vlieseline H 180 实标37 g/m²。不是额外叠加层，本轮 uses 默认不用；先测试印花热迁移、起泡、变形与粘合，不能沿用升华印布温度。",
+      "supplier_example": {
+        "name": "Vlieseline H 180",
+        "gsm": 37,
+        "fiber": "85% PA, 15% R-PES",
+        "verified_on": "2026-11-04"
+      }
+    }
+  }
+}

@@ -48,6 +48,63 @@ def art(p,token):
   out+=use('outlineFlower',305,60,.19)
  return out+'</g>'
 
+_MATERIAL_CACHE={}
+def load_materials(project_gp):
+ key=str(project_gp)
+ if key not in _MATERIAL_CACHE:
+  catalog=json.loads((g.ROOT/'docs/material-catalog.json').read_text())['groups']
+  data=json.loads((project_gp/'piece-materials.json').read_text())
+  entries={p['piece_id']:p for p in data['pieces']}
+  for item in entries.values():
+   for use in item['uses']:assert use['group'] in catalog,(item['piece_id'],use['group'])
+  _MATERIAL_CACHE[key]=(catalog,entries)
+ return _MATERIAL_CACHE[key]
+
+def wrap_material_text(text,width,font_size):
+ # CJK consumes one em; ASCII has narrower glyphs. Never shrink the original pattern.
+ result=[];line='';units=0
+ for ch in str(text):
+  add=.58 if ord(ch)<128 else 1
+  if units+add>width/font_size:
+   result.append(line);line='';units=0
+  line+=ch;units+=add
+ if line:result.append(line)
+ return result
+
+def material_lines(project_gp,pid,compact=False,width=160,font_size=3.6):
+ catalog,entries=load_materials(project_gp);item=entries[pid];lines=[]
+ for use in item['uses']:
+  spec=catalog[use['group']];gsm=spec.get('target_gsm')
+  weight=('–'.join(str(v) for v in gsm)+' g/m²')if isinstance(gsm,list)else(str(gsm)+' g/m²' if gsm else '克重按样布')
+  role=use['role']+('（可选）'if use.get('optional')else '')
+  title=role+'：'+spec.get('short_name',spec['name'])+' '+use['group']+' · '+weight
+  lines.extend(wrap_material_text(title,width,font_size))
+  if not compact:
+   detail='色／工艺：'+use.get('treatment','按样布确认')+'；位置：'+use.get('placement','本衣片')
+   if use.get('cut_count'):detail+='；裁数：'+str(use['cut_count'])
+   lines.extend(wrap_material_text(detail,width,font_size))
+ if not compact:
+  for field,head in [('lining_note','里布'),('interfacing_note','局部衬')]:
+   if item.get(field):lines.extend(wrap_material_text(head+'说明：'+item[field],width,font_size))
+ return lines
+
+def append_material_panel(root,project_gp,pid):
+ vx,vy,w,h=map(float,root.get('viewBox').split());font=3.55;gap=5.7
+ lines=material_lines(project_gp,pid,width=w-28,font_size=font)
+ extra=25+len(lines)*gap
+ panel=f'<g xmlns="{NS}"><rect x="8" y="{h+4}" width="{w-16}" height="{extra-10}" rx="3" fill="#f3f6f5" stroke="#c7d4d8" stroke-width=".35"/>'
+ panel+=label(14,h+13,'本衣片材质建议 · 尚未打样确认',4.1,'#375b68')
+ for i,text in enumerate(lines):panel+=label(14,h+22+i*gap,text,font,'#2a414c')
+ panel+='</g>';root.append(ET.fromstring(panel))
+ root.set('height',f'{h+extra:.3f}mm');root.set('viewBox',' '.join(root.get('viewBox').split()[:3])+f' {h+extra:.3f}')
+ return lines
+
+def card_materials(project_gp,pid,x,y):
+ lines=material_lines(project_gp,pid,compact=True,width=386,font_size=17)
+ content=label(x,y,'材质建议 · 未打样',17,'#426674')
+ for i,text in enumerate(lines):content+=label(x,y+25+i*23,text,17,'#304853')
+ return content
+
 def write_piece(p):
  original=g.OUT/p['file'];root=ET.fromstring(original.read_text())
  defs=ET.fromstring('<defs xmlns="'+NS+'">'+DEFS+'</defs>');root.insert(0,defs)
@@ -57,6 +114,7 @@ def write_piece(p):
  else:raise AssertionError('Missing original geometry group')
  caption=ET.fromstring(label(10,41,'花纹定位预览 / 非生产印布；圆点仅示意扣位',3.5,'#a44838'))
  root.append(caption)
+ append_material_panel(root,g.OUT,p['piece_id'])
  f=OUT/p['file'];f.parent.mkdir(parents=True,exist_ok=True);ET.ElementTree(root).write(f,encoding='unicode',xml_declaration=False)
  # Geometry must be byte-identical in SVG d coordinate content.
  oldpaths={n.get('d')for n in ET.fromstring(original.read_text()).iter()if n.tag.endswith('path')}
@@ -65,17 +123,18 @@ def write_piece(p):
 
 
 def pieces_overview():
- cols=4;cw=440;ch=370;rows=math.ceil(len(g.pieces)/cols);W=1820;H=rows*ch+195
+ cols=4;cw=440;maxlines=max(len(material_lines(g.OUT,p['piece_id'],compact=True,width=386,font_size=17))for p in g.pieces);ch=405+maxlines*23;rows=math.ceil(len(g.pieces)/cols);W=1820;H=rows*ch+195
  body=label(35,55,'存护三月七 · 带花纹的完整衣片',40)+label(35,96,'原30片几何不变：先看花纹落位、衣片编号，再看净尺寸与裁剪尺寸。',23)
  body+=label(35,135,'定位预览，非定版印布：底色覆盖缝份，白边／金边按成品线内退；背面未知处留净色。',21,'#a34e38')
  for i,p in enumerate(g.pieces):
   x=30+(i%cols)*cw;y=180+(i//cols)*ch;a,b,c,d=Polygon(p['cut']).bounds;s=min(360/(c-a),175/(d-b),2)
-  body+=f'<rect x="{x}" y="{y}" width="420" height="352" rx="12" fill="#f5f7f7" stroke="#c6d0d5"/>'+label(x+14,y+28,p['piece_id']+' '+p['name'],20)
+  body+=f'<rect x="{x}" y="{y}" width="420" height="{ch-18}" rx="12" fill="#f5f7f7" stroke="#c6d0d5"/>'+label(x+14,y+28,p['piece_id']+' '+p['name'],20)
   tx=x+210-(a+c)/2*s;ty=y+135-(b+d)/2*s
   body+=f'<g transform="translate({tx} {ty}) scale({s})">'+art(p,'board-'+p['piece_id'])+g.svgpath(p['cut'],'none','#465763',.65)+g.svgpath(p['net'],'none','#c85b43',.4,'2 1')
   for mark in p['marks']:body+=path(mark,'#3c7882',.3)
   body+='</g>'+label(x+14,y+243,f'净 {p["net_bbox_mm"][0]} × {p["net_bbox_mm"][1]} mm',20)+label(x+14,y+272,f'裁 {p["cut_bbox_mm"][0]} × {p["cut_bbox_mm"][1]} mm',19)
   body+=label(x+14,y+302,p['cut_count']+' / 缝份 '+str(p['allowance_mm'])+' mm',18)+label(x+14,y+331,p['layer'],17,'#607480')
+  body+=card_materials(g.OUT,p['piece_id'],x+14,y+360)
  f=OUT/'pieces-overview.svg';f.write_text(doc(W,H,body));g.render(f,f.with_suffix('.png'),1800)
 
 
@@ -135,8 +194,8 @@ def main():
  OUT.mkdir(exist_ok=True)
  for p in g.pieces:write_piece(p)
  pieces_overview();layers_overview()
- report={'status':'patterned visual placement proof only','units':'mm','original_piece_count':len(g.pieces),'original_piece_path_commands_preserved':True,'original_geometry_modified':False,'original_pdfs_modified':False,'production_print_ready':False,'sources':['../../fabric-print/components/skirt-border-panel.svg','../../fabric-print/components/collar-left.svg','../../fabric-print/components/waist-panel-left.svg','../../fabric-print/components/back-ribbon-left.svg'],'skirt_visible_pleat_faces':'each 30mm repeat leaves first10mm visible; diamonds centered at5,95,185,275,365; flower305','plain_hidden_parts':['P-B05','P-B06','P-B08','P-O07','P-S03','P-A04','P-A05'],'source_geometry':'../pattern-manifest.json','pieces':[{'piece_id':p['piece_id'],'file':p['file'],'net_bbox_mm':p['net_bbox_mm'],'cut_bbox_mm':p['cut_bbox_mm']}for p in g.pieces]}
+ report={'status':'patterned visual placement proof only','units':'mm','original_piece_count':len(g.pieces),'original_piece_path_commands_preserved':True,'original_geometry_modified':False,'material_source':'../piece-materials.json','material_catalog':'../../../../../docs/material-catalog.json','single_svg_page_height_extended_for_material_notes':True,'original_pdfs_modified':False,'production_print_ready':False,'sources':['../../fabric-print/components/skirt-border-panel.svg','../../fabric-print/components/collar-left.svg','../../fabric-print/components/waist-panel-left.svg','../../fabric-print/components/back-ribbon-left.svg'],'skirt_visible_pleat_faces':'each 30mm repeat leaves first10mm visible; diamonds centered at5,95,185,275,365; flower305','plain_hidden_parts':['P-B05','P-B06','P-B08','P-O07','P-S03','P-A04','P-A05'],'source_geometry':'../pattern-manifest.json','pieces':[{'piece_id':p['piece_id'],'file':p['file'],'net_bbox_mm':p['net_bbox_mm'],'cut_bbox_mm':p['cut_bbox_mm']}for p in g.pieces]}
  (OUT/'preview-checks.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
- (OUT/'README.md').write_text('# 存护完整衣片花纹预览\n\n[分层前后与合穿](layers-overview.png) · [30片花纹尺寸图](pieces-overview.png) · [逐片SVG](pieces/)\n\n本目录在v0.2实际衣片轮廓上直接显示花纹和编号，原净线、裁线、尺寸与PDF没有改动。底色延伸至原裁剪边，装饰白边、金边按成品边向内定位。所有字、编号、缝线均为校对内容，不能将本预览直接交厂印布。\n\n披领双白条、裙白宽边/细线/菱形/四瓣、袖口蓝线、上臂翻片蓝紫渐变、背结尾蓝粉渐变和腰饰金边来自现有自主绘制花型并按新轮廓重新定位。紫粉集中在肩翻片，蓝衣身保持浅蓝；未见背部纹样不由正面复制。白内衣、薄里、隐蔽支承保持净色。\n\n裙展开每30mm重复中的前10mm暂定为可见褶面，菱形和花形居中置于这些区域；仍须纸折和试布确认最终褶向。合穿图中花饰、扣位为外加配饰的定位示意，不代表要印在白衬衣或支承片上。\n\n图中P-B01等编号与[原完整衣片清单](../pattern-manifest.json)一一对应。[检查记录](preview-checks.json)核对30片原SVG路径均保留；尚未实物试穿或印样。\n')
+ (OUT/'README.md').write_text('# 存护完整衣片花纹预览\n\n[分层前后与合穿](layers-overview.png) · [30片花纹尺寸图](pieces-overview.png) · [逐片SVG](pieces/)\n\n本目录在v0.2实际衣片轮廓上直接显示花纹和编号。每片图底部新增面布、里布、贴边／支承布和局部衬建议，包含中文材质名、组号、目标克重、颜色／印花和使用位置；总览各卡也直接列出材质。单片页面只向下加长说明区，原衣片坐标、净线、裁线、毫米比例及PDF未改动。材质来自[逐片材料记录](../piece-materials.json)，目前均未打样确认。底色延伸至原裁剪边，装饰白边、金边按成品边向内定位。所有字、编号、缝线均为校对内容，不能将本预览直接交厂印布。\n\n披领双白条、裙白宽边/细线/菱形/四瓣、袖口蓝线、上臂翻片蓝紫渐变、背结尾蓝粉渐变和腰饰金边来自现有自主绘制花型并按新轮廓重新定位。紫粉集中在肩翻片，蓝衣身保持浅蓝；未见背部纹样不由正面复制。白内衣、薄里、隐蔽支承保持净色。\n\n裙展开每30mm重复中的前10mm暂定为可见褶面，菱形和花形居中置于这些区域；仍须纸折和试布确认最终褶向。合穿图中花饰、扣位为外加配饰的定位示意，不代表要印在白衬衣或支承片上。\n\n图中P-B01等编号与[原完整衣片清单](../pattern-manifest.json)一一对应。[检查记录](preview-checks.json)核对30片原SVG路径均保留；尚未实物试穿或印样。\n')
  print('Created patterned proof for',len(g.pieces),'unchanged pieces',OUT)
 if __name__=='__main__':main()

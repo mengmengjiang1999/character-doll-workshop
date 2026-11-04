@@ -4,6 +4,9 @@
   "original_piece_count": 30,
   "original_piece_path_commands_preserved": true,
   "original_geometry_modified": false,
+  "material_source": "../piece-materials.json",
+  "material_catalog": "../../../../../docs/material-catalog.json",
+  "single_svg_page_height_extended_for_material_notes": true,
   "original_pdfs_modified": false,
   "production_print_ready": false,
   "sources": [

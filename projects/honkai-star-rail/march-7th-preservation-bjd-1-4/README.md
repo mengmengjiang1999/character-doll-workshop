@@ -4,7 +4,7 @@
 - 造型：原始存护造型／公式服。
 - 目标娃体：UFdoll 四分囡囡体 S 胸（用户指定）；品牌发布记录已核对，实物版本与尺寸待复核。
 - 制作条件：可关节活动的四分 BJD；胸型固定为 S 胸。
-- 当前交付：完整衣片 v0.2、带花纹看稿 v0.3、分层前后与合穿图、逐片尺寸、1:1 黑白 PDF／SVG 与组装说明；采用标明依据的试版尺寸，尚未试穿。原彩色纹样源稿仍保留在 fabric-print/。
+- 当前交付：完整衣片 v0.2、带花纹与逐片材质看稿 v0.4、分层前后与合穿图、逐片尺寸、1:1 黑白 PDF／SVG 与组装说明；采用标明依据的试版尺寸，尚未试穿。原彩色纹样源稿仍保留在 fabric-print/。
 - 历史辅助产物：官方立绘／动作参考、官方 PMX 参考模型、基础试坯 A4 PDF／SVG／参数与检查记录；旧基础版保留为历史记录，新完整衣片在 garment-pattern/，尚无实物验证。
 
 ## 制作目标
@@ -16,6 +16,8 @@
 用户可以缝纫、缠花并使用自有 3D 打印机。服装主体优先采用布料制作；配饰按参考效果、安装与重量，在缠花、打印或组合工艺之间选择。具体部件清单待官方参考拆解后确定。
 
 ## 完整服装试版
+
+- **[每个衣片的材质记录](garment-pattern/piece-materials.md)** · [可编辑材料数据](garment-pattern/piece-materials.json)：面布、里布、辅衬、目标克重及印花安排。
 
 - **[带花纹的分层前后外形](garment-pattern/patterned/layers-overview.png)** · **[带花纹的全套衣片尺寸图](garment-pattern/patterned/pieces-overview.png)**
 - [1:1 PDF、逐片 SVG、参数与组装说明](garment-pattern/) · [两套可视化打版册](../../../docs/garment-guide.html)

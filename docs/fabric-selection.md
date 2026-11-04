@@ -2,6 +2,10 @@
 
 查阅日期：2026-11-03。建议先取 **5 类主布的小样**，分别解决褶裙的形状、深色片的遮盖、外搭的垂感、飘带的光泽和白袖的小褶皱。下表的部位分配与克重区间是本项目的制作建议；商品的成分、实标克重和印花方式来自所链接的厂商页面。本轮未进行采购或联系厂家，尚无实布验证记录。
 
+## 逐片材质入口
+
+完整衣片已逐编号登记：[存护 30 片](../projects/honkai-star-rail/march-7th-preservation-bjd-1-4/garment-pattern/piece-materials.md) · [巡猎 27 片](../projects/honkai-star-rail/march-7th-hunt-bandai-sitting-plush/garment-pattern/piece-materials.md)。除下方 M1–M5 主布外，承力布与辅衬在[材料目录](material-catalog.md)单列；具体面／里角色与印花面以逐片表为准。
+
 ## 首轮取样清单
 
 `g/m²` 表示每平方米的重量，不等于厚度；相同克重也可能有不同挺度。要求白色、细密、无弹的可印基布，优先选印厂已经验证过工艺的底布。以下英文商品作为具体规格和手感参照，不要求从海外购买同款。

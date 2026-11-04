@@ -3,254 +3,426 @@
     :root{color-scheme:light;--ink:#24354b;--pink:#b85d83;--line:#dddfe5}*{box-sizing:border-box}body{margin:0;background:#f5f3f1;color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.65}
     main{max-width:1320px;margin:auto;padding:36px 28px 80px}header{border-bottom:1px solid var(--line);padding:0 0 24px}h1{font-size:34px;margin:6px 0 10px}h2{font-size:28px;margin:0}h3{font-size:23px;margin:32px 0 12px}.eyebrow{font-size:13px;letter-spacing:2px;color:var(--pink);margin:0}.notice{background:#fff0dd;border-left:4px solid #ba8a48;padding:14px 18px;font-size:15px}
     nav{display:flex;gap:12px;margin-top:22px;flex-wrap:wrap}button,.button{font:inherit;border:1px solid var(--ink);padding:10px 18px;border-radius:9px;text-decoration:none;background:var(--ink);color:white;cursor:pointer}button[aria-selected=false],.secondary{color:var(--ink);background:white}.intro{display:flex;align-items:center;justify-content:space-between;gap:24px;margin:30px 0}.intro p{max-width:760px}.actions{display:flex;flex-direction:column;gap:10px;min-width:190px}.board{display:block;max-width:100%;height:auto;background:white;border:1px solid var(--line);border-radius:12px}.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px}.piece{display:flex;flex-direction:column;background:white;padding:15px;border:1px solid var(--line);border-radius:12px;text-decoration:none;color:var(--ink)}.piece:hover{border-color:var(--pink)}.piece img{width:100%;height:280px;object-fit:contain;background:#fcfcfc}.piece strong{margin-top:14px}.piece span,.piece small{font-size:13px;margin-top:6px}.piece small{color:#687385}footer{margin-top:40px;color:#687385;font-size:13px}[hidden]{display:none!important}@media(max-width:700px){main{padding:24px 14px}.intro{display:block}.actions{margin-top:18px}h1{font-size:28px}}
+    .piece-art{color:inherit;text-decoration:none;display:flex;flex-direction:column}.material-list{font-size:13px;margin:14px 0 0;padding-top:10px;border-top:1px solid var(--line)}.material-list dt{font-weight:700;color:var(--pink);margin-top:10px}.material-list dd{margin:2px 0 10px}.material-note,.material-reason{font-size:13px;margin:6px 0;line-height:1.6}.material-reason{color:#687385}
     </style></head><body><main><header><p class="eyebrow">MARCH 7TH / DOLL GARMENT WORKSHOP</p><h1>完整衣服，从每一层到每一片</h1>
-    <p>公式服花纹直接显示在每层衣服和各编号衣片上，可以对照合穿外观、裁剪尺寸与拼接位置。</p>
+    <p>公式服花纹直接显示在每层衣服和各编号衣片上；每片同时记录采用的材质、里布、辅衬及印花安排。</p>
     <div class="notice">彩色图用于看花纹位置，保留尺寸和工艺线；尚未试穿，不能直接当作交厂印布文件。黑白结构 PDF 按 100% 输出，并核对 50 mm 校准标尺。</div>
     <nav role="tablist"><button role="tab" aria-selected="true" data-target="preservation">存护 · 四分 BJD</button><button role="tab" aria-selected="false" data-target="hunt">巡猎 · 坐姿玩偶</button></nav></header><section id="preservation" >
-          <div class="intro"><div><p class="eyebrow">带花纹看稿 / v0.3 · 衣片结构 v0.2 / mm</p><h2>存护 · 囡囡体 S 胸</h2>
-          <p>胸围 170、腰围 128、肩宽 86 mm 等来自已登记的商品标称；缺少的长度采用明确列出的试版假设。</p></div><div class="actions"><a class="button" href="../projects/honkai-star-rail/march-7th-preservation-bjd-1-4/garment-pattern/preservation-full-pattern-v0.2-1to1.pdf">1:1 黑白结构 PDF</a><a class="button secondary" href="../projects/honkai-star-rail/march-7th-preservation-bjd-1-4/garment-pattern/README.md">尺寸与组装说明</a></div></div>
+          <div class="intro"><div><p class="eyebrow">带花纹看稿＋逐片材质 / v0.4 · 衣片结构 v0.2 / mm</p><h2>存护 · 囡囡体 S 胸</h2>
+          <p>胸围 170、腰围 128、肩宽 86 mm 等来自已登记的商品标称；缺少的长度采用明确列出的试版假设。</p></div><div class="actions"><a class="button" href="../projects/honkai-star-rail/march-7th-preservation-bjd-1-4/garment-pattern/piece-materials.md">逐片材质记录</a><a class="button" href="../projects/honkai-star-rail/march-7th-preservation-bjd-1-4/garment-pattern/preservation-full-pattern-v0.2-1to1.pdf">1:1 黑白结构 PDF</a><a class="button secondary" href="../projects/honkai-star-rail/march-7th-preservation-bjd-1-4/garment-pattern/README.md">尺寸与组装说明</a></div></div>
           <h3>带花纹的分层外观 · 编号对应下方衣片</h3>
           <a href="../projects/honkai-star-rail/march-7th-preservation-bjd-1-4/garment-pattern/patterned/layers-overview.png" target="_blank"><img class="board" src="../projects/honkai-star-rail/march-7th-preservation-bjd-1-4/garment-pattern/patterned/layers-overview.png" alt="存护 · 囡囡体 S 胸带花纹分层外形及衣片编号"></a>
           <h3>带花纹的全套衣片尺寸图</h3>
           <a href="../projects/honkai-star-rail/march-7th-preservation-bjd-1-4/garment-pattern/patterned/pieces-overview.png" target="_blank"><img class="board" src="../projects/honkai-star-rail/march-7th-preservation-bjd-1-4/garment-pattern/patterned/pieces-overview.png" alt="存护 · 囡囡体 S 胸带花纹完整衣片"></a>
-          <h3>逐片查看 · 30 种版片</h3><p>每张衣片直接显示对应花纹、编号和尺寸。贴边、里布和隐藏承力片保留素色；裁几片、是否镜像，以单片标注为准。整套图不可统一缩放来调尺码。</p>
-          <div class="grid"><a class="piece" href="../projects/honkai-star-rail/march-7th-preservation-bjd-1-4/garment-pattern/patterned/pieces/P-B01.svg" target="_blank">
+          <h3>逐片查看 · 30 种版片及材质</h3><p>每片分别记录面布、里布、辅衬、目标克重及印花安排；不需要的里布或衬也有说明。材质为本轮拟采用的取样方案，商品依据见<a href="material-catalog.md">材料目录</a>。裁几片、是否镜像，以单片标注为准。</p>
+          <div class="grid"><article class="piece" id="P-B01"><a class="piece-art" href="../projects/honkai-star-rail/march-7th-preservation-bjd-1-4/garment-pattern/patterned/pieces/P-B01.svg" target="_blank">
               <img src="../projects/honkai-star-rail/march-7th-preservation-bjd-1-4/garment-pattern/patterned/pieces/P-B01.svg" loading="lazy" alt="P-B01 收腰白衬衣前身 带花纹衣片">
-              <strong>P-B01 · 收腰白衬衣前身</strong>
-              <span>裁剪数量：面布1　面料：M5</span>
-              <small>点击放大花纹、尺寸、缝线和裁边</small></a><a class="piece" href="../projects/honkai-star-rail/march-7th-preservation-bjd-1-4/garment-pattern/patterned/pieces/P-B02.svg" target="_blank">
+              <strong>P-B01 · 收腰白衬衣前身</strong></a>
+              <span>裁剪数量：面布1</span>
+              <dl class="material-list"><dt>面布</dt><dd><b>高密纯棉细布 Lawn（M5，目标 75–90 g/m²）</b><br>原白，不印花；整片；裁 1 片</dd></dl>
+              <p class="material-note">无独立里布。<br>不加整片衬。</p>
+              <p class="material-reason">选材理由：细密薄棉用于收腰白衣，控制省道与叠穿厚度。</p>
+              <small>拟采用，待样布确认 · 点击衣片放大花纹、尺寸与材质</small></article><article class="piece" id="P-B02"><a class="piece-art" href="../projects/honkai-star-rail/march-7th-preservation-bjd-1-4/garment-pattern/patterned/pieces/P-B02.svg" target="_blank">
               <img src="../projects/honkai-star-rail/march-7th-preservation-bjd-1-4/garment-pattern/patterned/pieces/P-B02.svg" loading="lazy" alt="P-B02 收腰白衬衣后片 带花纹衣片">
-              <strong>P-B02 · 收腰白衬衣后片</strong>
-              <span>裁剪数量：面布2，镜像　面料：M5</span>
-              <small>点击放大花纹、尺寸、缝线和裁边</small></a><a class="piece" href="../projects/honkai-star-rail/march-7th-preservation-bjd-1-4/garment-pattern/patterned/pieces/P-B03.svg" target="_blank">
+              <strong>P-B02 · 收腰白衬衣后片</strong></a>
+              <span>裁剪数量：面布2，镜像</span>
+              <dl class="material-list"><dt>面布</dt><dd><b>高密纯棉细布 Lawn（M5，目标 75–90 g/m²）</b><br>原白，不印花；整片；裁 2 片</dd></dl>
+              <p class="material-note">无整片里布；后开口由P-B05贴边遮针脚。<br>扣位薄衬计在P-B05，不在本片重复叠加。</p>
+              <p class="material-reason">选材理由：与前身同批薄棉，后中保持柔软可开。</p>
+              <small>拟采用，待样布确认 · 点击衣片放大花纹、尺寸与材质</small></article><article class="piece" id="P-B03"><a class="piece-art" href="../projects/honkai-star-rail/march-7th-preservation-bjd-1-4/garment-pattern/patterned/pieces/P-B03.svg" target="_blank">
               <img src="../projects/honkai-star-rail/march-7th-preservation-bjd-1-4/garment-pattern/patterned/pieces/P-B03.svg" loading="lazy" alt="P-B03 完整白长袖 带花纹衣片">
-              <strong>P-B03 · 完整白长袖</strong>
-              <span>裁剪数量：面布2，镜像　面料：M5</span>
-              <small>点击放大花纹、尺寸、缝线和裁边</small></a><a class="piece" href="../projects/honkai-star-rail/march-7th-preservation-bjd-1-4/garment-pattern/patterned/pieces/P-B04.svg" target="_blank">
+              <strong>P-B03 · 完整白长袖</strong></a>
+              <span>裁剪数量：面布2，镜像</span>
+              <dl class="material-list"><dt>面布</dt><dd><b>高密纯棉细布 Lawn（M5，目标 75–90 g/m²）</b><br>原白，不印花；整片；裁 2 片</dd></dl>
+              <p class="material-note">无独立里布。<br>不加衬；袖底以P-B08收净。</p>
+              <p class="material-reason">选材理由：薄棉有利于袖山吃势和袖摆小抽褶。</p>
+              <small>拟采用，待样布确认 · 点击衣片放大花纹、尺寸与材质</small></article><article class="piece" id="P-B04"><a class="piece-art" href="../projects/honkai-star-rail/march-7th-preservation-bjd-1-4/garment-pattern/patterned/pieces/P-B04.svg" target="_blank">
               <img src="../projects/honkai-star-rail/march-7th-preservation-bjd-1-4/garment-pattern/patterned/pieces/P-B04.svg" loading="lazy" alt="P-B04 宽翻袖口 带花纹衣片">
-              <strong>P-B04 · 宽翻袖口</strong>
-              <span>裁剪数量：面布2＋薄里2　面料：M5</span>
-              <small>点击放大花纹、尺寸、缝线和裁边</small></a><a class="piece" href="../projects/honkai-star-rail/march-7th-preservation-bjd-1-4/garment-pattern/patterned/pieces/P-B05.svg" target="_blank">
+              <strong>P-B04 · 宽翻袖口</strong></a>
+              <span>裁剪数量：面布2＋薄里2</span>
+              <dl class="material-list"><dt>面布</dt><dd><b>高密纯棉细布 Lawn（M5，目标 75–90 g/m²）</b><br>白底，按成品袖口定位蓝条；整片；裁 2 片</dd><dt>里布</dt><dd><b>高密纯棉细布 Lawn（M5，目标 75–90 g/m²）</b><br>原白，不印花；整片；裁 2 片</dd><dt>衬布</dt><dd><b>轻薄柔软缝入衬（I1，目标 30–40 g/m²）</b><br>素白，不印；局部缝入；仅袖扣安装区及端点；试样后选用</dd></dl>
+              <p class="material-note">面2配薄里2，里侧原白。<br>仅扣位需要时试I1；不把整个宽袖口做硬。</p>
+              <p class="material-reason">选材理由：和白袖同布，蓝条定位在面层，薄里包净边与针脚。</p>
+              <small>拟采用，待样布确认 · 点击衣片放大花纹、尺寸与材质</small></article><article class="piece" id="P-B05"><a class="piece-art" href="../projects/honkai-star-rail/march-7th-preservation-bjd-1-4/garment-pattern/patterned/pieces/P-B05.svg" target="_blank">
               <img src="../projects/honkai-star-rail/march-7th-preservation-bjd-1-4/garment-pattern/patterned/pieces/P-B05.svg" loading="lazy" alt="P-B05 白衣后中贴边 带花纹衣片">
-              <strong>P-B05 · 白衣后中贴边</strong>
-              <span>裁剪数量：薄里2　面料：M5</span>
-              <small>点击放大花纹、尺寸、缝线和裁边</small></a><a class="piece" href="../projects/honkai-star-rail/march-7th-preservation-bjd-1-4/garment-pattern/patterned/pieces/P-B06.svg" target="_blank">
+              <strong>P-B05 · 白衣后中贴边</strong></a>
+              <span>裁剪数量：薄里2</span>
+              <dl class="material-list"><dt>贴边布</dt><dd><b>高密纯棉细布 Lawn（M5，目标 75–90 g/m²）</b><br>原白，不印花；整片；裁 2 片</dd><dt>衬布</dt><dd><b>轻薄柔软缝入衬（I1，目标 30–40 g/m²）</b><br>素白，不印；局部缝入；后中实际勾圈缝装段和开口端点</dd></dl>
+              <p class="material-note">本片就是后中薄贴边，共2；不另裁整片里身。<br>原组装要求扣位薄衬，由本贴边承担；局部数量随扣段，不按整片加衬。</p>
+              <p class="material-reason">选材理由：原白薄棉遮针脚，局部衬分散反复开扣拉力。</p>
+              <small>拟采用，待样布确认 · 点击衣片放大花纹、尺寸与材质</small></article><article class="piece" id="P-B06"><a class="piece-art" href="../projects/honkai-star-rail/march-7th-preservation-bjd-1-4/garment-pattern/patterned/pieces/P-B06.svg" target="_blank">
               <img src="../projects/honkai-star-rail/march-7th-preservation-bjd-1-4/garment-pattern/patterned/pieces/P-B06.svg" loading="lazy" alt="P-B06 白衣领口斜裁包边 带花纹衣片">
-              <strong>P-B06 · 白衣领口斜裁包边</strong>
-              <span>裁剪数量：面布1，45度斜裁　面料：M5</span>
-              <small>点击放大花纹、尺寸、缝线和裁边</small></a><a class="piece" href="../projects/honkai-star-rail/march-7th-preservation-bjd-1-4/garment-pattern/patterned/pieces/P-B07.svg" target="_blank">
+              <strong>P-B06 · 白衣领口斜裁包边</strong></a>
+              <span>裁剪数量：面布1，45度斜裁</span>
+              <dl class="material-list"><dt>贴边布</dt><dd><b>高密纯棉细布 Lawn（M5，目标 75–90 g/m²）</b><br>原白，不印花；按45°斜裁；整片；裁 1 片</dd></dl>
+              <p class="material-note">无额外里布；现有面布1作为对折包边。<br>不加衬。</p>
+              <p class="material-reason">选材理由：同批薄棉斜裁沿领曲线转弯，保持包边轻薄。</p>
+              <small>拟采用，待样布确认 · 点击衣片放大花纹、尺寸与材质</small></article><article class="piece" id="P-B07"><a class="piece-art" href="../projects/honkai-star-rail/march-7th-preservation-bjd-1-4/garment-pattern/patterned/pieces/P-B07.svg" target="_blank">
               <img src="../projects/honkai-star-rail/march-7th-preservation-bjd-1-4/garment-pattern/patterned/pieces/P-B07.svg" loading="lazy" alt="P-B07 白色宽翻领片 带花纹衣片">
-              <strong>P-B07 · 白色宽翻领片</strong>
-              <span>裁剪数量：面布2＋薄里2，镜像　面料：M5</span>
-              <small>点击放大花纹、尺寸、缝线和裁边</small></a><a class="piece" href="../projects/honkai-star-rail/march-7th-preservation-bjd-1-4/garment-pattern/patterned/pieces/P-B08.svg" target="_blank">
+              <strong>P-B07 · 白色宽翻领片</strong></a>
+              <span>裁剪数量：面布2＋薄里2，镜像</span>
+              <dl class="material-list"><dt>面布</dt><dd><b>高密纯棉细布 Lawn（M5，目标 75–90 g/m²）</b><br>原白，不印花；整片；裁 2 片</dd><dt>里布</dt><dd><b>高密纯棉细布 Lawn（M5，目标 75–90 g/m²）</b><br>原白，不印花；整片；裁 2 片</dd><dt>衬布</dt><dd><b>轻薄柔软缝入衬（I1，目标 30–40 g/m²）</b><br>素白，不印；局部缝入；仅领尖或根部需要支承的小区域；试样后选用</dd></dl>
+              <p class="material-note">左右面2配薄里2，均原白。<br>小样软塌时才局部试I1；不预设整片粘衬。</p>
+              <p class="material-reason">选材理由：双层薄棉形成翻领，和白衣保持相同白色。</p>
+              <small>拟采用，待样布确认 · 点击衣片放大花纹、尺寸与材质</small></article><article class="piece" id="P-B08"><a class="piece-art" href="../projects/honkai-star-rail/march-7th-preservation-bjd-1-4/garment-pattern/patterned/pieces/P-B08.svg" target="_blank">
               <img src="../projects/honkai-star-rail/march-7th-preservation-bjd-1-4/garment-pattern/patterned/pieces/P-B08.svg" loading="lazy" alt="P-B08 袖底开衩薄条 带花纹衣片">
-              <strong>P-B08 · 袖底开衩薄条</strong>
-              <span>裁剪数量：面布2，斜裁　面料：M5</span>
-              <small>点击放大花纹、尺寸、缝线和裁边</small></a><a class="piece" href="../projects/honkai-star-rail/march-7th-preservation-bjd-1-4/garment-pattern/patterned/pieces/P-O01.svg" target="_blank">
+              <strong>P-B08 · 袖底开衩薄条</strong></a>
+              <span>裁剪数量：面布2，斜裁</span>
+              <dl class="material-list"><dt>贴边布</dt><dd><b>高密纯棉细布 Lawn（M5，目标 75–90 g/m²）</b><br>原白，不印花；斜裁；整片；裁 2 片</dd></dl>
+              <p class="material-note">无额外里布；原面布2改以包边用途登记。<br>不加衬。</p>
+              <p class="material-reason">选材理由：薄斜条包袖底开衩，避免袖口根部堆厚。</p>
+              <small>拟采用，待样布确认 · 点击衣片放大花纹、尺寸与材质</small></article><article class="piece" id="P-O01"><a class="piece-art" href="../projects/honkai-star-rail/march-7th-preservation-bjd-1-4/garment-pattern/patterned/pieces/P-O01.svg" target="_blank">
               <img src="../projects/honkai-star-rail/march-7th-preservation-bjd-1-4/garment-pattern/patterned/pieces/P-O01.svg" loading="lazy" alt="P-O01 露肩蓝外搭前片 带花纹衣片">
-              <strong>P-O01 · 露肩蓝外搭前片</strong>
-              <span>裁剪数量：面布2＋薄里2，镜像　面料：M3</span>
-              <small>点击放大花纹、尺寸、缝线和裁边</small></a><a class="piece" href="../projects/honkai-star-rail/march-7th-preservation-bjd-1-4/garment-pattern/patterned/pieces/P-O02.svg" target="_blank">
+              <strong>P-O01 · 露肩蓝外搭前片</strong></a>
+              <span>裁剪数量：面布2＋薄里2，镜像</span>
+              <dl class="material-list"><dt>面布</dt><dd><b>无弹涤纶薄仿双绉（M3，目标 70–90 g/m²）</b><br>蓝色定位色场，按当前前片看稿；整片；裁 2 片</dd><dt>里布</dt><dd><b>无弹涤纶薄仿双绉（M3，目标 70–90 g/m²）</b><br>匹配蓝净色，不复制面部图案；整片；裁 2 片</dd></dl>
+              <p class="material-note">面2配薄里2；各层分别排料，按原清单镜像条件。<br>不加整片衬，保留外搭和翻片垂感。</p>
+              <p class="material-reason">选材理由：薄仿双绉使外搭前片垂顺，里层用匹配净色控制露里。</p>
+              <small>拟采用，待样布确认 · 点击衣片放大花纹、尺寸与材质</small></article><article class="piece" id="P-O02"><a class="piece-art" href="../projects/honkai-star-rail/march-7th-preservation-bjd-1-4/garment-pattern/patterned/pieces/P-O02.svg" target="_blank">
               <img src="../projects/honkai-star-rail/march-7th-preservation-bjd-1-4/garment-pattern/patterned/pieces/P-O02.svg" loading="lazy" alt="P-O02 露肩蓝外搭后片 带花纹衣片">
-              <strong>P-O02 · 露肩蓝外搭后片</strong>
-              <span>裁剪数量：面布2＋薄里2，镜像　面料：M3</span>
-              <small>点击放大花纹、尺寸、缝线和裁边</small></a><a class="piece" href="../projects/honkai-star-rail/march-7th-preservation-bjd-1-4/garment-pattern/patterned/pieces/P-O03.svg" target="_blank">
+              <strong>P-O02 · 露肩蓝外搭后片</strong></a>
+              <span>裁剪数量：面布2＋薄里2，镜像</span>
+              <dl class="material-list"><dt>面布</dt><dd><b>无弹涤纶薄仿双绉（M3，目标 70–90 g/m²）</b><br>净蓝底；背面采用当前工程净色，不补未知花纹；整片；裁 2 片</dd><dt>里布</dt><dd><b>无弹涤纶薄仿双绉（M3，目标 70–90 g/m²）</b><br>匹配蓝净色，不印纹样；兼后中贴边；整片；裁 2 片</dd><dt>衬布</dt><dd><b>轻薄柔软缝入衬（I1，目标 30–40 g/m²）</b><br>素白，不印；局部缝入；仅后中扣位及端点</dd></dl>
+              <p class="material-note">面2配薄里2；各层分别排料，按原清单镜像条件。<br>后中实际扣位局部I1；别针承力另由P-A05承担，不跨开口。</p>
+              <p class="material-reason">选材理由：薄仿双绉使外搭后片垂顺，里层用匹配净色控制露里。</p>
+              <small>拟采用，待样布确认 · 点击衣片放大花纹、尺寸与材质</small></article><article class="piece" id="P-O03"><a class="piece-art" href="../projects/honkai-star-rail/march-7th-preservation-bjd-1-4/garment-pattern/patterned/pieces/P-O03.svg" target="_blank">
               <img src="../projects/honkai-star-rail/march-7th-preservation-bjd-1-4/garment-pattern/patterned/pieces/P-O03.svg" loading="lazy" alt="P-O03 蓝色上臂外袖 带花纹衣片">
-              <strong>P-O03 · 蓝色上臂外袖</strong>
-              <span>裁剪数量：面布2＋薄里2，镜像　面料：M3</span>
-              <small>点击放大花纹、尺寸、缝线和裁边</small></a><a class="piece" href="../projects/honkai-star-rail/march-7th-preservation-bjd-1-4/garment-pattern/patterned/pieces/P-O04.svg" target="_blank">
+              <strong>P-O03 · 蓝色上臂外袖</strong></a>
+              <span>裁剪数量：面布2＋薄里2，镜像</span>
+              <dl class="material-list"><dt>面布</dt><dd><b>无弹涤纶薄仿双绉（M3，目标 70–90 g/m²）</b><br>蓝色定位色场；整片；裁 2 片</dd><dt>里布</dt><dd><b>无弹涤纶薄仿双绉（M3，目标 70–90 g/m²）</b><br>匹配蓝净色，不印纹样；整片；裁 2 片</dd></dl>
+              <p class="material-note">面2配薄里2；各层分别排料，按原清单镜像条件。<br>不加整片衬，保留外搭和翻片垂感。</p>
+              <p class="material-reason">选材理由：薄仿双绉使蓝外袖垂顺，里层用匹配净色控制露里。</p>
+              <small>拟采用，待样布确认 · 点击衣片放大花纹、尺寸与材质</small></article><article class="piece" id="P-O04"><a class="piece-art" href="../projects/honkai-star-rail/march-7th-preservation-bjd-1-4/garment-pattern/patterned/pieces/P-O04.svg" target="_blank">
               <img src="../projects/honkai-star-rail/march-7th-preservation-bjd-1-4/garment-pattern/patterned/pieces/P-O04.svg" loading="lazy" alt="P-O04 前腰蓝系带 带花纹衣片">
-              <strong>P-O04 · 前腰蓝系带</strong>
-              <span>裁剪数量：面布2＋薄里2，镜像　面料：M3</span>
-              <small>点击放大花纹、尺寸、缝线和裁边</small></a><a class="piece" href="../projects/honkai-star-rail/march-7th-preservation-bjd-1-4/garment-pattern/patterned/pieces/P-O05.svg" target="_blank">
+              <strong>P-O04 · 前腰蓝系带</strong></a>
+              <span>裁剪数量：面布2＋薄里2，镜像</span>
+              <dl class="material-list"><dt>面布</dt><dd><b>无弹涤纶薄仿双绉（M3，目标 70–90 g/m²）</b><br>匹配外搭的净蓝色；整片；裁 2 片</dd><dt>里布</dt><dd><b>无弹涤纶薄仿双绉（M3，目标 70–90 g/m²）</b><br>同色薄里，翻面可见；不复制纹样；整片；裁 2 片</dd></dl>
+              <p class="material-note">面2配薄里2；各层分别排料，按原清单镜像条件。<br>不加整片衬，保留外搭和翻片垂感。</p>
+              <p class="material-reason">选材理由：薄仿双绉使前系带垂顺，里层用匹配净色控制露里。</p>
+              <small>拟采用，待样布确认 · 点击衣片放大花纹、尺寸与材质</small></article><article class="piece" id="P-O05"><a class="piece-art" href="../projects/honkai-star-rail/march-7th-preservation-bjd-1-4/garment-pattern/patterned/pieces/P-O05.svg" target="_blank">
               <img src="../projects/honkai-star-rail/march-7th-preservation-bjd-1-4/garment-pattern/patterned/pieces/P-O05.svg" loading="lazy" alt="P-O05 蓝袖外侧尖垂片 带花纹衣片">
-              <strong>P-O05 · 蓝袖外侧尖垂片</strong>
-              <span>裁剪数量：面布2＋薄里2，镜像　面料：M3</span>
-              <small>点击放大花纹、尺寸、缝线和裁边</small></a><a class="piece" href="../projects/honkai-star-rail/march-7th-preservation-bjd-1-4/garment-pattern/patterned/pieces/P-O06.svg" target="_blank">
+              <strong>P-O05 · 蓝袖外侧尖垂片</strong></a>
+              <span>裁剪数量：面布2＋薄里2，镜像</span>
+              <dl class="material-list"><dt>面布</dt><dd><b>无弹涤纶薄仿双绉（M3，目标 70–90 g/m²）</b><br>匹配外搭的净蓝色；整片；裁 2 片</dd><dt>里布</dt><dd><b>无弹涤纶薄仿双绉（M3，目标 70–90 g/m²）</b><br>同色薄里，翻面可见；不复制纹样；整片；裁 2 片</dd></dl>
+              <p class="material-note">面2配薄里2；各层分别排料，按原清单镜像条件。<br>不加整片衬，保留外搭和翻片垂感。</p>
+              <p class="material-reason">选材理由：薄仿双绉使袖尖垂片垂顺，里层用匹配净色控制露里。</p>
+              <small>拟采用，待样布确认 · 点击衣片放大花纹、尺寸与材质</small></article><article class="piece" id="P-O06"><a class="piece-art" href="../projects/honkai-star-rail/march-7th-preservation-bjd-1-4/garment-pattern/patterned/pieces/P-O06.svg" target="_blank">
               <img src="../projects/honkai-star-rail/march-7th-preservation-bjd-1-4/garment-pattern/patterned/pieces/P-O06.svg" loading="lazy" alt="P-O06 蓝紫上臂翻片 带花纹衣片">
-              <strong>P-O06 · 蓝紫上臂翻片</strong>
-              <span>裁剪数量：面布2＋薄里2　面料：M3</span>
-              <small>点击放大花纹、尺寸、缝线和裁边</small></a><a class="piece" href="../projects/honkai-star-rail/march-7th-preservation-bjd-1-4/garment-pattern/patterned/pieces/P-O07.svg" target="_blank">
+              <strong>P-O06 · 蓝紫上臂翻片</strong></a>
+              <span>裁剪数量：面布2＋薄里2</span>
+              <dl class="material-list"><dt>面布</dt><dd><b>无弹涤纶薄仿双绉（M3，目标 70–90 g/m²）</b><br>按看稿定位蓝紫渐变；整片；裁 2 片</dd><dt>里布</dt><dd><b>无弹涤纶薄仿双绉（M3，目标 70–90 g/m²）</b><br>匹配蓝紫净色薄里，翻面可见；不擅加背纹；整片；裁 2 片</dd></dl>
+              <p class="material-note">面2配薄里2；各层分别排料，按原清单镜像条件。<br>不加整片衬，保留外搭和翻片垂感。</p>
+              <p class="material-reason">选材理由：薄仿双绉使上臂翻片垂顺，里层用匹配净色控制露里。</p>
+              <small>拟采用，待样布确认 · 点击衣片放大花纹、尺寸与材质</small></article><article class="piece" id="P-O07"><a class="piece-art" href="../projects/honkai-star-rail/march-7th-preservation-bjd-1-4/garment-pattern/patterned/pieces/P-O07.svg" target="_blank">
               <img src="../projects/honkai-star-rail/march-7th-preservation-bjd-1-4/garment-pattern/patterned/pieces/P-O07.svg" loading="lazy" alt="P-O07 露肩外搭隐藏支承条 带花纹衣片">
-              <strong>P-O07 · 露肩外搭隐藏支承条</strong>
-              <span>裁剪数量：薄布4＋薄里4　面料：M5</span>
-              <small>点击放大花纹、尺寸、缝线和裁边</small></a><a class="piece" href="../projects/honkai-star-rail/march-7th-preservation-bjd-1-4/garment-pattern/patterned/pieces/P-C01.svg" target="_blank">
+              <strong>P-O07 · 露肩外搭隐藏支承条</strong></a>
+              <span>裁剪数量：薄布4＋薄里4</span>
+              <dl class="material-list"><dt>支承布</dt><dd><b>高密纯棉细布 Lawn（M5，目标 75–90 g/m²）</b><br>原白，不印花；整片；裁 4 片</dd><dt>里布</dt><dd><b>高密纯棉细布 Lawn（M5，目标 75–90 g/m²）</b><br>原白，不印花；整片；裁 4 片</dd></dl>
+              <p class="material-note">原薄布4＋薄里4，均用M5素白；不是4片衬布。<br>不另加衬，固定端按原设计缝牢。</p>
+              <p class="material-reason">选材理由：隐藏支承条需要轻薄无弹布层，连接本侧白衣与蓝外搭。</p>
+              <small>拟采用，待样布确认 · 点击衣片放大花纹、尺寸与材质</small></article><article class="piece" id="P-C01"><a class="piece-art" href="../projects/honkai-star-rail/march-7th-preservation-bjd-1-4/garment-pattern/patterned/pieces/P-C01.svg" target="_blank">
               <img src="../projects/honkai-star-rail/march-7th-preservation-bjd-1-4/garment-pattern/patterned/pieces/P-C01.svg" loading="lazy" alt="P-C01 深蓝前披领 带花纹衣片">
-              <strong>P-C01 · 深蓝前披领</strong>
-              <span>裁剪数量：面布2＋薄里2，镜像　面料：M2</span>
-              <small>点击放大花纹、尺寸、缝线和裁边</small></a><a class="piece" href="../projects/honkai-star-rail/march-7th-preservation-bjd-1-4/garment-pattern/patterned/pieces/P-C02.svg" target="_blank">
+              <strong>P-C01 · 深蓝前披领</strong></a>
+              <span>裁剪数量：面布2＋薄里2，镜像</span>
+              <dl class="material-list"><dt>面布</dt><dd><b>无弹细密涤斜纹（M2，目标 100–130 g/m²）</b><br>深蓝底双白条，按本片成品边定位；整片；裁 2 片</dd><dt>里布</dt><dd><b>无弹涤纶薄仿双绉（M3，目标 70–90 g/m²）</b><br>匹配深蓝净色，不复制白条纹；整片；裁 2 片</dd><dt>衬布</dt><dd><b>轻薄柔软缝入衬（I1，目标 30–40 g/m²）</b><br>素白，不印；局部缝入；仅领尖或固定点，需要时取小片；试样后选用</dd></dl>
+              <p class="material-note">面2配M3薄里2，不用双层M2增厚。<br>先试无衬；仅局部软塌时用I1。</p>
+              <p class="material-reason">选材理由：面层承载清晰白条，较薄净色里层降低尖角翻缝厚度。</p>
+              <small>拟采用，待样布确认 · 点击衣片放大花纹、尺寸与材质</small></article><article class="piece" id="P-C02"><a class="piece-art" href="../projects/honkai-star-rail/march-7th-preservation-bjd-1-4/garment-pattern/patterned/pieces/P-C02.svg" target="_blank">
               <img src="../projects/honkai-star-rail/march-7th-preservation-bjd-1-4/garment-pattern/patterned/pieces/P-C02.svg" loading="lazy" alt="P-C02 深蓝后尖披领 带花纹衣片">
-              <strong>P-C02 · 深蓝后尖披领</strong>
-              <span>裁剪数量：面布2＋薄里2，镜像　面料：M2</span>
-              <small>点击放大花纹、尺寸、缝线和裁边</small></a><a class="piece" href="../projects/honkai-star-rail/march-7th-preservation-bjd-1-4/garment-pattern/patterned/pieces/P-S01.svg" target="_blank">
+              <strong>P-C02 · 深蓝后尖披领</strong></a>
+              <span>裁剪数量：面布2＋薄里2，镜像</span>
+              <dl class="material-list"><dt>面布</dt><dd><b>无弹细密涤斜纹（M2，目标 100–130 g/m²）</b><br>深蓝底双白条，按本片成品边定位；整片；裁 2 片</dd><dt>里布</dt><dd><b>无弹涤纶薄仿双绉（M3，目标 70–90 g/m²）</b><br>匹配深蓝净色，不复制白条纹；整片；裁 2 片</dd><dt>衬布</dt><dd><b>轻薄柔软缝入衬（I1，目标 30–40 g/m²）</b><br>素白，不印；局部缝入；仅领尖或固定点，需要时取小片；试样后选用</dd></dl>
+              <p class="material-note">面2配M3薄里2，不用双层M2增厚。<br>先试无衬；仅局部软塌时用I1。</p>
+              <p class="material-reason">选材理由：面层承载清晰白条，较薄净色里层降低尖角翻缝厚度。</p>
+              <small>拟采用，待样布确认 · 点击衣片放大花纹、尺寸与材质</small></article><article class="piece" id="P-S01"><a class="piece-art" href="../projects/honkai-star-rail/march-7th-preservation-bjd-1-4/garment-pattern/patterned/pieces/P-S01.svg" target="_blank">
               <img src="../projects/honkai-star-rail/march-7th-preservation-bjd-1-4/garment-pattern/patterned/pieces/P-S01.svg" loading="lazy" alt="P-S01 深蓝十四褶裙片 带花纹衣片">
-              <strong>P-S01 · 深蓝十四褶裙片</strong>
-              <span>裁剪数量：面布1　面料：M1</span>
-              <small>点击放大花纹、尺寸、缝线和裁边</small></a><a class="piece" href="../projects/honkai-star-rail/march-7th-preservation-bjd-1-4/garment-pattern/patterned/pieces/P-S02.svg" target="_blank">
+              <strong>P-S01 · 深蓝十四褶裙片</strong></a>
+              <span>裁剪数量：面布1</span>
+              <dl class="material-list"><dt>面布</dt><dd><b>无弹薄涤塔夫（M1，目标 80–100 g/m²）</b><br>深蓝裙面与白边/标志定位印花；整片；裁 1 片</dd></dl>
+              <p class="material-note">原清单无独立里布，不增裙里。<br>不加衬；褶形按印后样布测试。</p>
+              <p class="material-reason">选材理由：薄塔夫作为十四褶裙形状候选，先检查细褶体积与反光。</p>
+              <small>拟采用，待样布确认 · 点击衣片放大花纹、尺寸与材质</small></article><article class="piece" id="P-S02"><a class="piece-art" href="../projects/honkai-star-rail/march-7th-preservation-bjd-1-4/garment-pattern/patterned/pieces/P-S02.svg" target="_blank">
               <img src="../projects/honkai-star-rail/march-7th-preservation-bjd-1-4/garment-pattern/patterned/pieces/P-S02.svg" loading="lazy" alt="P-S02 独立裙腰头 带花纹衣片">
-              <strong>P-S02 · 独立裙腰头</strong>
-              <span>裁剪数量：面布1＋薄里1　面料：M5 或M1</span>
-              <small>点击放大花纹、尺寸、缝线和裁边</small></a><a class="piece" href="../projects/honkai-star-rail/march-7th-preservation-bjd-1-4/garment-pattern/patterned/pieces/P-S03.svg" target="_blank">
+              <strong>P-S02 · 独立裙腰头</strong></a>
+              <span>裁剪数量：面布1＋薄里1</span>
+              <dl class="material-list"><dt>面布</dt><dd><b>高密纯棉细布 Lawn（M5，目标 75–90 g/m²）</b><br>原白，不印花；隐藏腰头；整片；裁 1 片</dd><dt>里布</dt><dd><b>高密纯棉细布 Lawn（M5，目标 75–90 g/m²）</b><br>原白，不印花；整片；裁 1 片</dd><dt>衬布</dt><dd><b>轻薄柔软缝入衬（I1，目标 30–40 g/m²）</b><br>素白，不印；局部缝入；仅后扣安装段和端点</dd></dl>
+              <p class="material-note">面1＋薄里1，选原允许的M5路线。<br>后扣段局部I1，其余腰头保持薄软。</p>
+              <p class="material-reason">选材理由：净色紧密薄棉承接褶量；无需在隐藏腰头印裙面花。</p>
+              <small>拟采用，待样布确认 · 点击衣片放大花纹、尺寸与材质</small></article><article class="piece" id="P-S03"><a class="piece-art" href="../projects/honkai-star-rail/march-7th-preservation-bjd-1-4/garment-pattern/patterned/pieces/P-S03.svg" target="_blank">
               <img src="../projects/honkai-star-rail/march-7th-preservation-bjd-1-4/garment-pattern/patterned/pieces/P-S03.svg" loading="lazy" alt="P-S03 裙后开衩护片 带花纹衣片">
-              <strong>P-S03 · 裙后开衩护片</strong>
-              <span>裁剪数量：薄里1　面料：M5</span>
-              <small>点击放大花纹、尺寸、缝线和裁边</small></a><a class="piece" href="../projects/honkai-star-rail/march-7th-preservation-bjd-1-4/garment-pattern/patterned/pieces/P-W01.svg" target="_blank">
+              <strong>P-S03 · 裙后开衩护片</strong></a>
+              <span>裁剪数量：薄里1</span>
+              <dl class="material-list"><dt>里布</dt><dd><b>高密纯棉细布 Lawn（M5，目标 75–90 g/m²）</b><br>原白，不印花；整片；裁 1 片</dd></dl>
+              <p class="material-note">原薄里1就是开衩护片，不再添加里层。<br>不加衬。</p>
+              <p class="material-reason">选材理由：柔软原白护片覆盖开衩内侧，不承担后扣主拉力。</p>
+              <small>拟采用，待样布确认 · 点击衣片放大花纹、尺寸与材质</small></article><article class="piece" id="P-W01"><a class="piece-art" href="../projects/honkai-star-rail/march-7th-preservation-bjd-1-4/garment-pattern/patterned/pieces/P-W01.svg" target="_blank">
               <img src="../projects/honkai-star-rail/march-7th-preservation-bjd-1-4/garment-pattern/patterned/pieces/P-W01.svg" loading="lazy" alt="P-W01 右前深色短腰片 带花纹衣片">
-              <strong>P-W01 · 右前深色短腰片</strong>
-              <span>裁剪数量：面布1＋薄里1　面料：M2</span>
-              <small>点击放大花纹、尺寸、缝线和裁边</small></a><a class="piece" href="../projects/honkai-star-rail/march-7th-preservation-bjd-1-4/garment-pattern/patterned/pieces/P-W02.svg" target="_blank">
+              <strong>P-W01 · 右前深色短腰片</strong></a>
+              <span>裁剪数量：面布1＋薄里1</span>
+              <dl class="material-list"><dt>面布</dt><dd><b>无弹细密涤斜纹（M2，目标 100–130 g/m²）</b><br>深色底与金边按本片可见成品边定位；整片；裁 1 片</dd><dt>里布</dt><dd><b>无弹涤纶薄仿双绉（M3，目标 70–90 g/m²）</b><br>匹配深灰净色，不印花；整片；裁 1 片</dd></dl>
+              <p class="material-note">面1配薄里1，沿用原镜像/方向要求。<br>默认不加衬；上端固定先试样。</p>
+              <p class="material-reason">选材理由：细斜纹容纳深色边纹，薄仿双绉里层让自由侧下缘不堆厚。</p>
+              <small>拟采用，待样布确认 · 点击衣片放大花纹、尺寸与材质</small></article><article class="piece" id="P-W02"><a class="piece-art" href="../projects/honkai-star-rail/march-7th-preservation-bjd-1-4/garment-pattern/patterned/pieces/P-W02.svg" target="_blank">
               <img src="../projects/honkai-star-rail/march-7th-preservation-bjd-1-4/garment-pattern/patterned/pieces/P-W02.svg" loading="lazy" alt="P-W02 左前深色长腰片 带花纹衣片">
-              <strong>P-W02 · 左前深色长腰片</strong>
-              <span>裁剪数量：面布1＋薄里1　面料：M2</span>
-              <small>点击放大花纹、尺寸、缝线和裁边</small></a><a class="piece" href="../projects/honkai-star-rail/march-7th-preservation-bjd-1-4/garment-pattern/patterned/pieces/P-W03.svg" target="_blank">
+              <strong>P-W02 · 左前深色长腰片</strong></a>
+              <span>裁剪数量：面布1＋薄里1</span>
+              <dl class="material-list"><dt>面布</dt><dd><b>无弹细密涤斜纹（M2，目标 100–130 g/m²）</b><br>深色底与金边按本片可见成品边定位；整片；裁 1 片</dd><dt>里布</dt><dd><b>无弹涤纶薄仿双绉（M3，目标 70–90 g/m²）</b><br>匹配深灰净色，不印花；整片；裁 1 片</dd></dl>
+              <p class="material-note">面1配薄里1，沿用原镜像/方向要求。<br>默认不加衬；上端固定先试样。</p>
+              <p class="material-reason">选材理由：细斜纹容纳深色边纹，薄仿双绉里层让自由侧下缘不堆厚。</p>
+              <small>拟采用，待样布确认 · 点击衣片放大花纹、尺寸与材质</small></article><article class="piece" id="P-W03"><a class="piece-art" href="../projects/honkai-star-rail/march-7th-preservation-bjd-1-4/garment-pattern/patterned/pieces/P-W03.svg" target="_blank">
               <img src="../projects/honkai-star-rail/march-7th-preservation-bjd-1-4/garment-pattern/patterned/pieces/P-W03.svg" loading="lazy" alt="P-W03 左右后深色腰片 带花纹衣片">
-              <strong>P-W03 · 左右后深色腰片</strong>
-              <span>裁剪数量：面布2＋薄里2，镜像　面料：M2</span>
-              <small>点击放大花纹、尺寸、缝线和裁边</small></a><a class="piece" href="../projects/honkai-star-rail/march-7th-preservation-bjd-1-4/garment-pattern/patterned/pieces/P-W04.svg" target="_blank">
+              <strong>P-W03 · 左右后深色腰片</strong></a>
+              <span>裁剪数量：面布2＋薄里2，镜像</span>
+              <dl class="material-list"><dt>面布</dt><dd><b>无弹细密涤斜纹（M2，目标 100–130 g/m²）</b><br>深色底与金边按本片可见成品边定位；整片；裁 2 片</dd><dt>里布</dt><dd><b>无弹涤纶薄仿双绉（M3，目标 70–90 g/m²）</b><br>匹配深灰净色，不印花；整片；裁 2 片</dd></dl>
+              <p class="material-note">面2配薄里2，沿用原镜像/方向要求。<br>默认不加衬；上端固定先试样。</p>
+              <p class="material-reason">选材理由：细斜纹容纳深色边纹，薄仿双绉里层让自由侧下缘不堆厚。</p>
+              <small>拟采用，待样布确认 · 点击衣片放大花纹、尺寸与材质</small></article><article class="piece" id="P-W04"><a class="piece-art" href="../projects/honkai-star-rail/march-7th-preservation-bjd-1-4/garment-pattern/patterned/pieces/P-W04.svg" target="_blank">
               <img src="../projects/honkai-star-rail/march-7th-preservation-bjd-1-4/garment-pattern/patterned/pieces/P-W04.svg" loading="lazy" alt="P-W04 独立淡紫装饰腰带 带花纹衣片">
-              <strong>P-W04 · 独立淡紫装饰腰带</strong>
-              <span>裁剪数量：面布1＋薄里1　面料：M4</span>
-              <small>点击放大花纹、尺寸、缝线和裁边</small></a><a class="piece" href="../projects/honkai-star-rail/march-7th-preservation-bjd-1-4/garment-pattern/patterned/pieces/P-A01.svg" target="_blank">
+              <strong>P-W04 · 独立淡紫装饰腰带</strong></a>
+              <span>裁剪数量：面布1＋薄里1</span>
+              <dl class="material-list"><dt>面布</dt><dd><b>无弹薄仿丝缎（M4，目标 80–100 g/m²）</b><br>淡紫净色；整片；裁 1 片</dd><dt>里布</dt><dd><b>无弹涤纶薄仿双绉（M3，目标 70–90 g/m²）</b><br>匹配淡紫净色薄里；整片；裁 1 片</dd><dt>衬布</dt><dd><b>轻薄柔软缝入衬（I1，目标 30–40 g/m²）</b><br>素白，不印；局部缝入；仅后扣段和端点</dd></dl>
+              <p class="material-note">面1＋薄里1；薄里为M3，非再裁一层M4缎面。<br>后扣局部I1，不贯穿缝住白衣或裙腰。</p>
+              <p class="material-reason">选材理由：缎面呈现淡紫色带，薄里包边并减少腰部叠层体积。</p>
+              <small>拟采用，待样布确认 · 点击衣片放大花纹、尺寸与材质</small></article><article class="piece" id="P-A01"><a class="piece-art" href="../projects/honkai-star-rail/march-7th-preservation-bjd-1-4/garment-pattern/patterned/pieces/P-A01.svg" target="_blank">
               <img src="../projects/honkai-star-rail/march-7th-preservation-bjd-1-4/garment-pattern/patterned/pieces/P-A01.svg" loading="lazy" alt="P-A01 背部蝴蝶结双翼 带花纹衣片">
-              <strong>P-A01 · 背部蝴蝶结双翼</strong>
-              <span>裁剪数量：面布1＋薄里1　面料：M4</span>
-              <small>点击放大花纹、尺寸、缝线和裁边</small></a><a class="piece" href="../projects/honkai-star-rail/march-7th-preservation-bjd-1-4/garment-pattern/patterned/pieces/P-A02.svg" target="_blank">
+              <strong>P-A01 · 背部蝴蝶结双翼</strong></a>
+              <span>裁剪数量：面布1＋薄里1</span>
+              <dl class="material-list"><dt>面布</dt><dd><b>无弹薄仿丝缎（M4，目标 80–100 g/m²）</b><br>青蓝净色，无主体纹样；整片；裁 1 片</dd><dt>里布</dt><dd><b>无弹涤纶薄仿双绉（M3，目标 70–90 g/m²）</b><br>匹配青蓝净色薄里；整片；裁 1 片</dd><dt>衬布</dt><dd><b>轻薄柔软缝入衬（I1，目标 30–40 g/m²）</b><br>素白，不印；局部缝入；仅中部捏褶和结芯接触区，需要时使用；试样后选用</dd></dl>
+              <p class="material-note">面1＋薄里1；翻面可见用匹配净色。<br>默认保留柔软翼形；需定形仅试局部I1，针座由P-A04承力。</p>
+              <p class="material-reason">选材理由：缎面用于蝶翼光泽，薄里避免整只蝶结双缎过厚。</p>
+              <small>拟采用，待样布确认 · 点击衣片放大花纹、尺寸与材质</small></article><article class="piece" id="P-A02"><a class="piece-art" href="../projects/honkai-star-rail/march-7th-preservation-bjd-1-4/garment-pattern/patterned/pieces/P-A02.svg" target="_blank">
               <img src="../projects/honkai-star-rail/march-7th-preservation-bjd-1-4/garment-pattern/patterned/pieces/P-A02.svg" loading="lazy" alt="P-A02 蝴蝶结结芯 带花纹衣片">
-              <strong>P-A02 · 蝴蝶结结芯</strong>
-              <span>裁剪数量：面布1＋薄里1　面料：M4</span>
-              <small>点击放大花纹、尺寸、缝线和裁边</small></a><a class="piece" href="../projects/honkai-star-rail/march-7th-preservation-bjd-1-4/garment-pattern/patterned/pieces/P-A03L.svg" target="_blank">
+              <strong>P-A02 · 蝴蝶结结芯</strong></a>
+              <span>裁剪数量：面布1＋薄里1</span>
+              <dl class="material-list"><dt>面布</dt><dd><b>无弹薄仿丝缎（M4，目标 80–100 g/m²）</b><br>匹配蝴蝶结结芯净色；整片；裁 1 片</dd><dt>里布</dt><dd><b>无弹涤纶薄仿双绉（M3，目标 70–90 g/m²）</b><br>匹配结芯净色薄里；整片；裁 1 片</dd></dl>
+              <p class="material-note">面1＋薄里1。<br>不再加衬；背面连接P-A04已含承力布和薄衬。</p>
+              <p class="material-reason">选材理由：薄里使小结芯围合时减少层数体积。</p>
+              <small>拟采用，待样布确认 · 点击衣片放大花纹、尺寸与材质</small></article><article class="piece" id="P-A03L"><a class="piece-art" href="../projects/honkai-star-rail/march-7th-preservation-bjd-1-4/garment-pattern/patterned/pieces/P-A03L.svg" target="_blank">
               <img src="../projects/honkai-star-rail/march-7th-preservation-bjd-1-4/garment-pattern/patterned/pieces/P-A03L.svg" loading="lazy" alt="P-A03L 蓝粉左垂尾 带花纹衣片">
-              <strong>P-A03L · 蓝粉左垂尾</strong>
-              <span>裁剪数量：面布1＋薄里1　面料：M4</span>
-              <small>点击放大花纹、尺寸、缝线和裁边</small></a><a class="piece" href="../projects/honkai-star-rail/march-7th-preservation-bjd-1-4/garment-pattern/patterned/pieces/P-A03R.svg" target="_blank">
+              <strong>P-A03L · 蓝粉左垂尾</strong></a>
+              <span>裁剪数量：面布1＋薄里1</span>
+              <dl class="material-list"><dt>面布</dt><dd><b>无弹薄仿丝缎（M4，目标 80–100 g/m²）</b><br>按本片蓝上粉下色场定位印花；整片；裁 1 片</dd><dt>里布</dt><dd><b>无弹涤纶薄仿双绉（M3，目标 70–90 g/m²）</b><br>匹配蓝粉配色的薄里；必要时净色/渐变打样，不复制主体纹样；整片；裁 1 片</dd></dl>
+              <p class="material-note">本片独立面1＋薄里1；左右各自排料，不合并为同长镜像。<br>不加衬，保持垂尾流动。</p>
+              <p class="material-reason">选材理由：缎面表现渐变；翻面可见的较薄里布减少露白与边缘卷曲。</p>
+              <small>拟采用，待样布确认 · 点击衣片放大花纹、尺寸与材质</small></article><article class="piece" id="P-A03R"><a class="piece-art" href="../projects/honkai-star-rail/march-7th-preservation-bjd-1-4/garment-pattern/patterned/pieces/P-A03R.svg" target="_blank">
               <img src="../projects/honkai-star-rail/march-7th-preservation-bjd-1-4/garment-pattern/patterned/pieces/P-A03R.svg" loading="lazy" alt="P-A03R 蓝粉右垂尾 带花纹衣片">
-              <strong>P-A03R · 蓝粉右垂尾</strong>
-              <span>裁剪数量：面布1＋薄里1　面料：M4</span>
-              <small>点击放大花纹、尺寸、缝线和裁边</small></a><a class="piece" href="../projects/honkai-star-rail/march-7th-preservation-bjd-1-4/garment-pattern/patterned/pieces/P-A04.svg" target="_blank">
+              <strong>P-A03R · 蓝粉右垂尾</strong></a>
+              <span>裁剪数量：面布1＋薄里1</span>
+              <dl class="material-list"><dt>面布</dt><dd><b>无弹薄仿丝缎（M4，目标 80–100 g/m²）</b><br>按本片蓝上粉下色场定位印花；整片；裁 1 片</dd><dt>里布</dt><dd><b>无弹涤纶薄仿双绉（M3，目标 70–90 g/m²）</b><br>匹配蓝粉配色的薄里；必要时净色/渐变打样，不复制主体纹样；整片；裁 1 片</dd></dl>
+              <p class="material-note">本片独立面1＋薄里1；左右各自排料，不合并为同长镜像。<br>不加衬，保持垂尾流动。</p>
+              <p class="material-reason">选材理由：缎面表现渐变；翻面可见的较薄里布减少露白与边缘卷曲。</p>
+              <small>拟采用，待样布确认 · 点击衣片放大花纹、尺寸与材质</small></article><article class="piece" id="P-A04"><a class="piece-art" href="../projects/honkai-star-rail/march-7th-preservation-bjd-1-4/garment-pattern/patterned/pieces/P-A04.svg" target="_blank">
               <img src="../projects/honkai-star-rail/march-7th-preservation-bjd-1-4/garment-pattern/patterned/pieces/P-A04.svg" loading="lazy" alt="P-A04 蝴蝶结针座承力底片 带花纹衣片">
-              <strong>P-A04 · 蝴蝶结针座承力底片</strong>
-              <span>裁剪数量：薄布2＋薄衬1　面料：M5</span>
-              <small>点击放大花纹、尺寸、缝线和裁边</small></a><a class="piece" href="../projects/honkai-star-rail/march-7th-preservation-bjd-1-4/garment-pattern/patterned/pieces/P-A05.svg" target="_blank">
+              <strong>P-A04 · 蝴蝶结针座承力底片</strong></a>
+              <span>裁剪数量：薄布2＋薄衬1</span>
+              <dl class="material-list"><dt>支承布</dt><dd><b>无弹紧密纯棉府绸支承布（M7，目标 110–130 g/m²）</b><br>原白，不印花；整片；裁 2 片</dd><dt>衬布</dt><dd><b>轻薄柔软缝入衬（I1，目标 30–40 g/m²）</b><br>素白，不印；缝入两层支承布之间；整片；裁 1 片</dd></dl>
+              <p class="material-note">原薄布2是两层承力底布，无额外印花里片。<br>保留原清单薄衬1；I1是必备设计层，实际货号仍待取样。</p>
+              <p class="material-reason">选材理由：本轮局部承力建议：原清单概略M5改选较稳的M7府绸承接针座缝孔载荷；原薄布2、薄衬1数量不变。先核验双层厚度，不把针座仅固定在薄缎。</p>
+              <small>拟采用，待样布确认 · 点击衣片放大花纹、尺寸与材质</small></article><article class="piece" id="P-A05"><a class="piece-art" href="../projects/honkai-star-rail/march-7th-preservation-bjd-1-4/garment-pattern/patterned/pieces/P-A05.svg" target="_blank">
               <img src="../projects/honkai-star-rail/march-7th-preservation-bjd-1-4/garment-pattern/patterned/pieces/P-A05.svg" loading="lazy" alt="P-A05 衣身单侧别针承力片 带花纹衣片">
-              <strong>P-A05 · 衣身单侧别针承力片</strong>
-              <span>裁剪数量：薄布1＋薄衬1　面料：M5</span>
-              <small>点击放大花纹、尺寸、缝线和裁边</small></a></div></section><section id="hunt" hidden>
-          <div class="intro"><div><p class="eyebrow">带花纹看稿 / v0.3 · 衣片结构 v0.2 / mm</p><h2>巡猎 · 万代坐姿娃</h2>
-          <p>尚无万代娃体实测围度：本套使用独立列出的假设设计基准，可替换参数重出衣片；不是已确认适配万代的成衣版。</p></div><div class="actions"><a class="button" href="../projects/honkai-star-rail/march-7th-hunt-bandai-sitting-plush/garment-pattern/hunt-full-pattern-v0.2-1to1.pdf">1:1 黑白结构 PDF</a><a class="button secondary" href="../projects/honkai-star-rail/march-7th-hunt-bandai-sitting-plush/garment-pattern/assembly.md">尺寸与组装说明</a></div></div>
+              <strong>P-A05 · 衣身单侧别针承力片</strong></a>
+              <span>裁剪数量：薄布1＋薄衬1</span>
+              <dl class="material-list"><dt>支承布</dt><dd><b>无弹紧密纯棉府绸支承布（M7，目标 110–130 g/m²）</b><br>原白，不印花；整片；裁 1 片</dd><dt>衬布</dt><dd><b>轻薄柔软缝入衬（I1，目标 30–40 g/m²）</b><br>素白，不印；置于支承片背面；整片；裁 1 片</dd></dl>
+              <p class="material-note">原薄布1＋薄衬1；安装在外搭本侧里层内，无新增整里片。<br>保留原设计薄衬1；仅该支承区，不跨后中魔术贴。</p>
+              <p class="material-reason">选材理由：本轮局部承力建议：原清单概略M5改选M7稳布分散别针局部拉力；原薄布1、薄衬1数量不变。只固定一侧承力区，不跨魔术贴开口。</p>
+              <small>拟采用，待样布确认 · 点击衣片放大花纹、尺寸与材质</small></article></div></section><section id="hunt" hidden>
+          <div class="intro"><div><p class="eyebrow">带花纹看稿＋逐片材质 / v0.4 · 衣片结构 v0.2 / mm</p><h2>巡猎 · 万代坐姿娃</h2>
+          <p>尚无万代娃体实测围度：本套使用独立列出的假设设计基准，可替换参数重出衣片；不是已确认适配万代的成衣版。</p></div><div class="actions"><a class="button" href="../projects/honkai-star-rail/march-7th-hunt-bandai-sitting-plush/garment-pattern/piece-materials.md">逐片材质记录</a><a class="button" href="../projects/honkai-star-rail/march-7th-hunt-bandai-sitting-plush/garment-pattern/hunt-full-pattern-v0.2-1to1.pdf">1:1 黑白结构 PDF</a><a class="button secondary" href="../projects/honkai-star-rail/march-7th-hunt-bandai-sitting-plush/garment-pattern/assembly.md">尺寸与组装说明</a></div></div>
           <h3>带花纹的分层外观 · 编号对应下方衣片</h3>
           <a href="../projects/honkai-star-rail/march-7th-hunt-bandai-sitting-plush/garment-pattern/patterned/layers-overview.png" target="_blank"><img class="board" src="../projects/honkai-star-rail/march-7th-hunt-bandai-sitting-plush/garment-pattern/patterned/layers-overview.png" alt="巡猎 · 万代坐姿娃带花纹分层外形及衣片编号"></a>
           <h3>带花纹的全套衣片尺寸图</h3>
           <a href="../projects/honkai-star-rail/march-7th-hunt-bandai-sitting-plush/garment-pattern/patterned/pieces-overview.png" target="_blank"><img class="board" src="../projects/honkai-star-rail/march-7th-hunt-bandai-sitting-plush/garment-pattern/patterned/pieces-overview.png" alt="巡猎 · 万代坐姿娃带花纹完整衣片"></a>
-          <h3>逐片查看 · 27 种版片</h3><p>每张衣片直接显示对应花纹、编号和尺寸。贴边、里布和隐藏承力片保留素色；裁几片、是否镜像，以单片标注为准。整套图不可统一缩放来调尺码。</p>
-          <div class="grid"><a class="piece" href="../projects/honkai-star-rail/march-7th-hunt-bandai-sitting-plush/garment-pattern/patterned/pieces/H-B01.svg" target="_blank">
+          <h3>逐片查看 · 27 种版片及材质</h3><p>每片分别记录面布、里布、辅衬、目标克重及印花安排；不需要的里布或衬也有说明。材质为本轮拟采用的取样方案，商品依据见<a href="material-catalog.md">材料目录</a>。裁几片、是否镜像，以单片标注为准。</p>
+          <div class="grid"><article class="piece" id="H-B01"><a class="piece-art" href="../projects/honkai-star-rail/march-7th-hunt-bandai-sitting-plush/garment-pattern/patterned/pieces/H-B01.svg" target="_blank">
               <img src="../projects/honkai-star-rail/march-7th-hunt-bandai-sitting-plush/garment-pattern/patterned/pieces/H-B01.svg" loading="lazy" alt="H-B01 浅色底衣前身 带花纹衣片">
-              <strong>H-B01 · 浅色底衣前身</strong>
-              <span>裁剪数量：面布 1　面料：M5</span>
-              <small>点击放大花纹、尺寸、缝线和裁边</small></a><a class="piece" href="../projects/honkai-star-rail/march-7th-hunt-bandai-sitting-plush/garment-pattern/patterned/pieces/H-B02.svg" target="_blank">
+              <strong>H-B01 · 浅色底衣前身</strong></a>
+              <span>裁剪数量：面布 1</span>
+              <dl class="material-list"><dt>面布</dt><dd><b>高密纯棉细布 Lawn（M5，目标 75–90 g/m²）</b><br>原白，不印花；整片；裁 1 片</dd></dl>
+              <p class="material-note">无独立里布。<br>不加衬。</p>
+              <p class="material-reason">选材理由：薄棉基础层在坐姿腹部保持柔软。</p>
+              <small>拟采用，待样布确认 · 点击衣片放大花纹、尺寸与材质</small></article><article class="piece" id="H-B02"><a class="piece-art" href="../projects/honkai-star-rail/march-7th-hunt-bandai-sitting-plush/garment-pattern/patterned/pieces/H-B02.svg" target="_blank">
               <img src="../projects/honkai-star-rail/march-7th-hunt-bandai-sitting-plush/garment-pattern/patterned/pieces/H-B02.svg" loading="lazy" alt="H-B02 浅色底衣后片 带花纹衣片">
-              <strong>H-B02 · 浅色底衣后片</strong>
-              <span>裁剪数量：面布 2，镜像　面料：M5</span>
-              <small>点击放大花纹、尺寸、缝线和裁边</small></a><a class="piece" href="../projects/honkai-star-rail/march-7th-hunt-bandai-sitting-plush/garment-pattern/patterned/pieces/H-B03.svg" target="_blank">
+              <strong>H-B02 · 浅色底衣后片</strong></a>
+              <span>裁剪数量：面布 2，镜像</span>
+              <dl class="material-list"><dt>面布</dt><dd><b>高密纯棉细布 Lawn（M5，目标 75–90 g/m²）</b><br>原白，不印花；整片；裁 2 片</dd></dl>
+              <p class="material-note">无整片里身；后中由H-B06薄贴边覆盖。<br>扣位衬计入H-B06，不重复整片加衬。</p>
+              <p class="material-reason">选材理由：与前身同批薄棉，后中可开且下背保持柔软。</p>
+              <small>拟采用，待样布确认 · 点击衣片放大花纹、尺寸与材质</small></article><article class="piece" id="H-B03"><a class="piece-art" href="../projects/honkai-star-rail/march-7th-hunt-bandai-sitting-plush/garment-pattern/patterned/pieces/H-B03.svg" target="_blank">
               <img src="../projects/honkai-star-rail/march-7th-hunt-bandai-sitting-plush/garment-pattern/patterned/pieces/H-B03.svg" loading="lazy" alt="H-B03 蓬白袖 带花纹衣片">
-              <strong>H-B03 · 蓬白袖</strong>
-              <span>裁剪数量：面布 2，镜像　面料：M5</span>
-              <small>点击放大花纹、尺寸、缝线和裁边</small></a><a class="piece" href="../projects/honkai-star-rail/march-7th-hunt-bandai-sitting-plush/garment-pattern/patterned/pieces/H-B04.svg" target="_blank">
+              <strong>H-B03 · 蓬白袖</strong></a>
+              <span>裁剪数量：面布 2，镜像</span>
+              <dl class="material-list"><dt>面布</dt><dd><b>高密纯棉细布 Lawn（M5，目标 75–90 g/m²）</b><br>白底，袖外侧定位淡粉花边；整片；裁 2 片</dd></dl>
+              <p class="material-note">无独立里布；袖下由H-B07/H-B08收净。<br>袖身不加衬。</p>
+              <p class="material-reason">选材理由：薄棉容纳袖山吃势与袖摆抽褶，图案避开袖下开口。</p>
+              <small>拟采用，待样布确认 · 点击衣片放大花纹、尺寸与材质</small></article><article class="piece" id="H-B04"><a class="piece-art" href="../projects/honkai-star-rail/march-7th-hunt-bandai-sitting-plush/garment-pattern/patterned/pieces/H-B04.svg" target="_blank">
               <img src="../projects/honkai-star-rail/march-7th-hunt-bandai-sitting-plush/garment-pattern/patterned/pieces/H-B04.svg" loading="lazy" alt="H-B04 白袖口／深色腕带基底 带花纹衣片">
-              <strong>H-B04 · 白袖口／深色腕带基底</strong>
-              <span>裁剪数量：面布 2＋薄里 2　面料：M5；深色外层可用M2</span>
-              <small>点击放大花纹、尺寸、缝线和裁边</small></a><a class="piece" href="../projects/honkai-star-rail/march-7th-hunt-bandai-sitting-plush/garment-pattern/patterned/pieces/H-B05.svg" target="_blank">
+              <strong>H-B04 · 白袖口／深色腕带基底</strong></a>
+              <span>裁剪数量：面布 2＋薄里 2</span>
+              <dl class="material-list"><dt>面布</dt><dd><b>无弹细密涤斜纹（M2，目标 100–130 g/m²）</b><br>深色腕带外观按现有本片看稿定位；整片；裁 2 片</dd><dt>里布</dt><dd><b>高密纯棉细布 Lawn（M5，目标 75–90 g/m²）</b><br>原白，不印花；整片；裁 2 片</dd><dt>衬布</dt><dd><b>轻薄柔软缝入衬（I1，目标 30–40 g/m²）</b><br>素白，不印；局部缝入；仅袖扣段和端点；试样后选用</dd></dl>
+              <p class="material-note">原面2＋薄里2；将原允许的深色外层落实到现有面片M2，里层M5，不增第三层。<br>仅扣位需要时局部I1。</p>
+              <p class="material-reason">选材理由：深色面与清晰腕带边纹一致，原白薄里隔开印花面和玩偶。</p>
+              <small>拟采用，待样布确认 · 点击衣片放大花纹、尺寸与材质</small></article><article class="piece" id="H-B05"><a class="piece-art" href="../projects/honkai-star-rail/march-7th-hunt-bandai-sitting-plush/garment-pattern/patterned/pieces/H-B05.svg" target="_blank">
               <img src="../projects/honkai-star-rail/march-7th-hunt-bandai-sitting-plush/garment-pattern/patterned/pieces/H-B05.svg" loading="lazy" alt="H-B05 浅色立领 带花纹衣片">
-              <strong>H-B05 · 浅色立领</strong>
-              <span>裁剪数量：面布 1＋薄里 1　面料：M5</span>
-              <small>点击放大花纹、尺寸、缝线和裁边</small></a><a class="piece" href="../projects/honkai-star-rail/march-7th-hunt-bandai-sitting-plush/garment-pattern/patterned/pieces/H-B06.svg" target="_blank">
+              <strong>H-B05 · 浅色立领</strong></a>
+              <span>裁剪数量：面布 1＋薄里 1</span>
+              <dl class="material-list"><dt>面布</dt><dd><b>高密纯棉细布 Lawn（M5，目标 75–90 g/m²）</b><br>原白，不印花；整片；裁 1 片</dd><dt>里布</dt><dd><b>高密纯棉细布 Lawn（M5，目标 75–90 g/m²）</b><br>原白，不印花；整片；裁 1 片</dd><dt>衬布</dt><dd><b>轻薄柔软缝入衬（I1，目标 30–40 g/m²）</b><br>素白，不印；局部缝入；仅领端闭合段或局部软塌处；试样后选用</dd></dl>
+              <p class="material-note">原面1＋薄里1，均用原白薄棉。<br>先试无衬，仅领端或形状确有需要时局部I1。</p>
+              <p class="material-reason">选材理由：轻薄双层便于立领翻净，避免颈根过硬。</p>
+              <small>拟采用，待样布确认 · 点击衣片放大花纹、尺寸与材质</small></article><article class="piece" id="H-B06"><a class="piece-art" href="../projects/honkai-star-rail/march-7th-hunt-bandai-sitting-plush/garment-pattern/patterned/pieces/H-B06.svg" target="_blank">
               <img src="../projects/honkai-star-rail/march-7th-hunt-bandai-sitting-plush/garment-pattern/patterned/pieces/H-B06.svg" loading="lazy" alt="H-B06 底衣后中薄贴边 带花纹衣片">
-              <strong>H-B06 · 底衣后中薄贴边</strong>
-              <span>裁剪数量：薄里 2，镜像　面料：M5</span>
-              <small>点击放大花纹、尺寸、缝线和裁边</small></a><a class="piece" href="../projects/honkai-star-rail/march-7th-hunt-bandai-sitting-plush/garment-pattern/patterned/pieces/H-B07.svg" target="_blank">
+              <strong>H-B06 · 底衣后中薄贴边</strong></a>
+              <span>裁剪数量：薄里 2，镜像</span>
+              <dl class="material-list"><dt>贴边布</dt><dd><b>高密纯棉细布 Lawn（M5，目标 75–90 g/m²）</b><br>原白，不印花；整片；裁 2 片</dd><dt>衬布</dt><dd><b>轻薄柔软缝入衬（I1，目标 30–40 g/m²）</b><br>素白，不印；局部缝入；后中实际上/下扣段及开口端点；不到坐底</dd></dl>
+              <p class="material-note">原薄里2镜像，作为后中贴边。<br>扣段局部I1；不从领口整条铺到臀下。</p>
+              <p class="material-reason">选材理由：贴边遮针脚，局部衬分散开扣拉力。</p>
+              <small>拟采用，待样布确认 · 点击衣片放大花纹、尺寸与材质</small></article><article class="piece" id="H-B07"><a class="piece-art" href="../projects/honkai-star-rail/march-7th-hunt-bandai-sitting-plush/garment-pattern/patterned/pieces/H-B07.svg" target="_blank">
               <img src="../projects/honkai-star-rail/march-7th-hunt-bandai-sitting-plush/garment-pattern/patterned/pieces/H-B07.svg" loading="lazy" alt="H-B07 白袖下开口贴边 带花纹衣片">
-              <strong>H-B07 · 白袖下开口贴边</strong>
-              <span>裁剪数量：薄里 4　面料：M5</span>
-              <small>点击放大花纹、尺寸、缝线和裁边</small></a><a class="piece" href="../projects/honkai-star-rail/march-7th-hunt-bandai-sitting-plush/garment-pattern/patterned/pieces/H-B08.svg" target="_blank">
+              <strong>H-B07 · 白袖下开口贴边</strong></a>
+              <span>裁剪数量：薄里 4</span>
+              <dl class="material-list"><dt>贴边布</dt><dd><b>高密纯棉细布 Lawn（M5，目标 75–90 g/m²）</b><br>原白，不印花；整片；裁 4 片</dd><dt>衬布</dt><dd><b>轻薄柔软缝入衬（I1，目标 30–40 g/m²）</b><br>素白，不印；局部缝入；仅上搭侧毛圈安装小段；试样后选用</dd></dl>
+              <p class="material-note">原薄里4作为两袖两侧贴边。<br>需要时仅毛圈小段加I1；下搭带的支承归H-B08。</p>
+              <p class="material-reason">选材理由：薄棉收净可开的袖底，保留玩偶手部穿脱空间。</p>
+              <small>拟采用，待样布确认 · 点击衣片放大花纹、尺寸与材质</small></article><article class="piece" id="H-B08"><a class="piece-art" href="../projects/honkai-star-rail/march-7th-hunt-bandai-sitting-plush/garment-pattern/patterned/pieces/H-B08.svg" target="_blank">
               <img src="../projects/honkai-star-rail/march-7th-hunt-bandai-sitting-plush/garment-pattern/patterned/pieces/H-B08.svg" loading="lazy" alt="H-B08 白袖下开口搭接条 带花纹衣片">
-              <strong>H-B08 · 白袖下开口搭接条</strong>
-              <span>裁剪数量：面布 2＋薄里 2　面料：M5</span>
-              <small>点击放大花纹、尺寸、缝线和裁边</small></a><a class="piece" href="../projects/honkai-star-rail/march-7th-hunt-bandai-sitting-plush/garment-pattern/patterned/pieces/H-C01.svg" target="_blank">
+              <strong>H-B08 · 白袖下开口搭接条</strong></a>
+              <span>裁剪数量：面布 2＋薄里 2</span>
+              <dl class="material-list"><dt>面布</dt><dd><b>高密纯棉细布 Lawn（M5，目标 75–90 g/m²）</b><br>原白，不印花；整片；裁 2 片</dd><dt>里布</dt><dd><b>高密纯棉细布 Lawn（M5，目标 75–90 g/m²）</b><br>原白，不印花；整片；裁 2 片</dd><dt>衬布</dt><dd><b>轻薄柔软缝入衬（I1，目标 30–40 g/m²）</b><br>素白，不印；局部缝入；仅细勾安装小段；试样后选用</dd></dl>
+              <p class="material-note">原面2＋薄里2，不与H-B07重复。<br>扣件拉扯使布变形时才局部I1，不整条加硬。</p>
+              <p class="material-reason">选材理由：双层薄棉构成独立搭接条，伸入上搭侧而不占袖身围度。</p>
+              <small>拟采用，待样布确认 · 点击衣片放大花纹、尺寸与材质</small></article><article class="piece" id="H-C01"><a class="piece-art" href="../projects/honkai-star-rail/march-7th-hunt-bandai-sitting-plush/garment-pattern/patterned/pieces/H-C01.svg" target="_blank">
               <img src="../projects/honkai-star-rail/march-7th-hunt-bandai-sitting-plush/garment-pattern/patterned/pieces/H-C01.svg" loading="lazy" alt="H-C01 弧形深褐胸片 带花纹衣片">
-              <strong>H-C01 · 弧形深褐胸片</strong>
-              <span>裁剪数量：面布 1＋薄里 1　面料：M2 面＋M3 薄里</span>
-              <small>点击放大花纹、尺寸、缝线和裁边</small></a><a class="piece" href="../projects/honkai-star-rail/march-7th-hunt-bandai-sitting-plush/garment-pattern/patterned/pieces/H-R01.svg" target="_blank">
+              <strong>H-C01 · 弧形深褐胸片</strong></a>
+              <span>裁剪数量：面布 1＋薄里 1</span>
+              <dl class="material-list"><dt>面布</dt><dd><b>无弹细密涤斜纹（M2，目标 100–130 g/m²）</b><br>深褐底、浅金边和胸卷纹定位印花；整片；裁 1 片</dd><dt>里布</dt><dd><b>无弹涤纶薄仿双绉（M3，目标 70–90 g/m²）</b><br>匹配深褐净色，不印胸纹；整片；裁 1 片</dd></dl>
+              <p class="material-note">原面1＋薄里1，M2面配M3薄里。<br>默认不加衬；不把胸片做成硬甲。</p>
+              <p class="material-reason">选材理由：细斜纹呈现深色细线，柔软薄里适应坐姿腹部曲面。</p>
+              <small>拟采用，待样布确认 · 点击衣片放大花纹、尺寸与材质</small></article><article class="piece" id="H-R01"><a class="piece-art" href="../projects/honkai-star-rail/march-7th-hunt-bandai-sitting-plush/garment-pattern/patterned/pieces/H-R01.svg" target="_blank">
               <img src="../projects/honkai-star-rail/march-7th-hunt-bandai-sitting-plush/garment-pattern/patterned/pieces/H-R01.svg" loading="lazy" alt="H-R01 红短外搭前片 带花纹衣片">
-              <strong>H-R01 · 红短外搭前片</strong>
-              <span>裁剪数量：红面 2＋薄里 2，镜像　面料：M3</span>
-              <small>点击放大花纹、尺寸、缝线和裁边</small></a><a class="piece" href="../projects/honkai-star-rail/march-7th-hunt-bandai-sitting-plush/garment-pattern/patterned/pieces/H-R02.svg" target="_blank">
+              <strong>H-R01 · 红短外搭前片</strong></a>
+              <span>裁剪数量：红面 2＋薄里 2，镜像</span>
+              <dl class="material-list"><dt>面布</dt><dd><b>无弹涤纶薄仿双绉（M3，目标 70–90 g/m²）</b><br>净红底，前襟浅金纹按该片定位；整片；裁 2 片</dd><dt>里布</dt><dd><b>无弹涤纶薄仿双绉（M3，目标 70–90 g/m²）</b><br>匹配净红薄里，不复制正面纹样；整片；裁 2 片</dd></dl>
+              <p class="material-note">红面2＋薄里2，按原镜像要求；薄里封净自由边。<br>不加整片衬。</p>
+              <p class="material-reason">选材理由：薄仿双绉用于红外搭面与匹配里层，保持肩袖和敞襟垂感。</p>
+              <small>拟采用，待样布确认 · 点击衣片放大花纹、尺寸与材质</small></article><article class="piece" id="H-R02"><a class="piece-art" href="../projects/honkai-star-rail/march-7th-hunt-bandai-sitting-plush/garment-pattern/patterned/pieces/H-R02.svg" target="_blank">
               <img src="../projects/honkai-star-rail/march-7th-hunt-bandai-sitting-plush/garment-pattern/patterned/pieces/H-R02.svg" loading="lazy" alt="H-R02 红短外搭后片 带花纹衣片">
-              <strong>H-R02 · 红短外搭后片</strong>
-              <span>裁剪数量：红面 2＋薄里 2，镜像　面料：M3</span>
-              <small>点击放大花纹、尺寸、缝线和裁边</small></a><a class="piece" href="../projects/honkai-star-rail/march-7th-hunt-bandai-sitting-plush/garment-pattern/patterned/pieces/H-R03.svg" target="_blank">
+              <strong>H-R02 · 红短外搭后片</strong></a>
+              <span>裁剪数量：红面 2＋薄里 2，镜像</span>
+              <dl class="material-list"><dt>面布</dt><dd><b>无弹涤纶薄仿双绉（M3，目标 70–90 g/m²）</b><br>净红工程背面，不复制前胸/前襟纹样；整片；裁 2 片</dd><dt>里布</dt><dd><b>无弹涤纶薄仿双绉（M3，目标 70–90 g/m²）</b><br>匹配净红薄里，不复制正面纹样；整片；裁 2 片</dd><dt>衬布</dt><dd><b>轻薄柔软缝入衬（I1，目标 30–40 g/m²）</b><br>素白，不印；局部缝入；仅本外搭后中独立扣段</dd></dl>
+              <p class="material-note">红面2＋薄里2，按原镜像要求；薄里封净自由边。<br>后中扣段局部I1，不连带里面白衣。</p>
+              <p class="material-reason">选材理由：薄仿双绉用于红外搭面与匹配里层，保持肩袖和敞襟垂感。</p>
+              <small>拟采用，待样布确认 · 点击衣片放大花纹、尺寸与材质</small></article><article class="piece" id="H-R03"><a class="piece-art" href="../projects/honkai-star-rail/march-7th-hunt-bandai-sitting-plush/garment-pattern/patterned/pieces/H-R03.svg" target="_blank">
               <img src="../projects/honkai-star-rail/march-7th-hunt-bandai-sitting-plush/garment-pattern/patterned/pieces/H-R03.svg" loading="lazy" alt="H-R03 红短肩袖 带花纹衣片">
-              <strong>H-R03 · 红短肩袖</strong>
-              <span>裁剪数量：红面 2＋薄里 2，镜像　面料：M3</span>
-              <small>点击放大花纹、尺寸、缝线和裁边</small></a><a class="piece" href="../projects/honkai-star-rail/march-7th-hunt-bandai-sitting-plush/garment-pattern/patterned/pieces/H-R04.svg" target="_blank">
+              <strong>H-R03 · 红短肩袖</strong></a>
+              <span>裁剪数量：红面 2＋薄里 2，镜像</span>
+              <dl class="material-list"><dt>面布</dt><dd><b>无弹涤纶薄仿双绉（M3，目标 70–90 g/m²）</b><br>红底肩部纹样按本片看稿；立体饰件另计；整片；裁 2 片</dd><dt>里布</dt><dd><b>无弹涤纶薄仿双绉（M3，目标 70–90 g/m²）</b><br>匹配净红薄里，不复制正面纹样；整片；裁 2 片</dd></dl>
+              <p class="material-note">红面2＋薄里2，按原镜像要求；薄里封净自由边。<br>不加整片衬。</p>
+              <p class="material-reason">选材理由：薄仿双绉用于红外搭面与匹配里层，保持肩袖和敞襟垂感。</p>
+              <small>拟采用，待样布确认 · 点击衣片放大花纹、尺寸与材质</small></article><article class="piece" id="H-R04"><a class="piece-art" href="../projects/honkai-star-rail/march-7th-hunt-bandai-sitting-plush/garment-pattern/patterned/pieces/H-R04.svg" target="_blank">
               <img src="../projects/honkai-star-rail/march-7th-hunt-bandai-sitting-plush/garment-pattern/patterned/pieces/H-R04.svg" loading="lazy" alt="H-R04 红尖长衣尾 带花纹衣片">
-              <strong>H-R04 · 红尖长衣尾</strong>
-              <span>裁剪数量：红面 2＋暗粉里 2，镜像　面料：M3</span>
-              <small>点击放大花纹、尺寸、缝线和裁边</small></a><a class="piece" href="../projects/honkai-star-rail/march-7th-hunt-bandai-sitting-plush/garment-pattern/patterned/pieces/H-R05.svg" target="_blank">
+              <strong>H-R04 · 红尖长衣尾</strong></a>
+              <span>裁剪数量：红面 2＋暗粉里 2，镜像</span>
+              <dl class="material-list"><dt>面布</dt><dd><b>无弹涤纶薄仿双绉（M3，目标 70–90 g/m²）</b><br>外侧净红；不把H02暗纹印到外面；整片；裁 2 片</dd><dt>里布</dt><dd><b>无弹涤纶薄仿双绉（M3，目标 70–90 g/m²）</b><br>暗粉底＋H02暗红内尾纹，作为可见里侧单独定位印花；整片；裁 2 片</dd></dl>
+              <p class="material-note">原红面2＋暗粉里2，均M3、各自镜像；里侧是有纹可见层，不按普通隐藏素里处理。<br>不加衬，尖衣尾保持垂感。</p>
+              <p class="material-reason">选材理由：同类薄布面里有利于双面衣尾翻缝；红表面与暗纹里侧按原组装关系分开。</p>
+              <small>拟采用，待样布确认 · 点击衣片放大花纹、尺寸与材质</small></article><article class="piece" id="H-R05"><a class="piece-art" href="../projects/honkai-star-rail/march-7th-hunt-bandai-sitting-plush/garment-pattern/patterned/pieces/H-R05.svg" target="_blank">
               <img src="../projects/honkai-star-rail/march-7th-hunt-bandai-sitting-plush/garment-pattern/patterned/pieces/H-R05.svg" loading="lazy" alt="H-R05 红肩袖下开口贴边 带花纹衣片">
-              <strong>H-R05 · 红肩袖下开口贴边</strong>
-              <span>裁剪数量：薄里 4　面料：M3</span>
-              <small>点击放大花纹、尺寸、缝线和裁边</small></a><a class="piece" href="../projects/honkai-star-rail/march-7th-hunt-bandai-sitting-plush/garment-pattern/patterned/pieces/H-R06.svg" target="_blank">
+              <strong>H-R05 · 红肩袖下开口贴边</strong></a>
+              <span>裁剪数量：薄里 4</span>
+              <dl class="material-list"><dt>贴边布</dt><dd><b>无弹涤纶薄仿双绉（M3，目标 70–90 g/m²）</b><br>匹配净红，不印纹样；整片；裁 4 片</dd><dt>衬布</dt><dd><b>轻薄柔软缝入衬（I1，目标 30–40 g/m²）</b><br>素白，不印；局部缝入；仅上搭毛圈安装的小段；试样后选用</dd></dl>
+              <p class="material-note">原薄里4用作两袖各两侧贴边。<br>需要时仅扣段局部I1，不接连白袖。</p>
+              <p class="material-reason">选材理由：同色薄贴边用于红袖下开口，露出时与外搭衔接。</p>
+              <small>拟采用，待样布确认 · 点击衣片放大花纹、尺寸与材质</small></article><article class="piece" id="H-R06"><a class="piece-art" href="../projects/honkai-star-rail/march-7th-hunt-bandai-sitting-plush/garment-pattern/patterned/pieces/H-R06.svg" target="_blank">
               <img src="../projects/honkai-star-rail/march-7th-hunt-bandai-sitting-plush/garment-pattern/patterned/pieces/H-R06.svg" loading="lazy" alt="H-R06 红肩袖下开口搭接条 带花纹衣片">
-              <strong>H-R06 · 红肩袖下开口搭接条</strong>
-              <span>裁剪数量：红面 2＋薄里 2　面料：M3</span>
-              <small>点击放大花纹、尺寸、缝线和裁边</small></a><a class="piece" href="../projects/honkai-star-rail/march-7th-hunt-bandai-sitting-plush/garment-pattern/patterned/pieces/H-S01.svg" target="_blank">
+              <strong>H-R06 · 红肩袖下开口搭接条</strong></a>
+              <span>裁剪数量：红面 2＋薄里 2</span>
+              <dl class="material-list"><dt>面布</dt><dd><b>无弹涤纶薄仿双绉（M3，目标 70–90 g/m²）</b><br>匹配净红，不印纹样；整片；裁 2 片</dd><dt>里布</dt><dd><b>无弹涤纶薄仿双绉（M3，目标 70–90 g/m²）</b><br>匹配净红薄里；整片；裁 2 片</dd><dt>衬布</dt><dd><b>轻薄柔软缝入衬（I1，目标 30–40 g/m²）</b><br>素白，不印；局部缝入；仅细勾安装小段；试样后选用</dd></dl>
+              <p class="material-note">红面2＋薄里2，依原搭接条数量。<br>薄布被扣件拉伸时才局部I1；不整条加硬。</p>
+              <p class="material-reason">选材理由：同色面里构成独立红袖搭接，兼顾翻净与穿脱。</p>
+              <small>拟采用，待样布确认 · 点击衣片放大花纹、尺寸与材质</small></article><article class="piece" id="H-S01"><a class="piece-art" href="../projects/honkai-star-rail/march-7th-hunt-bandai-sitting-plush/garment-pattern/patterned/pieces/H-S01.svg" target="_blank">
               <img src="../projects/honkai-star-rail/march-7th-hunt-bandai-sitting-plush/garment-pattern/patterned/pieces/H-S01.svg" loading="lazy" alt="H-S01 深色侧裙瓣 带花纹衣片">
-              <strong>H-S01 · 深色侧裙瓣</strong>
-              <span>裁剪数量：面布 2＋薄里 2，镜像　面料：M2 面＋M3 薄里</span>
-              <small>点击放大花纹、尺寸、缝线和裁边</small></a><a class="piece" href="../projects/honkai-star-rail/march-7th-hunt-bandai-sitting-plush/garment-pattern/patterned/pieces/H-S02.svg" target="_blank">
+              <strong>H-S01 · 深色侧裙瓣</strong></a>
+              <span>裁剪数量：面布 2＋薄里 2，镜像</span>
+              <dl class="material-list"><dt>面布</dt><dd><b>无弹细密涤斜纹（M2，目标 100–130 g/m²）</b><br>深褐底＋对应裙瓣金边/卷纹定位；整片；裁 2 片</dd><dt>里布</dt><dd><b>无弹涤纶薄仿双绉（M3，目标 70–90 g/m²）</b><br>匹配深褐净色，不复制裙纹；整片；裁 2 片</dd></dl>
+              <p class="material-note">面2＋薄里2；按原方向或镜像要求。<br>默认不加衬；先看坐姿叠片垂感。</p>
+              <p class="material-reason">选材理由：细斜纹承载边纹，薄里降低独立裙瓣的翻缝体积。</p>
+              <small>拟采用，待样布确认 · 点击衣片放大花纹、尺寸与材质</small></article><article class="piece" id="H-S02"><a class="piece-art" href="../projects/honkai-star-rail/march-7th-hunt-bandai-sitting-plush/garment-pattern/patterned/pieces/H-S02.svg" target="_blank">
               <img src="../projects/honkai-star-rail/march-7th-hunt-bandai-sitting-plush/garment-pattern/patterned/pieces/H-S02.svg" loading="lazy" alt="H-S02 深色前裙瓣 带花纹衣片">
-              <strong>H-S02 · 深色前裙瓣</strong>
-              <span>裁剪数量：面布 1＋薄里 1　面料：M2 面＋M3 薄里</span>
-              <small>点击放大花纹、尺寸、缝线和裁边</small></a><a class="piece" href="../projects/honkai-star-rail/march-7th-hunt-bandai-sitting-plush/garment-pattern/patterned/pieces/H-S03.svg" target="_blank">
+              <strong>H-S02 · 深色前裙瓣</strong></a>
+              <span>裁剪数量：面布 1＋薄里 1</span>
+              <dl class="material-list"><dt>面布</dt><dd><b>无弹细密涤斜纹（M2，目标 100–130 g/m²）</b><br>深褐底＋对应裙瓣金边/卷纹定位；整片；裁 1 片</dd><dt>里布</dt><dd><b>无弹涤纶薄仿双绉（M3，目标 70–90 g/m²）</b><br>匹配深褐净色，不复制裙纹；整片；裁 1 片</dd></dl>
+              <p class="material-note">面1＋薄里1；按原方向或镜像要求。<br>默认不加衬；先看坐姿叠片垂感。</p>
+              <p class="material-reason">选材理由：细斜纹承载边纹，薄里降低独立裙瓣的翻缝体积。</p>
+              <small>拟采用，待样布确认 · 点击衣片放大花纹、尺寸与材质</small></article><article class="piece" id="H-S03"><a class="piece-art" href="../projects/honkai-star-rail/march-7th-hunt-bandai-sitting-plush/garment-pattern/patterned/pieces/H-S03.svg" target="_blank">
               <img src="../projects/honkai-star-rail/march-7th-hunt-bandai-sitting-plush/garment-pattern/patterned/pieces/H-S03.svg" loading="lazy" alt="H-S03 独立柔软裙腰头 带花纹衣片">
-              <strong>H-S03 · 独立柔软裙腰头</strong>
-              <span>裁剪数量：面布 1＋薄里 1　面料：M5 或M3</span>
-              <small>点击放大花纹、尺寸、缝线和裁边</small></a><a class="piece" href="../projects/honkai-star-rail/march-7th-hunt-bandai-sitting-plush/garment-pattern/patterned/pieces/H-S04.svg" target="_blank">
+              <strong>H-S03 · 独立柔软裙腰头</strong></a>
+              <span>裁剪数量：面布 1＋薄里 1</span>
+              <dl class="material-list"><dt>面布</dt><dd><b>高密纯棉细布 Lawn（M5，目标 75–90 g/m²）</b><br>原白，不印花；隐藏柔软腰头；整片；裁 1 片</dd><dt>里布</dt><dd><b>高密纯棉细布 Lawn（M5，目标 75–90 g/m²）</b><br>原白，不印花；整片；裁 1 片</dd><dt>衬布</dt><dd><b>轻薄柔软缝入衬（I1，目标 30–40 g/m²）</b><br>素白，不印；局部缝入；仅后扣段和端点，不铺臀下</dd></dl>
+              <p class="material-note">原面1＋薄里1，选原允许的M5路线。<br>扣位局部I1，其余不加衬；与上衣独立。</p>
+              <p class="material-reason">选材理由：薄棉腰头承接分瓣与抽褶层，避免腰部整圈变硬。</p>
+              <small>拟采用，待样布确认 · 点击衣片放大花纹、尺寸与材质</small></article><article class="piece" id="H-S04"><a class="piece-art" href="../projects/honkai-star-rail/march-7th-hunt-bandai-sitting-plush/garment-pattern/patterned/pieces/H-S04.svg" target="_blank">
               <img src="../projects/honkai-star-rail/march-7th-hunt-bandai-sitting-plush/garment-pattern/patterned/pieces/H-S04.svg" loading="lazy" alt="H-S04 粉色前衬摆 带花纹衣片">
-              <strong>H-S04 · 粉色前衬摆</strong>
-              <span>裁剪数量：面布 1，薄里同数　面料：M3</span>
-              <small>点击放大花纹、尺寸、缝线和裁边</small></a><a class="piece" href="../projects/honkai-star-rail/march-7th-hunt-bandai-sitting-plush/garment-pattern/patterned/pieces/H-S05.svg" target="_blank">
+              <strong>H-S04 · 粉色前衬摆</strong></a>
+              <span>裁剪数量：面布 1，薄里同数</span>
+              <dl class="material-list"><dt>面布</dt><dd><b>无弹涤纶薄仿双绉（M3，目标 70–90 g/m²）</b><br>匹配净粉色，不印纹样；整片；裁 1 片</dd><dt>里布</dt><dd><b>无弹涤纶薄仿双绉（M3，目标 70–90 g/m²）</b><br>匹配净粉色，不印纹样；整片；裁 1 片</dd></dl>
+              <p class="material-note">原面1＋薄里同数1均保留；这是可见粉色衬摆层，面片仍按面布计。<br>不加衬；如果小样过厚须另修工艺，不能在本材料表擅自删里片。</p>
+              <p class="material-reason">选材理由：较薄同色布层形成实际外露下摆，抽褶后先核验叠层体积。</p>
+              <small>拟采用，待样布确认 · 点击衣片放大花纹、尺寸与材质</small></article><article class="piece" id="H-S05"><a class="piece-art" href="../projects/honkai-star-rail/march-7th-hunt-bandai-sitting-plush/garment-pattern/patterned/pieces/H-S05.svg" target="_blank">
               <img src="../projects/honkai-star-rail/march-7th-hunt-bandai-sitting-plush/garment-pattern/patterned/pieces/H-S05.svg" loading="lazy" alt="H-S05 粉色侧衬摆 带花纹衣片">
-              <strong>H-S05 · 粉色侧衬摆</strong>
-              <span>裁剪数量：面布 2，薄里同数　面料：M3</span>
-              <small>点击放大花纹、尺寸、缝线和裁边</small></a><a class="piece" href="../projects/honkai-star-rail/march-7th-hunt-bandai-sitting-plush/garment-pattern/patterned/pieces/H-S06.svg" target="_blank">
+              <strong>H-S05 · 粉色侧衬摆</strong></a>
+              <span>裁剪数量：面布 2，薄里同数</span>
+              <dl class="material-list"><dt>面布</dt><dd><b>无弹涤纶薄仿双绉（M3，目标 70–90 g/m²）</b><br>匹配净粉色，不印纹样；整片；裁 2 片</dd><dt>里布</dt><dd><b>无弹涤纶薄仿双绉（M3，目标 70–90 g/m²）</b><br>匹配净粉色，不印纹样；整片；裁 2 片</dd></dl>
+              <p class="material-note">原面2＋薄里同数2均保留；这是可见粉色衬摆层，面片仍按面布计。<br>不加衬；如果小样过厚须另修工艺，不能在本材料表擅自删里片。</p>
+              <p class="material-reason">选材理由：较薄同色布层形成实际外露下摆，抽褶后先核验叠层体积。</p>
+              <small>拟采用，待样布确认 · 点击衣片放大花纹、尺寸与材质</small></article><article class="piece" id="H-S06"><a class="piece-art" href="../projects/honkai-star-rail/march-7th-hunt-bandai-sitting-plush/garment-pattern/patterned/pieces/H-S06.svg" target="_blank">
               <img src="../projects/honkai-star-rail/march-7th-hunt-bandai-sitting-plush/garment-pattern/patterned/pieces/H-S06.svg" loading="lazy" alt="H-S06 白色前衬摆 带花纹衣片">
-              <strong>H-S06 · 白色前衬摆</strong>
-              <span>裁剪数量：面布 1，薄里同数　面料：M5</span>
-              <small>点击放大花纹、尺寸、缝线和裁边</small></a><a class="piece" href="../projects/honkai-star-rail/march-7th-hunt-bandai-sitting-plush/garment-pattern/patterned/pieces/H-S07.svg" target="_blank">
+              <strong>H-S06 · 白色前衬摆</strong></a>
+              <span>裁剪数量：面布 1，薄里同数</span>
+              <dl class="material-list"><dt>面布</dt><dd><b>高密纯棉细布 Lawn（M5，目标 75–90 g/m²）</b><br>原白，不印花；整片；裁 1 片</dd><dt>里布</dt><dd><b>高密纯棉细布 Lawn（M5，目标 75–90 g/m²）</b><br>原白，不印花；整片；裁 1 片</dd></dl>
+              <p class="material-note">原面1＋薄里同数1均保留；这是可见白色衬摆层，面片仍按面布计。<br>不加衬；如果小样过厚须另修工艺，不能在本材料表擅自删里片。</p>
+              <p class="material-reason">选材理由：较薄同色布层形成实际外露下摆，抽褶后先核验叠层体积。</p>
+              <small>拟采用，待样布确认 · 点击衣片放大花纹、尺寸与材质</small></article><article class="piece" id="H-S07"><a class="piece-art" href="../projects/honkai-star-rail/march-7th-hunt-bandai-sitting-plush/garment-pattern/patterned/pieces/H-S07.svg" target="_blank">
               <img src="../projects/honkai-star-rail/march-7th-hunt-bandai-sitting-plush/garment-pattern/patterned/pieces/H-S07.svg" loading="lazy" alt="H-S07 白色侧衬摆 带花纹衣片">
-              <strong>H-S07 · 白色侧衬摆</strong>
-              <span>裁剪数量：面布 2，薄里同数　面料：M5</span>
-              <small>点击放大花纹、尺寸、缝线和裁边</small></a><a class="piece" href="../projects/honkai-star-rail/march-7th-hunt-bandai-sitting-plush/garment-pattern/patterned/pieces/H-W01.svg" target="_blank">
+              <strong>H-S07 · 白色侧衬摆</strong></a>
+              <span>裁剪数量：面布 2，薄里同数</span>
+              <dl class="material-list"><dt>面布</dt><dd><b>高密纯棉细布 Lawn（M5，目标 75–90 g/m²）</b><br>原白，不印花；整片；裁 2 片</dd><dt>里布</dt><dd><b>高密纯棉细布 Lawn（M5，目标 75–90 g/m²）</b><br>原白，不印花；整片；裁 2 片</dd></dl>
+              <p class="material-note">原面2＋薄里同数2均保留；这是可见白色衬摆层，面片仍按面布计。<br>不加衬；如果小样过厚须另修工艺，不能在本材料表擅自删里片。</p>
+              <p class="material-reason">选材理由：较薄同色布层形成实际外露下摆，抽褶后先核验叠层体积。</p>
+              <small>拟采用，待样布确认 · 点击衣片放大花纹、尺寸与材质</small></article><article class="piece" id="H-W01"><a class="piece-art" href="../projects/honkai-star-rail/march-7th-hunt-bandai-sitting-plush/garment-pattern/patterned/pieces/H-W01.svg" target="_blank">
               <img src="../projects/honkai-star-rail/march-7th-hunt-bandai-sitting-plush/garment-pattern/patterned/pieces/H-W01.svg" loading="lazy" alt="H-W01 蓝色斜交腰带 带花纹衣片">
-              <strong>H-W01 · 蓝色斜交腰带</strong>
-              <span>裁剪数量：面布 2＋薄里 2　面料：M4</span>
-              <small>点击放大花纹、尺寸、缝线和裁边</small></a><a class="piece" href="../projects/honkai-star-rail/march-7th-hunt-bandai-sitting-plush/garment-pattern/patterned/pieces/H-W02.svg" target="_blank">
+              <strong>H-W01 · 蓝色斜交腰带</strong></a>
+              <span>裁剪数量：面布 2＋薄里 2</span>
+              <dl class="material-list"><dt>面布</dt><dd><b>无弹薄仿丝缎（M4，目标 80–100 g/m²）</b><br>净蓝色，无主体纹样；整片；裁 2 片</dd><dt>里布</dt><dd><b>无弹涤纶薄仿双绉（M3，目标 70–90 g/m²）</b><br>匹配蓝色净色薄里，翻面可见；不复制正面主体纹样；整片；裁 2 片</dd></dl>
+              <p class="material-note">原面2＋薄里2；薄里M3，非裸露M4背面。<br>不加整条衬，保留带与尾片的垂感。</p>
+              <p class="material-reason">选材理由：缎面提供色带光泽，较薄的匹配里布避免翻面露白与双缎叠厚。</p>
+              <small>拟采用，待样布确认 · 点击衣片放大花纹、尺寸与材质</small></article><article class="piece" id="H-W02"><a class="piece-art" href="../projects/honkai-star-rail/march-7th-hunt-bandai-sitting-plush/garment-pattern/patterned/pieces/H-W02.svg" target="_blank">
               <img src="../projects/honkai-star-rail/march-7th-hunt-bandai-sitting-plush/garment-pattern/patterned/pieces/H-W02.svg" loading="lazy" alt="H-W02 粉色横腰带 带花纹衣片">
-              <strong>H-W02 · 粉色横腰带</strong>
-              <span>裁剪数量：面布 1＋薄里 1　面料：M4</span>
-              <small>点击放大花纹、尺寸、缝线和裁边</small></a><a class="piece" href="../projects/honkai-star-rail/march-7th-hunt-bandai-sitting-plush/garment-pattern/patterned/pieces/H-W03.svg" target="_blank">
+              <strong>H-W02 · 粉色横腰带</strong></a>
+              <span>裁剪数量：面布 1＋薄里 1</span>
+              <dl class="material-list"><dt>面布</dt><dd><b>无弹薄仿丝缎（M4，目标 80–100 g/m²）</b><br>净粉色，无主体纹样；整片；裁 1 片</dd><dt>里布</dt><dd><b>无弹涤纶薄仿双绉（M3，目标 70–90 g/m²）</b><br>匹配粉色净色薄里，翻面可见；不复制正面主体纹样；整片；裁 1 片</dd><dt>衬布</dt><dd><b>轻薄柔软缝入衬（I1，目标 30–40 g/m²）</b><br>素白，不印；局部缝入；仅独立粉腰带后扣段和端点</dd></dl>
+              <p class="material-note">原面1＋薄里1；薄里M3，非裸露M4背面。<br>独立后扣局部I1，其他位置不加衬。</p>
+              <p class="material-reason">选材理由：缎面提供色带光泽，较薄的匹配里布避免翻面露白与双缎叠厚。</p>
+              <small>拟采用，待样布确认 · 点击衣片放大花纹、尺寸与材质</small></article><article class="piece" id="H-W03"><a class="piece-art" href="../projects/honkai-star-rail/march-7th-hunt-bandai-sitting-plush/garment-pattern/patterned/pieces/H-W03.svg" target="_blank">
               <img src="../projects/honkai-star-rail/march-7th-hunt-bandai-sitting-plush/garment-pattern/patterned/pieces/H-W03.svg" loading="lazy" alt="H-W03 蓝色渐尖垂尾 带花纹衣片">
-              <strong>H-W03 · 蓝色渐尖垂尾</strong>
-              <span>裁剪数量：面布 2＋薄里 2，镜像　面料：M4</span>
-              <small>点击放大花纹、尺寸、缝线和裁边</small></a><a class="piece" href="../projects/honkai-star-rail/march-7th-hunt-bandai-sitting-plush/garment-pattern/patterned/pieces/H-W04.svg" target="_blank">
+              <strong>H-W03 · 蓝色渐尖垂尾</strong></a>
+              <span>裁剪数量：面布 2＋薄里 2，镜像</span>
+              <dl class="material-list"><dt>面布</dt><dd><b>无弹薄仿丝缎（M4，目标 80–100 g/m²）</b><br>蓝色净底，局部纹样按本片看稿定位；整片；裁 2 片</dd><dt>里布</dt><dd><b>无弹涤纶薄仿双绉（M3，目标 70–90 g/m²）</b><br>匹配蓝色净色薄里，翻面可见；不复制正面主体纹样；整片；裁 2 片</dd></dl>
+              <p class="material-note">原面2＋薄里2；薄里M3，非裸露M4背面。<br>不加整条衬，保留带与尾片的垂感。</p>
+              <p class="material-reason">选材理由：缎面提供色带光泽，较薄的匹配里布避免翻面露白与双缎叠厚。</p>
+              <small>拟采用，待样布确认 · 点击衣片放大花纹、尺寸与材质</small></article><article class="piece" id="H-W04"><a class="piece-art" href="../projects/honkai-star-rail/march-7th-hunt-bandai-sitting-plush/garment-pattern/patterned/pieces/H-W04.svg" target="_blank">
               <img src="../projects/honkai-star-rail/march-7th-hunt-bandai-sitting-plush/garment-pattern/patterned/pieces/H-W04.svg" loading="lazy" alt="H-W04 粉色侧垂带 带花纹衣片">
-              <strong>H-W04 · 粉色侧垂带</strong>
-              <span>裁剪数量：面布 2＋薄里 2　面料：M4</span>
-              <small>点击放大花纹、尺寸、缝线和裁边</small></a><a class="piece" href="../projects/honkai-star-rail/march-7th-hunt-bandai-sitting-plush/garment-pattern/patterned/pieces/H-T01.svg" target="_blank">
+              <strong>H-W04 · 粉色侧垂带</strong></a>
+              <span>裁剪数量：面布 2＋薄里 2</span>
+              <dl class="material-list"><dt>面布</dt><dd><b>无弹薄仿丝缎（M4，目标 80–100 g/m²）</b><br>净粉色，无主体纹样；整片；裁 2 片</dd><dt>里布</dt><dd><b>无弹涤纶薄仿双绉（M3，目标 70–90 g/m²）</b><br>匹配粉色净色薄里，翻面可见；不复制正面主体纹样；整片；裁 2 片</dd></dl>
+              <p class="material-note">原面2＋薄里2；薄里M3，非裸露M4背面。<br>不加整条衬，保留带与尾片的垂感。</p>
+              <p class="material-reason">选材理由：缎面提供色带光泽，较薄的匹配里布避免翻面露白与双缎叠厚。</p>
+              <small>拟采用，待样布确认 · 点击衣片放大花纹、尺寸与材质</small></article><article class="piece" id="H-T01"><a class="piece-art" href="../projects/honkai-star-rail/march-7th-hunt-bandai-sitting-plush/garment-pattern/patterned/pieces/H-T01.svg" target="_blank">
               <img src="../projects/honkai-star-rail/march-7th-hunt-bandai-sitting-plush/garment-pattern/patterned/pieces/H-T01.svg" loading="lazy" alt="H-T01 粉色袖顶褶边 带花纹衣片">
-              <strong>H-T01 · 粉色袖顶褶边</strong>
-              <span>裁剪数量：面布 2＋薄里 2　面料：M3</span>
-              <small>点击放大花纹、尺寸、缝线和裁边</small></a></div></section><footer>后背魔术贴承担衣服开合；存护背蝶结采用可拆别针，固定在一侧承力区。先试坯确认轮廓，再按部位面料印样与定稿。</footer></main><script>
+              <strong>H-T01 · 粉色袖顶褶边</strong></a>
+              <span>裁剪数量：面布 2＋薄里 2</span>
+              <dl class="material-list"><dt>面布</dt><dd><b>无弹涤纶薄仿双绉（M3，目标 70–90 g/m²）</b><br>匹配净粉色，不印纹样；整片；裁 2 片</dd><dt>里布</dt><dd><b>无弹涤纶薄仿双绉（M3，目标 70–90 g/m²）</b><br>匹配净粉色薄里；整片；裁 2 片</dd></dl>
+              <p class="material-note">原面2＋薄里2；不因窄褶边自动删减。<br>不加衬，避免袖山接缝堆硬。</p>
+              <p class="material-reason">选材理由：轻薄粉色面里形成真实荷叶边，先检查抽褶后体积。</p>
+              <small>拟采用，待样布确认 · 点击衣片放大花纹、尺寸与材质</small></article></div></section><footer>后背魔术贴承担衣服开合；存护背蝶结采用可拆别针，固定在一侧承力区。先试坯确认轮廓，再按部位面料印样与定稿。</footer></main><script>
     for(const b of document.querySelectorAll('[data-target]'))b.addEventListener('click',()=>{for(const s of document.querySelectorAll('section'))s.hidden=s.id!==b.dataset.target;for(const t of document.querySelectorAll('[data-target]'))t.setAttribute('aria-selected',String(t===b));location.hash=b.dataset.target;});
     if(location.hash==='#hunt')document.querySelector('[data-target="hunt"]').click();
     </script></body></html>

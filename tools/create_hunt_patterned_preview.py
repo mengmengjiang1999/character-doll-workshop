@@ -6,6 +6,7 @@ import xml.etree.ElementTree as ET
 import json, math, re, hashlib
 import create_hunt_garment as base
 from create_dimension_previews import label
+from create_preservation_patterned_preview import append_material_panel, material_lines, card_materials
 ROOT=base.ROOT
 GP=base.OUT
 OUT=GP/'patterned'
@@ -87,16 +88,17 @@ def writepieces():
         legend='花纹定位看稿；不是印厂生产文件'
         if p['piece_id']=='H-R04':legend='本图显示暗纹里侧；红色表面净色'
         r.append(ET.fromstring('<g xmlns="'+NS+'">'+label(10,40,legend,3.6,'#954532')+'</g>'))
+        append_material_panel(r,GP,p['piece_id'])
         file=OUT/p['file'];file.parent.mkdir(parents=True,exist_ok=True);file.write_text(serial(r))
         MAPPING.append({'piece_id':p['piece_id'],'name':p['name'],'source_motif':SOURCES.get(p['piece_id']),'preview_face':'lining' if p['piece_id']=='H-R04' else 'outer face','base_color_covers_allowance':True,'motif_clipped_to_net_shape':True,'geometry_source':'../'+p['file'],'notes':'里布/贴边不另加无关纹样；未知后背为净色；R04单片显示里侧暗纹，外面用净红色。'})
 
 def overview():
-    cols=4;cw=440;ch=355;rows=math.ceil(len(base.pieces)/cols);W=cols*cw+60;H=rows*ch+180
+    cols=4;cw=440;maxlines=max(len(material_lines(GP,p['piece_id'],compact=True,width=386,font_size=17))for p in base.pieces);ch=405+maxlines*23;rows=math.ceil(len(base.pieces)/cols);W=cols*cw+60;H=rows*ch+180
     body='<defs>'+DEFS+'</defs>'+label(35,55,'巡猎坐娃 · 完整衣片花纹定位看稿',40)+label(35,95,'保留原衣片尺寸、缝份与净线；底色覆盖裁边，纹样按成品区域定位。',23,'#a54d39')
     body+=label(35,130,'R04 显示暗纹里侧，外面净红；后背及隐藏贴边保持净色。未做实布验证。',22)
     for i,p in enumerate(base.pieces):
         x=30+i%cols*cw;y=165+i//cols*ch
-        body+=f'<rect x="{x}" y="{y}" width="420" height="337" rx="12" fill="#f7f7f3" stroke="#c6d0d5"/>'
+        body+=f'<rect x="{x}" y="{y}" width="420" height="{ch-18}" rx="12" fill="#f7f7f3" stroke="#c6d0d5"/>'
         body+=label(x+14,y+28,p['piece_id']+' '+p['name'],21)
         a,b,c,d=base.basicpiece(p);s=min(360/(c-a),170/(d-b),2)
         tx=x+210-(a+c)/2*s;ty=y+132-(b+d)/2*s
@@ -105,6 +107,7 @@ def overview():
         body+=label(x+14,y+298,p['cut_count']+' / 缝份 '+str(p['allowance_mm'])+' mm',18)
         note='里侧暗纹；外面净红' if p['piece_id']=='H-R04' else p['layer']
         body+=label(x+14,y+323,note,17,'#61727e')
+        body+=card_materials(GP,p['piece_id'],x+14,y+360)
     f=OUT/'pieces-overview.svg';f.write_text(base.svgdoc(W,H,body).replace('xmlns="'+NS+'"','xmlns="'+NS+'" xmlns:xlink="'+XL+'"',1));base.render(f,f.with_suffix('.png'),1800)
 
 # Apply motifs to corresponding silhouettes in the existing layered engineering flat.
@@ -170,9 +173,16 @@ def layers():
 def main():
     before={str(f):hashlib.sha256(f.read_bytes()).hexdigest() for f in GP.glob('*')if f.is_file()}
     OUT.mkdir(exist_ok=True);writepieces();overview();layers()
-    (OUT/'mapping.json').write_text(json.dumps({'status':'pattern placement preview; not production print or fit validated','geometry_unchanged':True,'piece_count':len(MAPPING),'pieces':MAPPING},ensure_ascii=False,indent=2)+'\n')
+    (OUT/'mapping.json').write_text(json.dumps({'status':'pattern placement preview; not production print or fit validated','geometry_unchanged':True,'material_source':'../piece-materials.json','single_svg_page_height_extended_for_material_notes':True,'piece_count':len(MAPPING),'pieces':MAPPING},ensure_ascii=False,indent=2)+'\n')
     assert all(hashlib.sha256(Path(f).read_bytes()).hexdigest()==digest for f,digest in before.items())
     for f in (OUT/'pieces').glob('*.svg'):
-        r=ET.parse(f).getroot();src=ET.parse(GP/'pieces'/f.name).getroot();assert r.get('viewBox')==src.get('viewBox') and r.get('width')==src.get('width') and r.get('height')==src.get('height')
-    print('Created 27 patterned piece previews, 2 overview PNGs; original geometry, SVG dimensions and master files unchanged.')
+        r=ET.parse(f).getroot();src=ET.parse(GP/'pieces'/f.name).getroot();assert r.get('viewBox').split()[:3]==src.get('viewBox').split()[:3] and r.get('width')==src.get('width') and float(r.get('viewBox').split()[3])>float(src.get('viewBox').split()[3])
+        oldpaths={e.get('d')for e in src.iter()if e.tag.endswith('path')};newpaths={e.get('d')for e in r.iter()if e.tag.endswith('path')};assert oldpaths<=newpaths
+    readme=OUT/'README.md'
+    note='## 每片材质标注\n\n单片SVG下方增加材料建议区，总览卡片直接列出中文材质、组号及目标克重。单片还记录面布、里布、贴边／支承布、局部衬的颜色／工艺与位置，均为尚未打样的建议。说明区只增加页高，原衣片坐标、毫米比例和50 mm校准线保留。数据来自[逐片材料记录](../piece-materials.json)。\n'
+    if readme.exists():
+        text=readme.read_text();text=text.split('## 每片材质标注')[0].rstrip()+'\n\n'+note
+    else:text='# 巡猎完整衣片花纹与材质预览\n\n'+note
+    readme.write_text(text)
+    print('Created 27 patterned piece previews, 2 overview PNGs; original geometry and mm scale unchanged; page heights extended for per-piece material notes.')
 if __name__=='__main__':main()

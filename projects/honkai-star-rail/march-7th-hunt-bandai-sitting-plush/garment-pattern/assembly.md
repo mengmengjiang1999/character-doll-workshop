@@ -6,6 +6,7 @@
 
 ## 先看图与文件
 
+- **[逐片材质记录](piece-materials.md)** · [材料数据](piece-materials.json)
 - [分层前后及合穿外观](patterned/layers-overview.png)；示意不供量尺寸，后背是可穿脱的工程设计。
 - [完整分件尺寸总览](patterned/pieces-overview.png)；[逐片尺寸表](dimension-table.md)；[带花纹单片 SVG](patterned/pieces/)；[黑白结构 SVG](pieces/)。
 - [全套 1:1 PDF](hunt-full-pattern-v0.2-1to1.pdf)：**27 页，各页自定义大小，非 A4**。最长腰带页约 540 mm 宽。使用绘图仪／大幅输出，或在 PDF 阅读器“海报／平铺”模式以 100% 分页拼接；不要“适合页面”。每页印后量 50 mm 标尺，不够即取消该次打印。
